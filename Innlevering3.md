@@ -7,8 +7,7 @@
 ### <span style="color:OrangeRed;"> Testen gjennomføres fysisk i sal HHT 02.216, Økonomen </span>
 
 Denne testen innholder spørsmål knyttet til **Tema 2 og Tema 3**. Hvert spørsmål har ett riktig svar, og tre feilsvar.
-Makspoeng på testen er 2 poeng. For å få poeng på testen må du ha minst 25% riktige svar. Hvis du har 25% eller mer riktige svar blir poengen din prosent riktige svar x 2. 
-Testen skal tas individuelt. 
+Makspoeng på testen er 2 poeng. For å få poeng på testen må du ha minst 25% riktige svar. Gitt at du har minst 25% riktige svar beregnes poengen prosent riktige svar x 2. Poengen blir avrundet til en desimal. Testen skal tas individuelt. 
 
 Lykke til!
 
