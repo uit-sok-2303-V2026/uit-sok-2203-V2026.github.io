@@ -4,7 +4,7 @@
 | Uke | Mandag | Tirsdag | Onsdag | Torsdag | Fredag |   |
 |----------|----------|----------|-----------|----------|----------|----------|
 | 2 |  | **F – Intro til kurset (AM)** | **F1.1 – Introduksjon til den nordiske modellen (MM)** <br> NOU 2011:7, kap. 3.1–3.3 |  |  |  |
-| 3 |  | **F1.2 – Velferdsstaten: filosofi og finansiering (MM)** <br> Barr k. 1–2 | **F1.3 – Introduksjon til arbeidsmarkedsøkonomi 1** (AM)<br> Boeri & van Ours k. 1 | NB! Selvstudier: [v1.3–v1.6](video.md#tema1) | **S1.1 (DT-lab)(AM)** |  |
+| 3 |  | **F1.2 – Velferdsstaten: filosofi og finansiering (MM)** <br> Barr k. 1–2 | **F1.3 – Introduksjon til arbeidsmarkedsøkonomi 1** (AM)<br> Boeri & van Ours k. 1 | Selvstudier: [v1.3–v1.6](video.md#tema1) | **S1.1 (DT-lab)(AM)** |  |
 | 4 |  |  |  |  | **S.T1 (1h - Wiseflow) [Flervalgstest 1](#0)** |  |
 | 5 |  | **F2.1 – Familiepolitikk(AM)** <br> Boeri & van Ours k. 7 | **F2.2 – Utdanning** (MM) <br> Barr k. 3 og 10–11 |  | **S2.1** (DT-lab) |  |
 | 6 |  | **F2.3 – Helsetjenester (MM)** <br> Barr k. 3, 4, 9 | **F2.4 – (ingen ny forelesning,fortsettelse fra F2.3) (MM)** |  | **S2.2 (DT-lab)** |  |
@@ -15,7 +15,7 @@
 | 11 | Egne studier |  |  |  |  |  |
 | 12 |  | **S.U2 – [Utfordring 2](innlevering4.md)** |  |  | **Frist – [Utfordring 2](innlevering4.md)** |  |
 | 13 |  | **F4.1 – Argumenter for offentlig finansiert trygd (1) (MM)** <br> Barr k. 4 og 6 | **F4.2 – Argumenter for offentlig finansiert trygd (2)(MM)** <br> Barr k. 4 og 6 |  |  |  |
-| 14 | 🧊 **Påskeferie – ingen undervisning** |  |  |  |  |  |
+| 14 |  |  |  |  |  |  |
 | 15 |  |  | **F4.3 – Problemer og løsninger** (AM)<br> Boeri & van Ours k. 12 |  | **F4.4 – Alderspensjon (AM)** <br> Barr k. 3, 4 og 7 |  |
 | 16 |  | **S4.1 (DT-lab)** |  |  |  |  |
 | 17 |  |  | **S.U4 – [Utfordring 3](innlevering5.md)** |  | **Frist – [Utfordring 3](innlevering5.md)** |  |
