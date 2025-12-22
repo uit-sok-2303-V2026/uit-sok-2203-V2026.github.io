@@ -1,5 +1,5 @@
 {% include navbar.html %}{% include top-box.html %}
-# Seminarer: SOK-2008 Den nordiske modellen    
+# Seminarer: SOK-2303 Den nordiske modellen    
 
 * [Løsninger til oppgaver i Boeri og van Ours (NB: 2. utgave)](https://uit-sok-2008-h23.github.io/assets/Solutions_exercises_Boeri_van_Ours.pdf)
 
