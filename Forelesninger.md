@@ -13,8 +13,8 @@ Her finner du lenker til alle forelesninger på kurset. Siden oppdateres fortlø
 
 ## Forelesninger [Tema 3](temaer.md#tema3)<a name="f_t3"></a>
 
- ## Forelesninger [Tema 4](temaer.md#tema4)<a name="f_t4"></a>
+## Forelesninger [Tema 4](temaer.md#tema4)<a name="f_t4"></a>
 
- ## Forelesninger [Tema 5](temaer.md#tema5)<a name="f_t5"></a>
+## Forelesninger [Tema 5](temaer.md#tema5)<a name="f_t5"></a>
 
 ## Oppsummering og instruks til muntlig eksamen
