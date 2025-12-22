@@ -49,10 +49,5 @@ Her finner du video-forelesninger lenket til Tema 4
   * [Del 3](https://www.youtube.com/watch?v=U7NWx2bU0-U)
   * [Del 4](https://www.youtube.com/watch?v=yjOqTHs0XAI)
 
-## Videoer [Tema 5](tema5.md)<a name="v_t5"></a>
-Her finner du video-forelesninger lenket til Tema 5
-* [v.5.1 - Diskriminering: Fordommer hos arbeidsgivere](https://youtu.be/q8oKcs4NYeg)
-* [v.5.2 - Diskriminering: Fordommer hos kolleger og kunder](https://youtu.be/1WODKQx3zJg)
-* [v.5.3 - Diskriminering: Monopsonimakt](https://youtu.be/ncNni_7vU2o)
-* [v.5.4 - Diskriminering: Statistisk diskriminering](https://youtu.be/OtBjx54IWcA)
+
 
