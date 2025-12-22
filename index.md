@@ -22,10 +22,9 @@ Innleveringsplanen gir oppgaver, frister og ressurser knyttet til obligatoriske 
 - [Timeplan](https://timeplan.uit.no/){:target="blank"} på timeplan.uit.no
 
 ## Faglærerinfo
-<!--- <strong>[Andrea Mannberg](https://uit.no/ansatte/andrea.mannberg)</strong> (Fagansvar) - professor i samfunnsøkonomi
+- <strong>[Andrea Mannberg](https://uit.no/ansatte/andrea.mannberg)</strong> (Fagansvar) - professor i samfunnsøkonomi
   - Epost: andrea.mannberg@uit.no
   - Telefon: +47 77 64 60 92
-  -->
 - <strong>[Mikko Moilanen](https://en.uit.no/ansatte/person?p_document_id=200602)</strong> (fagansvar) - professor i samfunnsøkonomi
  
 ## Administrative spørsmål
