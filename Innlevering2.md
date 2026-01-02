@@ -87,12 +87,10 @@ Utfordringene blir bedømt i henhold til regelen i Tabell 1. Det vil være mulig
 
 ### Plagiat og juks
 
-Det er tillatt å arbeide med oppgavene sammen med andre. Hver enkelt student skal likvel skrive og levere inn sine utfordringer individuelt. Med andre ord må hver enkelt student produsere sin egen tekst, figurer, koder og så videre. Det er ikke lov å levere inn helt eller nesten identiske oppgaver. Det er altså ikke lov å kun bytte ut noen ord i sin innlevering. Vi bruker URKUND for å sjekke for plagiering. Vi er bevisst på at oppgavene vil være relativt lik og vil ta høyde for dette når vi evaluerer resultatene fra URKUND. 
+Det er tillatt å arbeide med oppgavene sammen med andre, men hver gruppe skal produsere sin egen tekst, figurer, koder og så videre. Det er ikke lov å levere inn tekster som er produsert av KI. Vi bruker URKUND for å sjekke for plagiering. 
 
 ### Bruk av kunstig intelligens (KI)
-Hver innlevering **skal** inneholde en deklarasjon om bruk av KI. Deklarasjonen skal settes inn i et appendiks til oppgaven. **Du må ha med deklarasjonen selv om du ikke har brukt KI**.
-
-Dersom du bruker kunstig intelligens for å løse oppgaven skal du oppgi hvilken KI du brukte. Du må også gjøre rede for de spørsmål du stilte til KI:n, hvilket svar du fikk, og i hvilken grad du endret svaret/koden fra KI:n. Redegjørelsen skal leveres som et appendiks til oppgaven. **Dersom du ikke gjør rede for ditt bruk av KI, vil oppdekket bruk anses som juks**. Du er selv ansvarlig for å sjekke innholdet i besvarelsen fra KI-verktøyet (ikke alt er riktig!), og du må passe på at besvarelsen din flyter godt (det vil trekke ned dersom sensoren ser tydelige forskjeller mellom egen tekst og tekst som er generert av KI).
+Hver innlevering **skal** inneholde en deklarasjon om bruk av KI. Deklarasjonen skal settes inn i et appendiks til oppgaven. **Du må ha med deklarasjonen selv om du ikke har brukt KI**. Dersom dere bruker kunstig intelligens for å løse oppgaven skal dere oppgi hvilken KI dere brukte. Dere er selve ansvarlige for de tekster leverer inn. 
 
 ### Tips og triks for hvordan du skriver en god besvarelse
 
