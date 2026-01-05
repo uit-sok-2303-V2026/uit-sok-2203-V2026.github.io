@@ -49,7 +49,9 @@ Kunngjøringer og beskjeder legges ut i [Canvas](https://uit.instructure.com/){:
 
 ## Innlevering og eksamen  
 
-Kurset har mappeevaluering, eksaminasjonen på kurset består av to deler: en mappeevaluering og en muntlig eksamen. De to delene teller likt til sluttkarakter. For å bestå kurset må du ha godkjent karakter på begge delene.    
+Kurset har mappeevaluering, eksaminasjonen på kurset består av to deler: en mappeevaluering og en muntlig eksamen. De to delene teller likt til sluttkarakter. For å bestå kurset må du ha godkjent karakter på begge delene.
+
+For å sikre at flervalgstestene (som er en del av mappeevalueringen) gjennomføres i et kontrollert og trygt miljø uten juks, bruker vi Safe Exam Browser (SEB). Les mer [her](Mappeevaluering.md).
 
 Frister, oppgaver og ressurser til mappeevalueringen finnes i [mappevaluering](mappeevaluering.html){:target="blank"}. 
 
