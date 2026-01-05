@@ -6,6 +6,7 @@
 Her finner du lenker til alle forelesninger på kurset. Siden oppdateres fortløpende.
 
 ## Introduksjon til kurset
+* [Kursintroduksjon del 1](https://uit-sok-2303-V2026.github.io/assets/F0_kursintro_sok_2303_v26.pdf)
 
 ## Forelesninger [Tema 1](temaer.md#tema1)<a name="f_t1"></a>
 
