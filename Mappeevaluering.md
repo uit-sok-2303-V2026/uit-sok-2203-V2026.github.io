@@ -27,7 +27,7 @@ Alle flervalgstestene gjennomføres **fysisk** i rom HHT 02.216 Økonomen. Vi ha
 De samme regler som gjelder ved eksamen, gjelder også for flervalgstestene. Hvis du har giltig årsak til at du ikke kan ta testen på angitt tidspunkt, vil vi se til at du får ta testen seinere. For dette trengs inntyg (f.eks. legeerklæring). 
 Hvis du er fraværende uten giltig grunn, vil du få null poeng fra testen med til mappen.
 
-**For å sikre at flervalgstestene gjennomføres i et kontrollert og trygt miljø uten juks, bruker vi Safe Exam Browser (SEB)**. Når du åpner en test i SEB, låses datamaskinen til selve test-opplegget slik at du kun har tilgang til selve testen. Før du tar flervalgstester må du installere Safe Exam Browser på din enhet. Du finner offisielle nedlastinger [her](https://safeexambrowser.org/download_en.html)
+**For å sikre at flervalgstestene gjennomføres i et kontrollert og trygt miljø uten juks, bruker vi Safe Exam Browser (SEB)**. Når du åpner en test i SEB, låses datamaskinen til selve test-opplegget slik at du kun har tilgang til selve testen. Før du tar flervalgstester må du installere Safe Exam Browser på din enhet. Du finner offisielle nedlastinger [her](https://safeexambrowser.org/download_en.html).
 Denne siden inneholder installasjonsfiler for Windows, macOS og iOS. Før hver flervalgs-test får du en .seb-fil som åpner testen i SEB. Denne distribueres via Canvas. Når du åpner filen, starter flervalgstesten i sikkert eksamensmodus.
 Før de tellende flervalgstestene gjennomfører vi en egen prøve-SEB. Dette gir deg mulighet til å prøve opplegget på forhånd og sikre at SEB og som de skal før selve flervalgstestdagene.
 
