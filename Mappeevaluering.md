@@ -23,9 +23,13 @@ Flervalgstest gjennomføres individuelt.
 
 ## Flervalgstester (innlevering 1, 3, og 6)
 Flervalgstestene vil innholde 15 - 25 spørsmål. Hvert spørsmål vil ha fire svarsalternativer, der et svarsalternativ er riktig. 
-Flervalgstestene gjennomføres fysisk i rom HHT 02.216 Økonomen. Vi har rommet i 2 timer, men vil kun bruke 1 time til testen. 
+Alle flervalgstestene gjennomføres **fysisk** i rom HHT 02.216 Økonomen. Vi har rommet i 2 timer, men vil kun bruke 1 time til testen. 
 De samme regler som gjelder ved eksamen, gjelder også for flervalgstestene. Hvis du har giltig årsak til at du ikke kan ta testen på angitt tidspunkt, vil vi se til at du får ta testen seinere. For dette trengs inntyg (f.eks. legeerklæring). 
-Hvis du er fraværende uten giltig grunn, vil du få null poeng fra testen med til mappen. 
+Hvis du er fraværende uten giltig grunn, vil du få null poeng fra testen med til mappen.
+
+**For å sikre at flervalgstestene gjennomføres i et kontrollert og trygt miljø uten juks, bruker vi Safe Exam Browser (SEB)**. Når du åpner en test i SEB, låses datamaskinen til selve test-opplegget slik at du kun har tilgang til selve testen. Før du tar flervalgstester må du installere Safe Exam Browser på din enhet. Du finner offisielle nedlastinger [her](https://safeexambrowser.org/download_en.html)
+Denne siden inneholder installasjonsfiler for Windows, macOS og iOS. Før hver flervalgs-test får du en .seb-fil som åpner testen i SEB. Denne distribueres via Canvas. Når du åpner filen, starter flervalgstesten i sikkert eksamensmodus.
+Før de tellende flervalgstestene gjennomfører vi en egen prøve-SEB. Dette gir deg mulighet til å prøve opplegget på forhånd og sikre at SEB og som de skal før selve flervalgstestdagene.
 
 ### Evaluering av flervalgstester
 For å få poeng på flervalgstesten må du ha minst 25% riktige svar. Hvis du har det, vil poengen din bli: prosent riktige svar x 2 (f.eks 0.75x2 = 1.5). 
