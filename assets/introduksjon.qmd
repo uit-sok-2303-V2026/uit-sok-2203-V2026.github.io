@@ -1,0 +1,416 @@
+---
+title: "SOK-2303 - Den nordiske modellen"
+author:
+  - Mikko Moilanen
+format: 
+  revealjs:
+ #   smaller: true
+    scrollable: true
+ #   chalkboard: true
+    multiplex: true
+    self-contained: true
+    footer: "[uit-sok-2303-v26.github.io/](https://uit-sok-2303-v2026.github.io/)"
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: title_slide.png
+      data-background-size: cover
+date-format: "DD MMM YYYY"
+css: style.css
+editor: visual
+from: markdown+emoji
+---
+
+## Vi har det bra
+
+### World happiness Index 2024
+
+::: fragment
+```{r, message=FALSE, warning=FALSE}
+suppressPackageStartupMessages(library(tidyverse))
+#| code-fold: true
+library(rvest)
+
+### world happiness index scores 2025###
+
+## webscrape data
+link <- "https://countryeconomy.com/demography/world-happiness-index"
+page <- read_html(link)
+
+country <- page %>% html_nodes("td:nth-child(1)") %>% html_text()
+happiness_score <- page %>% html_nodes(".numero+ .numero") %>% html_text()
+
+whi <- data.frame(country, happiness_score, stringsAsFactors = FALSE)
+
+## clean + present
+whi <- whi %>%
+  mutate(
+    country = str_remove(country, "\\s*\\[\\+\\]\\s*$"),  # fjern " [+]" på slutten (mer robust enn end=-5)
+    happiness_score = as.numeric(happiness_score)
+  ) %>%
+  select(country, happiness_score) %>%
+  arrange(desc(happiness_score))
+
+# vis de "beste" tydelig (endre 20 om du vil)
+whi %>% slice_head(n = 20)
+
+```
+:::
+
+## Vi har høy levestandard
+
+::: fragment
+```{r,message=FALSE, warning = FALSE}
+suppressPackageStartupMessages(library(tidyverse))
+library(wbstats)
+library(ggplot2)
+library(plotly)
+library(tidyverse)
+
+my_indicators <- c(
+  life_exp = "SP.DYN.LE00.IN", 
+  gdp_capita ="NY.GDP.PCAP.CD", 
+  pop = "SP.POP.TOTL"
+)
+
+life <- wb_data(my_indicators, start_date = 2022)
+
+life_with_region <- life %>%
+  left_join(wb_countries() %>% select(iso3c, region), by = "iso3c")
+
+life_with_region <- life_with_region %>%
+    mutate(pop_millions = pop / 1e6)
+
+# Now, let's create the plot with adjusted settings
+plot <- plot_ly(life_with_region, 
+                x = ~gdp_capita, 
+                y = ~life_exp, 
+                color = ~region,
+                size = ~pop_millions,
+                sizes = c(5, 10000),
+                type = 'scatter', 
+                mode = 'markers',
+                text = ~paste("Country: ", country, 
+                              "<br>Population: ", scales::comma(pop), 
+                              "<br>Life Expectancy: ", round(life_exp, 2), 
+                              "<br>GDP per capita: ", scales::dollar(gdp_capita)),
+                hoverinfo = 'text') %>%
+     layout(
+      title = "Forventet levetid og BNP per innbygger i 2022",
+      xaxis = list(title = "BNP pr. innbygger (logaritmisk skala)", 
+                   type = "log",
+                   tickformat = "$,.0f"),
+      yaxis = list(title = "Forventet levetid ved fødsel"),
+      showlegend = TRUE,
+      legend = list(title = list(text = "Region")),
+      annotations = list(x = 1, y = -0.1, text = "Kilde: World Bank", 
+                         showarrow = FALSE, xref='paper', yref='paper', 
+                         xanchor='right', yanchor='auto',
+                         font = list(size = 10))
+    )
+
+# Display the plot
+plot
+
+```
+:::
+
+## Vi er like, og vi er rike
+
+::: fragment
+```{r,message=FALSE, warning = FALSE}
+suppressPackageStartupMessages(library(tidyverse))  # Laster tidyverse-pakker for datahåndtering
+library(plotly)  # Laster plotly for interaktive figurer
+library(tidyverse)
+library(wbstats)  # Laster wbstats for å hente data fra World Bank
+
+# Definer hvilke indikatorer vi vil hente
+gini_indicators <- c(
+  gini = "SI.POV.GINI",        # Gini-indeks for inntektsulikhet
+  gdp_capita = "NY.GDP.PCAP.CD", # BNP per innbygger
+  pop = "SP.POP.TOTL"          # Total befolkning
+)
+
+# Hent data fra Verdensbanken for perioden 1990 til 2025
+gini <- wb_data(gini_indicators, start_date = 1990, end_date = 2025)
+
+# Finn siste tilgjengelige Gini-verdi per land
+latest_gini <- gini %>%
+  group_by(country) %>%         # Gruppér etter land
+  arrange(date, .by_group = TRUE) %>%  # Sorter etter dato innen hvert land
+  filter(!is.na(gini)) %>%      # Fjern rader uten Gini-verdi
+  slice_tail(n = 1) %>%         # Velg siste rad (nyeste data)
+  ungroup()                     # Fjern gruppering
+
+# Legg til regioninformasjon for hvert land
+latest_gini <- latest_gini %>%
+  left_join(wb_countries() %>% select(iso3c, region), by = "iso3c")
+
+# Forbered tekst til hover-tekst (verktøytips når du holder musen over punktet)
+latest_gini <- latest_gini %>%
+  mutate(
+    text = paste("Land: ", country,
+                 "\nBefolkning (mill): ", scales::comma(pop / 1e6),
+                 "\nGini: ", gini,
+                 "\nBNP per innb.: $", scales::comma(gdp_capita))
+  )
+
+# Lag figuren med plot_ly
+interactive_plot <- plot_ly(
+  data = latest_gini,
+  x = ~log10(gdp_capita),      # Bruk logaritmisk skala for BNP
+  y = ~gini,                   # Gini-indeks på y-aksen
+  type = 'scatter',            # Scatter-plot
+  mode = 'markers',            # Punktdiagram
+  size = ~pop,                 # Punktstørrelse basert på populasjon
+  color = ~region,             # Farge basert på region
+  text = ~text,                # Hover-tekst
+  hoverinfo = 'text',          # Vis bare hover-tekst
+  sizes = c(5, 100),           # Størrelse på punkter (min, maks)
+  marker = list(sizemode = 'diameter')
+) %>%
+  layout(
+    title = "Gini-indeks og bnp per innbygger",  # Tittel over figuren
+    xaxis = list(
+      title = "BNP pr. innbygger (logaritmisk skala)",    # Tittel x-akse
+      tickvals = log10(c(1000, 10000, 100000)),           # Verdier for ticks på log-skala
+      ticktext = c("$1 000", "$10 000", "$100 000")       # Tekst for ticks
+    ),
+    yaxis = list(title = "Gini-indeks"),  # Tittel y-akse
+    size = list(title = "Population"),    # Tittel størrelseforklaring
+    legend = list(title = list(text = "Region")),  # Tittel for legenden
+    hovermode = "closest",  # Hovermodus
+    autosize = TRUE,        # Tilpass størrelse automatisk
+    annotations = list(
+      x = 1, y = -0.1, text = "Kilde: World Bank",  # Annotation nederst med kilde
+      showarrow = FALSE, xref='paper', yref='paper',
+      xanchor='right', yanchor='auto',
+      font = list(size = 10)
+    )
+  )
+
+# Vis figuren
+interactive_plot
+
+
+
+```
+:::
+
+## Vi er frie
+
+```{=html}
+<iframe data-external="1" src="https://ourworldindata.org/grapher/human-rights-index-vdem?country=~OWID_WRL&embedded=true&tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+```
+
+## Den nordiske modellen
+
+::::: columns
+::: {.column width="50%"}
+-   Hvorfor er Norge blant landene med høyest velferd; gladest og friest befolkning, høyest levestandard og minst forskjeller mellom folk?
+
+-   Og hvorfor er det slik at Norge har vært blant de flinkeste til å absorbere økonomiske sjokk og andre eksternt påførte kriser?
+
+-   Mye av forklaringen på suksesshistorien ligger i hvordan vi har organisert den norske samfunnsmodellen
+:::
+
+::: {.column width="50%"}
+![](viking.jpg){.r-stretch}
+:::
+:::::
+
+## Men...
+
+::::: columns
+::: {.column width="50%"}
+#### **Innføringskurs i mikroøkonomi**
+
+-   Inngrep på markedet fører til redusert velferd
+-   Konklusjon:
+    -   Det er best å la markedene være i fred.
+    -   Unngå alle inngrep på markedene.
+:::
+
+::: {.column width="50%"}
+#### **Den nordiske modellen**
+
+-   Veldig mange og veldig store inngrep på markedene
+    -   spesielt på arbeidsmarkedet, utdanningsmarkedet, helsemarkedet og forsikringsmarkedet
+:::
+:::::
+
+#### Hvorfor?
+
+#### Hvilke insentiver?
+
+## Den nordiske modellen
+
+![](NordiskeModellen.png){.r-stretch}
+
+## Samfunnets målsettinger
+
+::::: columns
+::: {.column width="40%"}
+-   Mål
+    -   personlig frihet
+        -   muligheten til å kunne utvikle egne potensialer på egne premisser
+        -   økonomisk trygghet er en helt nødvendig betingelse for frihet
+    -   økonomisk vekst
+        -   å skape verdier
+        -   effektivitet: større kake
+            -   at de fleste er i jobb
+            -   sløsing og gammeldagse metoder betyr mindre velferd og lønn
+    -   sosial likhet
+        -   inntektsutjevning
+        -   rettferdighet: hvordan fordele kake
+:::
+
+::: {.column width="60%"}
+![](NordiskeModellen.png){.r-stretch width="600"} ![](NordiskeModellen.png){.r-stretch width="600"}
+:::
+:::::
+
+## Den nordiske modellens tre grunnpilarer
+
+::::: columns
+::: {.column width="40%"}
+-   økonomisk styring
+    -   aktiv, stabilitetsorientert økonomisk politikk
+    -   frihandel
+    -   lover, skatter og avgifter
+    -   høy yrkesdeltakelse
+-   offentlig velferd
+    -   ordninger som dekkes av et høyt skattenivå
+    -   universelle ordninger for inntekts- og standardsikring
+        -   legger til rette for høy yrkesdeltaking og mobilitet
+    -   skattefinansierte helse- og velferdstjenester og gratis utdanning
+        -   bidrar til likestilling og utjevning av levekår, helse og yrkesmuligheter
+-   organisert arbeidsliv
+    -   sentralisert koordinering av lønnsdannelsen
+    -   sikrer at norske bedrifter kan konkurrere internasjonalt
+    -   fører til små lønnsforskjeller og reduserer inntektsulikheter
+    -   skaper et forutsigbart og stabilt arbeidsliv med høy organisasjonsgrad
+    -   bidrar til høy sysselsetting og god økonomisk utviklin
+:::
+
+::: {.column width="60%"}
+![](NordiskeModellen.png){.r-stretch width="600"} ![](NordiskeModellen.png){.r-stretch width="600"}
+:::
+:::::
+
+## Den nordiske modellens oppslutning
+
+::::: columns
+::: {.column width="40%"}
+-   Verdier
+    -   tillit
+    -   solidaritet
+    -   menneskerettigheter
+    -   demokrati
+:::
+
+::: {.column width="60%"}
+![](NordiskeModellen.png){.r-stretch width="600"}
+:::
+:::::
+
+## Tillit
+
+-   tillit er en forutsetning for oppslutning om velferd
+-   dyre kollektive ordninger krever tillit og solidaritet
+    -   velferdsstaten er avhengig av at hver enkelt har en tillit til at «alle de andre» også vil legge pengene sine i den felles potten
+-   en velfungerende velferdsstat bidrar til å skape tillit
+    -   blitt holdt ved like av institusjonene velferdsstaten representerer
+    -   denne gjensidig forsterkende dynamikken er ikke gitt en gang for alle
+
+## Tillit
+
+<iframe data-external="1" src="https://ourworldindata.org/grapher/interpersonal-trust-in-europe?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">
+
+</iframe>
+
+## Solidaritet
+
+-   oppslutningen om velferdsordningene bygger på et ønske om at inntekt og sosial bakgrunn ikke skal være avgjørende for tilgang til velferdsordninger som utdanning og helsetjenester
+-   modellen baserer seg på et sterkt krav til solidaritet mellom generasjoner
+-   mange nordiske innbyggere har en preferanse for likhet
+
+## Demokrati
+
+-   gir borgerne muligheten til å delta i beslutningsprosesser
+-   skaper et samfunn hvor alle har mulighet til å si sin mening og bidra til utformingen av politikk
+    -   styrker følelsen av eierskap og tilknytning til samfunnet
+-   krever åpenhet og ansvarlighet fra myndighetenes side
+    -   kan bidra til å redusere korrupsjon og sikre at offentlige midler brukes på en effektiv og rettferdig måte
+
+## Menneskerettigheter
+
+-   fungerer som et grunnlag for mange av de prinsippene og verdiene som kjennetegner modellen
+    -   respekt for individet:
+        -   menneskerettighetene anerkjenner den iboende verdigheten og likheten til alle individer
+-   styrking av sosial samhørighet og tillit: ved å fremme og beskytte menneskerettighetene, bygger de nordiske landene et samfunn hvor alle borgere har mulighet til å delta fullt ut
+-   likestilling og mangfold: Menneskerettighetene fremmer likestilling mellom kjønnene og beskyttelse av minoriteters rettigheter. Dette er i tråd med den nordiske modellens fokus på inkludering og mangfold.
+
+## Den nordiske modellens utfordringer
+
+-   økt global konkurranse
+
+-   klimaproblemer
+
+-   migrasjon og europeisk integrasjon
+
+-   indre endringer setter modellenes bærekraft og fornyelsesevne på prøve.
+
+    -   økende, eldre og mer mangfoldig befolkning
+    -   urbanisering
+    -   stigende forventninger til helse, utdanning og velferd
+
+## Eldre befolkning
+
+![](images/clipboard-1459326500.png)
+
+## Fallende inntekter fra olje og gass
+
+![](images/clipboard-3199338669.png)
+
+## Hvorfor er yrkesdeltakelse viktig
+
+![](images/clipboard-1105745369.png)
+
+## Den nordiske modellens utfordringer
+
+-   **Et kjernespørsmål er om man klarer å fornye institusjonene og virkemidlene uten at det går på bekostning av målsettinger om rettferdig fordeling, balansert vekst, høy yrkesdeltakelse og den politiske oppslutningen om modellen**
+
+## Den nordiske modellen
+
+![](NordiskeModellen.png){.r-stretch}
+
+## Læringsmål: Kunnskaper og forståelse
+
+-   **Studentene skal ha innsikt i sentrale trekk ved den nordiske samfunnsmodellen**
+-   **Studentene skal forstå offentlige inngrep i økonomien og ha innblikk i velferdsøkonomiske problemstillinger**
+    -   **skal forstå teoretiske argumenter bak velferdsordningenes innretning og omfang**
+    -   **skal forstå insentivproblemer som oppstår i skjæringspunktet mellom velferdsstat og marked**
+        -   Bakgrunnen til, og ulike politiske og moralfilosofiske begrunnelser for, velferdsstaten
+        -   Hvordan effektivitet, rettferdighet og insentivproblemer påvirker arbeidsmarkedet og ulike velferdspolitiske ordninger
+        -   Hvordan ulikhet defineres og operasjonaliseres i normative analyser
+        -   Beskatningens samfunnsøkonomiske kostnader og begrensninger
+        -   Hvordan arbeidsmarkedet fungerer, blant annet trekantssamarbeidets rolle i lønnsdannelsen, og hvordan familie-, innvandrings- og likestillingspolitikken påvirker sysselsetting og verdiskaping
+        -   Teoretiske argumenter bak viktige overføringsordninger i folketrygden og disinsentiveffekter knyttet til disse
+        -   Offentlig sektor sin rolle i utdannelses- og helsesektoren
+
+## Læringsmål: Ferdigheter
+
+-   Kunne inkorporere politiske og moralfilosofiske teorier i analyse av velferdsstaten
+-   Kunne analysere
+    -   hvordan en effektiv allokering av ressursene kan oppnåes i imperfekte markeder
+    -   fattigdom, ulikhet og velferd
+    -   Analysere ulike overføringsordninger opp mot effektivitet, fordeling og insentiveffekter
+-   Kunne analysere og drøfte relasjonen mellom forsikringsmarkeder og sosialforsikringssystem
+-   Kunne anvende offentlig tilgjengelig statistikk for å analysere aktuelle problemstillinger innen faget
+
+## Læringsmål: Kompetanse
+
+-   Ha innsikt om relevante problemstillinger relatert til velferdsstaten
+-   Kunne planlegge og gjennomføre arbeidsoppgaver og benytte både økonomisk teori og empiriske data for å analysere problemstillinger knyttet til velferdsstaten i tråd med etiske krav og retningslinjer.
+-   Kunne formidle sentrale teorier, problemstillinger og løsninger i grafisk, analytisk og muntlig form.
+-   Være i stand til å delta i samfunnsdebatten om velferdspolitikkens ulike virkemidler og deres bærekraft.
