@@ -10,7 +10,7 @@ Her finner du lenker til alle forelesninger på kurset. Siden oppdateres fortlø
 * Kursintroduksjon del 2 [slides](https://uit-sok-2303-V2026.github.io/assets/introduksjon.html) [qmd](https://uit-sok-2303-V2026.github.io/assets/introduksjon.qmd)
 
 ## Forelesninger [Tema 1](temaer.md#tema1)<a name="f_t1"></a>
-* F1:1 Den norske velferdsmodellen [slides](https://uit-sok-2303-V2026.github.io/assets/forelesning_2_modellen.html)[qmd](https://uit-sok-2303-V2026.github.io/assets/forelesning_2_modellen.qmd)
+* F1:1 Den norske velferdsmodellen [slides](https://uit-sok-2303-V2026.github.io/assets/forelesning_2_modellen.html) [qmd](https://uit-sok-2303-V2026.github.io/assets/forelesning_2_modellen.qmd)
 
 ## Forelesninger [Tema 2](temaer.md#tema2)<a name="f_t2"></a>
 
