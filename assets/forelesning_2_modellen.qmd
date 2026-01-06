@@ -1,0 +1,662 @@
+---
+title: "SOK-2303 - Den nordiske modellen"
+subtitle: "F1.1 – Introduksjon til den nordiske modellen - NOU 2011:7, kap. 3.1–3.3"
+author:
+  - Mikko Moilanen
+format: 
+  revealjs:
+ #   smaller: true
+    scrollable: true
+ #   chalkboard: true
+    multiplex: true
+    self-contained: true
+    footer: "[uit-sok-2303-v26.github.io/](https://uit-sok-2303-v26.github.io/)"
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: title_slide.png
+      data-background-size: cover
+date-format: "DD MMM YYYY"
+editor: visual
+from: markdown+emoji
+---
+
+## Esping-Andersens velferdsstatsregimer
+
+1.  Stat--marked--familie-dimensjonen
+    -   arbeidsdelingen mellom de tre hovedtilbyderne av velferd
+2.  Stratifiseringsdimensjonen
+    -   i hvilken grad velferdsstatene forsterker eller begrenser de ulikhetene som nødvendigvis ville oppstå i markedet
+3.  «Dekommodifisering»-dimensjonen
+    -   i hvilken grad arbeiderne er avhengige av markedet
+
++-----------------------------------+--------------+-------------------+-----------------------+
+|                                   | Liberal      | Sosialdemokratisk | Konservativ           |
++===================================+==============+===================+=======================+
+| Rollen til                        |              |                   |                       |
++-----------------------------------+--------------+-------------------+-----------------------+
+| Familien                          | Marginal     | Marginal          | Sentral               |
++-----------------------------------+--------------+-------------------+-----------------------+
+| Markedet                          | Sentral      | Marginal          | Marginal              |
++-----------------------------------+--------------+-------------------+-----------------------+
+| Staten                            | Marginal     | Sentral           | Subsidiær             |
++-----------------------------------+--------------+-------------------+-----------------------+
+| Velferdsstaten:                   |              |                   |                       |
++-----------------------------------+--------------+-------------------+-----------------------+
+| Dominerende form for solidaritet  | Individuell  | Universell        | Slektskap             |
+|                                   |              |                   |                       |
+|                                   |              |                   | Korporatisme          |
+|                                   |              |                   |                       |
+|                                   |              |                   | Etatisme              |
++-----------------------------------+--------------+-------------------+-----------------------+
+| Dominerende arena for solidaritet | Markedet     | Staten            | Familien              |
++-----------------------------------+--------------+-------------------+-----------------------+
+| Grad av dekommodifisering         | Minimal      | Maksimal          | Høy (for forsørgeren) |
++-----------------------------------+--------------+-------------------+-----------------------+
+| Typiske eksempler                 | USA          | Norge             | Tyskland, Italia      |
++-----------------------------------+--------------+-------------------+-----------------------+
+
+### Velferdsstatsmodeller
+
+-   Den liberale
+    -   sosiale ytelser gis **bare til de aller fattigste** etter streng behovsprøving
+-   Den konservative
+    -   viderefører status og hierarki skapt i arbeidslivet
+        -   sosiale ytelser er typisk basert på en forsikringsmodell, slik at **utbetalinger avhenger av hvor stor «premie» som er betalt inn**
+-   Den sosialdemokratiske
+    -   større inngrep i markedet
+    -   **universelle** ytelser som **omfatter hele befolkningen**
+        -   uavhengig av tidligere opptjening
+        -   begrenset innslag av økonomisk behovsprøving
+-   de nordiske lands velferdsstater skiller seg systematisk fra andre land i Europa og OECD
+
+## Den norske velferdsmodellen
+
+![](NordiskeModellen.png)
+
+-   Norge har klart å kombinere **økonomisk vekst** med stor grad av personlig frihet, **høy yrkesdeltakelse**, **jevn inntektsfordeling**, **høy levestandard** og stor grad av **sosial likhet**
+
+-   hovedtrekk ved den norske velferdsmodellen:
+    -   staten bidrar til **høy yrkesdeltakelse**:
+
+        -   vektlegging av gratis offentlig utdanning
+
+        -   en omfattende familiepolitikk
+
+        -   en aktiv arbeidsmarkedspolitikk
+
+    -   et **organisert arbeidsliv** (**trepartssamarbeid** med sterke arbeidsgiver- og arbeidstakerorganisasjoner)
+
+        -   sentraliserte og koordinerte lønnsforhandlinger
+
+        -   bidrar til små lønnsforskjeller, forutsigbarhet og høy sysselsetting
+
+    -   et **skattefinansiert offentlig velferdstilbud** som benyttes av de fleste
+
+        -   helse- og omsorgstjenester
+
+        -   utdanningstilbud
+
+    -   et **godt utbygd og universelt inntektssikring**
+
+        -   sjenerøse overføringer ved arbeidsledighet, sykdom, uførhet og alderdom
+
+-   modellen har høye velferdspolitiske ambisjoner
+    -   et sentralt mål: høy yrkesdeltakelse for alle grupper
+        -   økonomiske hensyn
+        -   arbeidslivet er en viktig arena for sosial inkludering
+    -   de statlige inntektssikrings- og velferdsordningene bør legge til rette for at **personer som ikke kan delta i arbeidsmarkedet sikres en levestandard** på et visst nivå
+
+-   en svært jevn inntektsfordeling knyttes både til
+    -   velregulert arbeidsliv og trepartssamarbeid
+    -   de omfordelende funksjonene til skattesystemet
+    -   inntektssikringsordningene
+    -   tjenestesektoren
+        -   helse og utdanning
+
+-   de nordiske velferdsstatene er preget av høy tillit
+    -   mer tillit både til sine medborgere og til myndighetene
+    -   tillit er et gode i markedet, og kan være et konkurransefortrinn:
+        -   bidrar til å redusere kostnadene ved økonomiske transaksjoner
+
+## En bitteliten tillitsundersøkelse
+
+![](./images/trust.png){fig-alt="A QR code for the survey."}
+
+
+## Live oppdatering av resultater
+
+```{ojs}
+import { liveGoogleSheet } from "@jimjamslam/live-google-sheet";
+import { aq, op } from "@uwdata/arquero";
+
+// 1️⃣ Starttid (når sliden lastes)
+startTid = Date.now() - new Date().getTimezoneOffset() * 60 * 1000;
+
+// 2️⃣ Hent live data
+surveyResults = liveGoogleSheet(
+"https://docs.google.com/spreadsheets/d/" +
+"1VjlOhHAbpSfTPVEEU-jBNAbmZecC3grP5lQYKMBVAII/" +
+"pub?gid=1240287103&single=true&output=csv",
+2000, 1, 2
+);
+
+// Enkel, eksplisitt timestamp-parser
+parseTimestamp = s => {
+if (!s) return NaN;
+const [d, t] = s.split(" ");
+const [dd, mm, yyyy] = d.split("/").map(Number);
+const [HH, MM, SS] = t.split(":").map(Number);
+return Date.UTC(yyyy, mm - 1, dd, HH, MM, SS);
+};
+
+// Filtrer på svar etter start
+filteredResults = aq.from(surveyResults)
+.derive({ ts: aq.escape(d => parseTimestamp(d.Timestamp)) })
+.params({ startTid })
+.filter(d => d.ts >= startTid);
+
+// 4️⃣ Statistikk
+stats = filteredResults
+.select("Tillit")
+.rollup({
+count: d => op.count(),
+average: d => op.mean(d.Tillit),
+min: d => op.min(d.Tillit),
+max: d => op.max(d.Tillit)
+})
+.objects()[0];
+
+// 5️⃣ Visning
+md`
+
+## En bitteliten tillitsundersøkelse
+
+* **Antall svar:** ${stats.count}
+* **Gjennomsnitt:** ${stats.average?.toFixed(2) ?? "–"}
+* **Min:** ${stats.min ?? "–"}
+* **Max:** ${stats.max ?? "–"}
+
+*Svar telt fra: ${
+  new Date(
+    startTid + new Date().getTimezoneOffset() * 60 * 1000
+  ).toLocaleTimeString("no-NO")
+}*
+`
+```  
+## Finansiering av velferdsmodellen
+
+### Kollektiv finansiering av individuelle rettigheter
+
+-   et bærende prinsipp for den norske modellen er kollektiv finansiering av **individuelle** rettigheter
+    -   retten til å benytte seg av tjenestetilbudet eller til å få utbetalt ytelser
+        -   knyttet til hver enkelt person
+        -   ikke betinget av hvor mye vedkommende tidligere har bidratt til finansieringen i form av skatt
+-   på individnivå: ingen krav om at innbetalingene skal tilsvare de samlede utbetalingene
+-   på makronivå: de samlede inntektene **må være være høye nok** til å dekke de samlede kostnadene
+
+#### Generasjonskontrakten
+
+-   for at velferdsmodellen skal være bærekraftig, kreves det at de samlede nettobidragene er tilstrekkelig store til å dekke de samlede nettooverføringene over tid
+    -   det faktiske finansieringsbehovet vil bl.a. avhenge av befolkningens alderssammensetning
+
+![Omfordeling over livsløpet. Netto overføringer fra offentlig forvaltning etter alder.1 1 000 kroner. 2024-priser. Kilde: Statistisk sentralbyrå og Finansdepartementet](https://www.regjeringen.no/contentassets/7400c9d08a5543b8912fbf700f3344fd/no/hfig/fig1-10.svg)
+
+-   det er lite behov for å spare privat til foreldrenes eldreomsorg eller barnas universitetsutdanning
+    -   ivaretatt gjennom kollektive ordninger den enkelte har et begrenset behov også for å spare privat for å kunne møte risikoen
+        -   for å bli arbeidsledig
+        -   for å ikke kunne arbeide fordi man er syk, ufør eller gammel
+        -   for å få barn
+-   Velferdsstaten kan forstås som en kollektiv forsikringsordning
+    -   de ovennevnte risikoene kan vanskelig dekkes i det private forsikringsmarkedet
+        -   private tilbydere vil ikke kunne stole på at kundene ga dem alle relevante opplysninger om sin egen arbeids- eller helsesituasjon (asymmetrisk informasjon)
+        -   en fare for at personer endrer atferd, for eksempel blir mer skjødesløse med sin egen helse, når de visste at de var forsikret
+        -   private forsikringsselskaper er derfor svært restriktive med å selge denne typen forsikringer
+            -   selv om befolkningen etterspør disse forsikringene
+
+#### Høy yrkesdeltakelse som forutsetning for modellens bærekraft
+
+-   høy yrkesdeltakelse er en forutsetning for at modellen skal fungere og være **økonomisk bærekraftig**
+    -   behov for høye skatteinntekter for å finansiere det omfattende velferdstilbudet
+        -   jo flere som betaler skatt ==\> de samlede skatteinntektene vil være høyere ==\> mer bærekraftig velferdsmodell
+    -   hver stønadsmottaker er kostnadskrevende å finansiere, fordi ytelsene er høye
+-   det relativt høye skatte- og ytelsesnivået innebærer at én person mindre i arbeid
+    -   gir inntektssvikt gjennom tapt skatteinngang
+    -   utgiftsvekst gjennom økte stønadsutbetalinger
+
+##Sysselsettingsrater
+::: fragment
+```{r,message=FALSE, warning = FALSE}
+# Pakker (kun det som faktisk trengs)
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(eurostat)
+  library(lubridate)
+  library(ggthemes)
+})
+
+# --------------------------------------------------
+# 1. Hent data fra Eurostat
+# --------------------------------------------------
+employment <- get_eurostat(id = "lfsi_emp_a", type = "label") %>%
+  mutate(year = year(TIME_PERIOD))
+
+# --------------------------------------------------
+# 2. Filtrer til riktig indikator og år
+# --------------------------------------------------
+employment_2024 <- employment %>%
+  filter(
+    indic_em == "Total employment (resident population concept - LFS)",
+    age == "From 20 to 64 years",
+    unit == "Percentage of total population",
+    year == 2024
+  ) %>%
+  select(
+    country = geo,
+    sex,
+    value = values
+  )
+
+# (valgfri sanity check)
+# count(employment_2024, sex)
+
+# --------------------------------------------------
+# 3. Gjenbrukbar plott-funksjon
+# --------------------------------------------------
+plot_employment <- function(data, sex_filter, title, subtitle) {
+
+  data %>%
+    filter(sex == sex_filter) %>%
+    arrange(value) %>%
+    ggplot(aes(x = reorder(country, value), y = value)) +
+    geom_col(width = 0.7, fill = "#0a85e5") +
+    geom_text(
+      aes(label = round(value, 1)),
+      hjust = -0.3,
+      size = 3,
+      color = "#000500"
+    ) +
+    coord_flip() +
+    expand_limits(y = 65) +
+    labs(
+      title = title,
+      subtitle = subtitle,
+      caption = "Kilde: Eurostat",
+      x = NULL,
+      y = NULL
+    ) +
+    ggthemes::theme_pander() +
+    theme(
+      plot.background = element_rect(fill = "#f5f9fc", colour = NA),
+      panel.grid = element_line(colour = "#f5f9fc"),
+      axis.text.x = element_blank(),
+      axis.text.y = element_text(size = 8, color = "#000500"),
+      axis.ticks.x = element_blank(),
+      plot.title = element_text(size = 22, color = "#000500"),
+      plot.subtitle = element_text(size = 16, color = "#484e4c"),
+      plot.caption = element_text(size = 12, color = "#484e4c")
+    )
+}
+
+# --------------------------------------------------
+# 4. Lag figurene
+# --------------------------------------------------
+
+# Total
+plot_employment(
+  employment_2024,
+  sex_filter = "Total",
+  title = "Total sysselsettingsrate",
+  subtitle = "% av befolkning 20–64 år (2024)"
+)
+
+# Kvinner
+plot_employment(
+  employment_2024,
+  sex_filter = "Females",
+  title = "Sysselsettingsrate blant kvinner",
+  subtitle = "% av befolkning 20–64 år (2024)"
+)
+
+# Menn
+plot_employment(
+  employment_2024,
+  sex_filter = "Males",
+  title = "Sysselsettingsrate blant menn",
+  subtitle = "% av befolkning 20–64 år (2024)"
+)
+
+```
+:::
+
+## Den norske arbeidslivsmodellen
+
+### Et organisert arbeidsliv
+
+-   kjennetegnet av nært samarbeid mellom myndighetene og arbeidsgiver- og arbeidstakerorganisasjonene
+    -   samarbeidet er ment til å bidra til
+
+        -   å skape en felles forståelse av hovedtrekkene i den økonomiske politikken
+        -   å legge til rette for god utnyttelse av arbeidskraftsressursene
+
+## Organisasjonsgrad
+::: fragment
+```{r,message=FALSE, warning = FALSE}
+suppressPackageStartupMessages(library(tidyverse))
+library(OECD)
+library(ggthemes)
+
+# -----------------------------
+# DATADEL – UENDRET LOGIKK
+# -----------------------------
+trade_union <- get_dataset("TUD")
+
+latest_trade <- trade_union %>%
+  group_by(REF_AREA) %>%
+  arrange(TIME_PERIOD, .by_group = TRUE) %>%
+  filter(!is.na(ObsValue)) %>%
+  slice_tail(n = 1) %>%
+  ungroup()
+
+latest_trade$year <- as.numeric(format(latest_trade$TIME_PERIOD, format = "%Y"))
+latest_trade$ObsValue <- as.numeric(format(latest_trade$ObsValue))
+
+# -----------------------------
+# ENESTE REELLE ENDRING:
+# dropp iso2 og bruk REF_AREA
+# -----------------------------
+trade_union_density <- latest_trade %>%
+  select(country = REF_AREA, ObsValue) %>%
+  arrange(ObsValue)
+
+# -----------------------------
+# PLOTT – UTEN ggflags
+# -----------------------------
+trade_union_density %>%
+  ggplot(aes(x = reorder(country, ObsValue), y = ObsValue)) + 
+  geom_bar(
+    stat = "identity",
+    width = 0.7,
+    color = "#0a85e5",
+    fill  = "#0a85e5"
+  ) + 
+  geom_text(
+    aes(label = sprintf("%.1f", ObsValue)),
+    position = position_dodge(width = 0.9),
+    hjust = -0.5,
+    size = 3,
+    color = "#000500"
+  ) + 
+  labs(
+    title = "Organisasjonsgrad",
+    subtitle = "(% av lønnstakere)",
+    caption = "Kilde: OECD"
+  ) +
+  xlab("") + 
+  ylab("") -> plot_trade_union_density
+
+plot_trade_union_density + 
+  coord_flip() + 
+  expand_limits(y = 65) + 
+  ggthemes::theme_pander() + 
+  theme(
+    plot.background = element_rect(color = "#f5f9fc"),
+    panel.grid = element_line(colour = "#f5f9fc"),
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(color = "#000500", size = 8),
+    axis.ticks.x = element_blank(),
+    text = element_text(family = "Gadugi"),
+    plot.title = element_text(size = 28, color = "#000500"),
+    plot.subtitle = element_text(size = 20, color = "#484e4c"),
+    plot.caption = element_text(size = 20, color = "#484e4c")
+  )
+```
+:::
+
+## Organisasjonsgraden i Norge
+-   lavere enn i de andre nordiske landene
+-   likevel høy sammenliknet med de fleste vestlige land
+-   arbeidsgiversiden er også kjennetegnet av høy organisasjonsgrad
+-   innvandrere har generelt sett lavere organisasjonsgrad enn befolkningen for øvrig
+    -   lavere sysselsettingsrater
+    -   mer usikker tilknytning til arbeidslivet
+    -   arbeider ofte i bransjer som historisk har lav grad av organisering
+
+### Koordinert lønnsdannelse og begrenset lønnsspredning
+
+```{r,message=FALSE, warning = FALSE}
+suppressPackageStartupMessages(library(tidyverse))
+library(OECD)
+library(ggflags)
+library(countrycode)
+deciles <- get_dataset("DEC_I")
+deciles%>%
+filter(REF_AREA%in%c("NOR","SWE","DEN","FIN","NLD","GER","FRA","GBR","CAN", "USA")) -> sub_deciles
+
+sub_deciles$year <- as.numeric(format(sub_deciles$TIME_PERIOD, format = "%Y"))
+sub_deciles$iso2 <- tolower(countrycode(sub_deciles$REF_AREA, "iso3c", "iso2c"))
+sub_deciles$ObsValue <- as.numeric(format(sub_deciles$ObsValue))
+
+sub_deciles %>%
+  filter(!is.na(iso2)) %>%
+  filter(AGGREGATION_OPERATION%in%c("D5_1","D9_5","D9_1")) %>%
+  filter(SEX=="_T")%>%
+  filter(year==2024) %>%
+  select(REF_AREA,AGGREGATION_OPERATION,iso2,ObsValue)%>%
+  arrange(ObsValue)->sub_deciles_clean
+
+# Plotting
+plot_decile_ratios <- sub_deciles_clean %>%
+  ggplot(aes(x = reorder(iso2, ObsValue), y = ObsValue, fill = AGGREGATION_OPERATION)) + 
+  geom_bar(stat = "identity", position = "dodge", width = 0.7, color = "#0a85e5") + 
+  ggflags::geom_flag(aes(x = iso2, country = iso2), size = 8) +
+  labs(title = "Brutto lønnsfordeling i utvalgte land",
+       subtitle = "Tallene er fra 2024",
+       caption = "Kilde: OECD") +
+  xlab("") + 
+  ylab("") +
+  facet_wrap(~ AGGREGATION_OPERATION, scales = "free_x") +  # Divides the plot based on AGGREGATION_OPERATION
+  theme(legend.position = "none",  # Hides the legend
+        axis.text.x = element_blank(),  # Removes the x-axis text
+        axis.ticks.x = element_blank())  # Removes the x-axis ticks
+
+# Display the plot
+plot_decile_ratios
+```
+
+-   lønnsdannelsen: stor grad av koordinering mellom arbeidstaker- og arbeidsgiverorganisasjoner
+    -   partene i arbeidslivet har ansvar for gjennomføringen av lønnsoppgjørene
+-   modellen tar utgangspunkt i at den samlede lønnsveksten **må tilpasses den veksten konkurranseutsatt sektor over tid kan leve med**
+    -   **frontfagene** (sektorene som har størst innslag av konkurranseutsatt virksomhet) framforhandler sine avtaler først
+        -   legger føringer for forhandlingene om øvrige tariffavtaler
+-   den sentraliserte lønnsdannelsesmodellen har ført til **sammenpresset lønnsstruktur**
+    -   virker inn fra begge ender av lønnsskalaen
+        -   **de laveste lønningene øker**
+        -   **de høyeste lønningene blir redusert**
+    -   oppnår et relativt **høyt lønnsgulv** og et relativt **lavt lønnstak**
+        -   et høyt lønnsgulv: stiller krav til at arbeidstakernes utdanning og kvalifikasjoner skal være på et visst nivå
+            -   høye krav til produktivitet
+            -   høye krav til kvalifikasjoner blant arbeidstakerne
+-   en sammenpresset lønnsstruktur innbærer da at
+    -   de minst produktive bedriftene «presses ut»
+        -   har ikke har råd til å betale selv de laveste lønningene
+    -   de høyproduktive bedriftene lykkes og slik bidrar til høy økonomisk vekst
+    -   bedriftene tjener mer på å benytte ny og effektiv teknologi
+        -   fører til en raskere modernisering
+    -   lavproduktiv arbeidskraft tvinges i noen grad ut av arbeidsmarkedet
+    -   lavproduktiv arbeidskraft kan ha vansker å få innpass på arbeidsmarkedet
+        -   fordi terskelen for deltakelse blir relativt høy når minstelønningene er høye
+
+## Velferdsstaten
+
+### Inntektssikring
+
+-   to hovedtrekk ved inntektssikringsordningene
+    -   **universelle**
+        -   som hovedregel inkluderer alle som er bosatt i Norge (bostedsbaserte rettigheter)
+    -   **individuelle**
+        -   den enkelte har rettigheter i kraft av seg selv og sin egen situasjon
+    -   **Siden 1967 har den norske velferdsmodellen kombinert Beveridges og Bismarcks prinsipper**
+    -   Beveridge-inspirerte ytelser (bostedsbaserte)
+        -   de flate, universelle ytelsene
+            -   garanterte minsteytelser til alders- og uførepensjonister
+            -   de fleste familieytelsene
+    -   Bismarck-inspirerte ytelser
+        -   de inntektsbaserte elementene i alders-, uføre- og etterlattepensjoner
+        -   inntektsavhengige dagpenger, sykepenger og fødselspenger
+            -   den voksende middelklassen føler at velferdsstatens ytelser er for dem
+                -   vil ikke ha samme ønske om å kjøpe private tilleggspensjoner som de kanskje ville hatt i en rendyrket modell med universelle ytelser
+                -   bidrar til å sikre oppslutningen om velferdsordningene
+-   skattesystemet brukes aktivt i omfordelingspolitikken
+    -   skatte- og avgiftsinntektene danner grunnlaget for finansiering
+    -   bidrar til direkte omfordeling, gjennom progressiv inntektsbeskatning og beskatning på bl.a. formue og arv
+
+## Rettigheter og plikter: aktiv arbeidsmarkedspolitkk og sosial investering
+
+### Aktiv arbeidsmarkedspolitkk
+
+-   **de relativt høye minstesatsene i velferdssystemet kan være et disinsentiv til arbeid**
+-   yrkesaktiviteten er likevel høy - delvis sammenheng med at mange ytelsene stiller eksplisitte krav:
+    -   kreves en viss opptjening før man kan få ut en stønad som er tilstrekkelig høy til å leve et vanlig liv
+        -   sykepenger og dagpenger utbetales ikke til personer uten tilstrekkelig opptjening
+    -   krav om yrkesrettet aktivitet for at man skal kunne fortsette å motta ytelser
+        -   dagpenger: krav om at man må være aktiv arbeidssøker
+        -   arbeidsavklaringspenger: en jevnlig vurdering av restarbeidsevnen
+    -   de fleste av stønadene er tidsbegrensede
+
+### Sosial investering
+
+#### Utdanning
+
+-   **mål: alle skal ha lik tilgang til grunnutdanning av høy kvalitet**
+-   ingen siling av elevene i grunnutdanningen
+-   videregående og høyere utdanning er i all hovedsak gratis
+    -   studenter har tilgang til stipender og subsidierte lån
+-   hensikten er å sikre tilgang til utdanning for flest mulig
+    -   et ledd i den enkeltes velferd
+    -   for å sikre at samfunnets menneskelige ressurser blir best mulig utnyttet
+        -   gjennom å legge et godt grunnlag hos alle barn kan oppnå en framtidig arbeidsstokk som både har evne og vilje til å lære raskt
+
+#### Aktiv likestillingspolitikk
+
+-   en omfattende familiepolitikk med vekt på likestilling mellom kjønnene
+-   alle de nordiske landene har siden 1970-tallet utviklet en omfattende infrastruktur for offentlig omsorg
+-   samtidig ble foreldrepermisjonene også kraftig utvidet i de nordiske landene
+    -   lange
+    -   høy lønnskompensasjon
+-   de fem nordiske landene har i dag Europas høyeste sysselsettingsrater blant kvinner, samtidig som fødselsratene i alle disse landene ligger godt over gjennomsnittet for hele EU-området
+    -   tilskrives ofte den aktive familiepolitikken
+
+## Kvinners sysselsetting og fertilitet
+::: fragment
+```{r,message=FALSE, warning = FALSE}
+suppressPackageStartupMessages(library(tidyverse))
+library(wbstats)
+library(plotly)
+library(tidyverse)
+
+# Define the indicators
+ind_fem_emp <- c(
+  fem_emp = "SL.EMP.TOTL.SP.FE.ZS", 
+  fertility_rate = "SP.DYN.TFRT.IN", 
+  pop = "SP.POP.TOTL"
+)
+
+# Fetch data
+fertility <- wb_data(ind_fem_emp, start_date = 2022)
+
+# Prepare data for plotting
+fertility <- fertility %>%
+  mutate(
+    text = paste("Land: ", country, "\nPopulasjon (M): ", pop, "\nKvinners sysselsettingsrate: ", fem_emp, "\nFertilitetsrate: ", fertility_rate, sep="")
+  ) %>%
+  left_join(wb_countries(), "iso3c")
+
+# Create the Plotly plot
+interactive_fertility_plot <- plot_ly(
+  data = fertility,
+  x = ~fem_emp,
+  y = ~fertility_rate,
+  size = ~pop,
+  color = ~region,
+  text = ~text,
+  hoverinfo = "text",
+  type = 'scatter',
+  mode = 'markers',
+  marker = list(sizemode = 'diameter', opacity = 0.7, line = list(width = 2, color = 'rgb(0, 0, 0)'))
+) %>%
+  layout(
+    title = "Fertilitet og kvinners sysselsetting",
+    xaxis = list(title = "Kvinners sysselsettingsrate"),
+    yaxis = list(title = "Fertilitetsrate"),
+    showlegend = TRUE,
+    legend = list(title = list(text = 'Region')),
+    margin = list(l = 50, r = 50, b = 100, t = 100, pad = 4),
+    annotations = list(
+      list(
+        xref = 'paper', 
+        yref = 'paper', 
+        x = 1, 
+        y = -0.1, 
+        showarrow = FALSE, 
+        text = "Kilde: World Bank"
+      )
+    )
+  )
+
+# Display the interactive plot
+interactive_fertility_plot
+
+```
+:::
+
+### Barnehager
+
+-   barnehager har økt yrkesdeltakelsen
+    -   frigjør foreldrenes arbeidskraft
+        -   begge foreldrene kan være i arbeid samtidig
+    -   en ambisjon at barnehagene skal øke barn og unges læringspotensiale
+        -   viktig for barn som kommer fra problembelastede familier, eller familier der foreldrene har spesielle problemer på arbeidsmarkedet
+
+<iframe data-external="1" src="https://archive.ourworldindata.org/20250902-112932/grapher/gross-enrollment-ratio-in-pre-primary-education.html?country=BLZ~MNE~BRA~Arab+World~NOR&amp;utm_source=chatgpt.com" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">
+
+</iframe>
+
+#### En stor offentlig tjenestesektor
+
+-   store variasjoner mellom land i hvordan velferdstjenestene er organisert og finansiert
+-   det offentlige tjenestetilbudet i Norge er universelt
+    -   tjenestene er tilgjengelige for alle innbyggerne uten hensyn til kjønn, inntekt/betalingsevne eller bosted
+-   tjenestene er også stort sett skattefinansierte, med begrensede egenandeler
+
+#### Helsevesenet
+
+-   mål: lik tilgang til tjenester uavhengig av bosted, sosial klasse eller inntekt
+-   helsetjenestene er offentlig eide, og stiller små krav til egenbetaling
+-   det offentlige både tilbyr tjenestene og betaler for dem
+    -   ulempen: rasjonering av tjenester må skje gjennom køer
+-   stor oppslutning om at omsorg for gamle og syke er et offentlig ansvar
+    -   markedet, frivillige organisasjoner og familien har en mindre rolle
+
+## Økonomiske insentiver og inntektssikring
+
+-   høy yrkesdeltakelse er en forutsetning for den norske velferdsmodellens bærekraft
+-   alle skal sikres en anstendig inntekt, slik at man unngår at det utvikler seg en gruppe arbeidstakere med lave inntekter («working poor»)
+
+### Etterspørsel etter arbeidskraft: økonomiske insentiver for arbeidsgiver
+
+-   den norske sammenpressete lønnsstrukturen har relativt høyt lønnsgulv og relativt lavt lønnstak - det stilles relativt høye krav til produktivitet for alle arbeidstakere
+-   utformingen av inntektssikringssystemet kan bidra til å svekke de økonomiske insentivene til å holde på lavproduktiv arbeidskraft
+    -   når virksomheten er i økonomiske vanskeligheter kan det være fristende å overføre ordinære lønnskostnader til statlige budsjetter
+
+### Arbeidstilbud: økonomiske insentiver for arbeidstaker
+
+-   de fleste inntektssikringsordningene for **friske mennesker i arbeidsfør alder** er tidsbegrensede, og mange av dem innebærer aktivitetskrav
+
+-   den enkelte stønadsmottaker kan ikke velge fritt om han eller hun ønsker å delta i arbeidslivet
+    -   stønadsmottakere har visse muligheter til selv å påvirke hvor fort de kommer i arbeid
+        -   blant annet gjennom mer eller mindre aktiv jobbsøking
+            -   helsetilstand
+            -   muligheten til å velge arbeidstype
+            -   preferansen for arbeid eller fritid
+
+-   **Arbeidslinja**: ordningene er ment til være utformet på en slik måte at de motiverer til deltakelse i arbeidslivet framfor mottak av ulike stønader
