@@ -1,0 +1,451 @@
+---
+title: "SOK-2008 - Velferdsstaten (kapittel 1) og Politisk teori (kapittel 2)"
+author:
+  - Mikko Moilanen
+format: 
+  revealjs:
+ #   smaller: true
+    scrollable: true
+    chalkboard: true
+    multiplex: true
+ #   self-contained: true
+    footer: "[uit-sok-2209-v24.github.io/](https://uit-sok-2008-h24.github.io/)"
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: title_slide.png
+      data-background-size: cover
+date-format: "DD MM YYYY"
+css: style.css
+editor: visual
+from: markdown+emoji
+---
+
+## Velferdsstaten, kap. 1 i Barr
+
+-   velferdsstaten passer naturlig inn i rammen av samfunnsøkonomisk analyse
+-   de teoretiske argumentene i økonomisk teori støtter eksistensen av velferdsstaten, ikke bare av rettferdighetsgrunner, men også av effektivitetsgrunner
+-   velferdsstaten kan tenkes å være både:
+    -   institusjoner som **kjemper mot fattigdom**, **omfordeler inntekt** og formue, og **prøver å redusere sosial ekskludering** («Robin Hood»-funksjonen), og
+    -   institusjoner som **tilbyr forsikring** og **tilbyr en mekanisme for omfordeling over livssyklusen** («sparegris»-funksjonen)
+-   et felt hvor samfunnsøkonomisk teori gir sterke resultater
+    -   støtter den generelle ideen om velferdsstaten (og i overraskende grad kan gjøre det uten å ty til ideologi)
+-   **det sentrale argumentet:**
+    -   **velferdsstaten eksisterer ikke bare for å beskytte de fattige, men fordi den gjør ting som markedene ville gjort dårlig eller ikke i det hele tatt**
+        -   vi trenger en velferdsstat selv om all fattigdom på en eller annen måte kunne elimineres
+        -   det blir feil å søke å minimere velferdsstaten - snarere bør dens omfang optimaliseres
+-   Barr-bokens største spørsmål:
+    -   **hvilke teoretiske argumenter fra samfunnsøkonomisk teori rettferdiggjør de ulike delene av velferdsstaten?** ![](NordiskeModellen.png)
+
+## 1.1 Samfunnsøkonomisk tilnærming
+
+-   alle samfunn står overfor to store spørsmål:
+
+    1.  **Hvor mye omfordeling (av inntekt, formue, makt osv.) bør det være?**
+
+    -   Hva er det overordnete (politiske) målet?
+        -   effektiv bruk av knappe ressurser
+        -   omfordeling av ressursene i henhold til likhet og rettferdighet
+        -   individuell frihet
+    -   John Maynard Keynes: "**The political problem of mankind is to combine three things: economic efficiency, social justice and individual liberty**" ![John Maynard Keynes](https://contemporarythinkers.org/jm-keynes/wp-content/uploads/sites/31/2012/08/JK.jpg){width="361"}
+    -   disse målene kan bli vektet ulikt
+        -   Utilitarisme: maksimal velferd (effektivitet)
+        -   Egalitarisme: likhet (omfordeling)
+        -   Rawls: rettferdighet
+        -   Libertarianisme: individuell frihet
+    -   ofte en avveining mellom effektivitet og rettferdighet (= omfordeling)
+
+    2.  **Gitt svaret på det første spørsmålet: På hvilken måte oppnås disse målene best?**
+
+    -   Markedsallokering/frikonkurransemodell vs. planøkonomi
+    -   Blandingsøkonomi: 0ffentlig innblanding (finansiering, regulering, styring og produksjon)
+
+-   Spørsmål 1 er (i all hovesak) ideologisk (et normativt spørsmål)
+
+    -   gjenstand for politisk debatt
+
+-   Spørsmål 2 er hovedsakelig et teknisk problem om hvilken metode som fungerer best til å oppnå målene (et positivt spørsmål)
+
+## 1.2 Hva er en velferdsstat?
+
+-   ingen entydig definisjon
+    -   ulike kilder til velferd:
+        -   arbeidsmarked (lønnsinntekt)
+        -   private forsikringer og sparing
+        -   frivillighet
+        -   staten
+-   offentlige tjenester leveres på veldig mange ulike måter
+    -   privat/offentlig produksjon
+    -   brukerprising
+    -   egenandeler osv.
+-   velferdsstatens grenser er ikke veldefinerte
+
+## Bakgrunnen for velferdsstaten
+
+-   England 1601: Fattiglovgivning (Poor Law Act)
+    -   Ta vare på fattige og syke
+-   Norge: fattiglover først på midten av 1800-tallet
+-   Tyskland midten av 1800-tallet: Sosialforsikring (Otto von Bismarck).
+    -   forsikring mot inntektsbortfall for industriarbeidere (industrialisering erstattet selvberging)
+    -   finansiert av arbeiderne selv som betalte inn en del av lønnen i et forsikringsfond
+-   Storbritannia midten av 1900-tallet: universelle velferdsordninger (Beveridge-rapporten)
+    -   Staten tar ansvar for alle borgere mht. garantert minsteinntekt og grunnleggende helse- og omsorgstjenester
+    -   Både for yrkesaktive og -passive.
+
+## Utviklingen av velferdsstaten i Norge
+
+-   1800-tallet til tidlig 1900-tallet:
+    -   begynnelse av velferdsstaten med fattiglovene og arbeiderbeskyttelseslovene
+-   1930-tallet:
+    -   innføring av sosialhjelpsloven en milepæl for den norske velferdsstaten
+-   1940-50-tallet:
+    -   etablering av en rekke sosiale rettigheter inkludert universell barnetrygd, alderstrygd og uføretrygd
+-   1960-tallet:
+    -   utvidelse av velferdstjenester med introduksjon av folketrygden, som gir økonomisk sikkerhet i tilfeller av sykdom, uførhet, svangerskap og fødsel, alder og død
+-   1970-tallet:
+    -   styrking av arbeidstakerrettigheter og utdanningssystemet
+-   1980-tallet til nå:
+    -   fokus på likestilling, inkludert foreldrepermisjon
+    -   utvidelse av velferdsgoder
+    -   forsøk på å balansere høy kvalitet i offentlige tjenester med bærekraftig økonomisk politikk
+
+<iframe src="https://ourworldindata.org/grapher/social-spending-oecd-longrun?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">
+
+</iframe>
+
+## Hovedelementer i velferdsstaten
+
+-   forsikring og pensjonssparing
+    -   sykepenger, uføretrygd, arbeidsledighetstrygd, alderspensjon
+-   fattigdomsbekjempelse
+    -   minstelønn, sosialtrygd, helse og utdanning
+-   familiepolitikk
+    -   foreldrepenger (fødselspermisjon), barnehageplass osv.
+-   omfordeling av inntekt
+    -   kombinasjon av velferdsordninger og skattesystem
+
+## Eksempler på hovedordninger og kategorier
+
+![](hovedordninger.png){.r-stretch}
+
+## 1.3 Spesifikke målsettinger
+
+-   effektivitet
+    -   makroeffektivitet
+    -   mikroeffektivitet
+        -   konsumglatting
+        -   risikodeling
+        -   insentiver
+-   rettferdighet
+    -   fattigdomsbekjempelse
+    -   redusere ulikhet
+    -   sosial kohesjon
+-   administrativ gjennomførbarhet
+
+### Effektivitet (allokativ effektivitet)
+
+-   makroeffektivitet
+    -   hvor mye skal vi bruke totalt sett
+    -   kostnadskontroll
+-   mikroeffektivitet
+    -   fordeling mellom helse, utdanning, og andre tjenester
+        -   hva gir på marginen mest avkastning pr. krone? (allokering av ressurser)
+    -   konsumglatting
+        -   pensjonssystemet
+        -   barnetrygd
+        -   studentfinansiering
+    -   risikodeling (opprettholde levestandard ved uventede sjokk)
+        -   forsikring
+-   insentiver
+    -   offentlige systemer burde minimalisere uheldige virkninger (på arbeidsmarked, sparing osv.)
+
+### Rettferdighet/likhet
+
+-   fattigdomsbekjempelse
+    -   redusere fattigdom / færrest mulig personer under fattigdomsgrensen
+-   redusere ulikhet
+    -   vertikal likhet (evneprinsippet)
+        -   individer som har tilgang til mer økonomiske ressurser, bør bidra med en større andel av ressursene til fellesskapet
+    -   horisontal likhet (nytteprinsippet)
+        -   kan defineres som at de som er i samme stilling, skal behandles likt
+        -   Medisinsk behandling til de mest trengende
+        -   avhengig av f.eks. alder, familiestørrelse osv.
+-   former for omfordeling
+    -   skattesystemet
+        -   bunnfradrag, progressiv skatt osv.
+            -   vertikal omfordeling
+    -   offentlige tjenester
+        -   helsesektoren, utdanningssektoren, sosialforsikring, familiepolitikk osv.
+            -   horisontal omfordeling
+    -   reguleringer i arbeidsmarkedet
+        -   minstelønn, arbeidsmarkedstiltak osv.
+
+#### Motvirke sosial eksludering
+
+-   unngå stigmatiserende ordninger
+    -   skal ikke være nedverdigende å motta stønad
+    -   kan øke oppslutningen om velferdsordningene
+-   solidaritet
+    -   ordningene burde i høyest mulig grad være uavhengig av sosial status
+    -   universelle versus behovsprøvde (means-tested) ordninger
+
+### Administrativ gjennomførbarhet
+
+-   systemet bør være enkelt, lettforståelig, og billigst mulig
+-   redusere mulighetene for misbruk og utnyttelse av systemet
+
+## 1.4 Finansiering
+
+-   hvem betaler for velferdsstaten?
+    -   skattesystem, -objekt, -insidens
+    -   forbruk, inntekt, formue (arv),eiendom
+    -   bedrifts- vs. individbeskatning
+-   høy yrkesdeltakelse er viktig for bærekraften i de offentlige velferdsordningene
+    -   bidrar til økt produktivitet og skatteinntekter
+-   en stor velferdsstat krever høye skatter, men skattestrategien er ganske vekstvennlig:
+    -   relativt lav bedriftsskatt og inntektsskatt
+    -   stor skattebase med relativt lave marginalskatter
+    -   høye skatter på alkohol, tobakk og drivstoff
+    -   myndighetene streber for at insentiveffektene på arbeidstilbud skulle være relativt små
+        -   prøver å unngå 100% effektiv marginalskatt for trygdemottakere
+        -   oppfølging av yngre arbeidstakere
+    -   trygd
+        -   førtidspensjoner tar ut lavproduktiv arbeidskraft
+        -   arbeidsledighetstrygd tar ut lavproduktive arbeidstakere
+    -   helse og utdanning øker BNP
+        -   gir underinvestering dersom privat
+
+## Utfordringer
+
+-   velferdsstaten er basert delvis på en fortidig sosial orden
+    -   stabile familier
+    -   stabile langsiktige jobber
+    -   høyt sysselsettingsnivå
+-   demografiske endringer
+    -   befolkningen øker
+    -   levealderen øker
+    -   andelen yrkesaktive antas å synke
+    -   andelen innvandrere forventes å øke
+-   fallende sysselsetting
+-   nedadgående organisasjonsgrad
+-   teknologiske endringer og nye kompetansekrav
+-   økende ulikhet
+-   klimaendringer
+
+# Kap 2: Politisk teori: Sosial rettferdighet og staten
+
+-   Hvordan mener vi velferdsstaten bør se ut?
+    -   frihet vs. inngrep
+        -   politiske rettigheter
+        -   sivile rettigheter
+        -   statlig innblanding
+        -   oppbygging av institusjoner
+    -   økonomisk effektivitet
+    -   omfordeling/rettferdighet
+    -   libertariansk, liberal og kollektivist
+
+![](NordiskeModellen.png)
+
+## The World's Smallest Political Quiz
+
+![](quiz.png)
+
+## 2.1 Samfunnsteorier
+
+-   et samfunn er et samarbeidsprosjekt til gjensidig nytte for medlemmene
+    -   inneholder generelt både like interesser og interessekonflikter mellom enkeltpersoner og grupper
+-   institusjonene i ethvert samfunn (dets grunnlov, lover og sosiale prosesser osv.) påvirker dypt en persons livssjanser
+-   formålet med en samfunnsteori er å tilby prinsipper som gjør oss i stand til å velge mellom ulike sosiale ordninger
+
+## 2.2 Libertarianisme
+
+-   det primære målet for institusjoner er å **maksimere individuell frihet**
+
+-   naturrettslibertarianere (f.eks. Nozick) hevder at offentlig inngrep er moralsk feil, bortsett fra under svært spesifikke omstendigheter
+
+    -   ethvert forsøk fra staten på å omfordele ressurser krenker individets rett til selvbestemmelse og eiendom
+
+![Robert Nozick](https://civita.no/content/uploads/2019/08/image-10.png)
+
+-   empiriske libertarianere (f.eks. Hayek) er imot offentlige inngrep fordi de vil redusere den totale velferden
+    -   Hayek hevder at jakten på sosial rettferdighet vil ødelegge markedsordenen
+    -   staten kan spille en rolle i å sikre grunnleggende sosiale tjenester som beskyttelse mot ekstreme nødsituasjoner, så lenge disse tiltakene ikke undergraver markedets funksjoner eller individets frihet til å ta egne beslutninger
+
+![Friedrich Hayek](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Friedrich_Hayek_portrait.jpg/220px-Friedrich_Hayek_portrait.jpg)
+
+-   Libertarianere generelt
+    -   individuell frihet, privat eiendomsrett
+    -   markedsøkonomi (laissez-faire-kapitalisme)
+    -   nattvekterstat (beskyttelse som kollektivt gode)
+        -   sikre borgerne og deres eiendeler
+        -   sikre at kontrakter overholdes, lov og orden
+        -   legge forholdene til rette for frikonkurranse
+    -   fiendtlig mot velferdsstaten (ingen omfordeling)
+    -   mot offentlig innblanding selv med Pareto-forbedring
+    -   minimal stat
+
+::: notes
+Individuell frihet og privat eiendomsrett: Libertarianere setter individets frihet og rett til eiendom øverst. De mener at hver person har rett til å bestemme over sitt eget liv og sine eiendeler uten innblanding fra staten.
+
+Markedsøkonomi (laissez-faire-kapitalisme): De støtter en fri markedsøkonomi der statens rolle er minimal. Laissez-faire-prinsippet betyr at markedet styrer seg selv uten statlig inngripen, og at fri konkurranse fører til effektiv ressursfordeling.
+
+Nattvekterstat: Libertarianere ønsker en stat som kun fungerer som en nattvekter, altså en stat som kun beskytter borgerne og deres eiendom. Statens oppgaver begrenses til å:
+
+Beskytte borgere og eiendom: Sikre innbyggernes sikkerhet og eiendeler gjennom forsvar og politi. Sikre kontrakter, lov og orden: Sørge for at lover følges og kontrakter overholdes. Fremme frikonkurranse: Legge til rette for et konkurransedyktig marked, uten å blande seg inn. Fiendtlig mot velferdsstaten: Libertarianere er generelt motstandere av velferdsstaten fordi de mener omfordeling av ressurser krenker individets eiendomsrett. De tror på at velstand skapes best gjennom frivillig handel, ikke statlige inngrep.
+
+Mot offentlig innblanding, selv med Pareto-forbedring: Selv om en statlig intervensjon kunne gjort noen bedre stilt uten å gjøre andre verre stilt (Pareto-forbedring), avviser libertarianere dette, fordi det innebærer statlig inngripen i individers frihet.
+
+Minimal stat: Samlet sett ønsker libertarianere en minimal stat som kun ivaretar de mest grunnleggende funksjonene, uten å blande seg inn i økonomiske og personlige beslutninger.
+:::
+
+## 2.3 Liberale samfunnsteorier
+
+-   individet er utgangspunktet
+-   privat eiendomsrett er et middel, ikke et mål
+-   står i kontrast til libertarianske synspunkter
+    -   tillater staten en større rolle i omfordeling
+    -   svakere antakelse om at det frie markedet nødvendigvis er den beste metoden for produksjon og omfordeling
+-   kapitalisme gir (under gitte forutsetninger) paretooptimal fordeling av ressursene
+    -   opptatt av omfordeling pga. at kapitalisme kan ha uheldige fordelingsvirkninger
+-   omfordeling mulig og ønskelig
+
+::: notes
+Individet som utgangspunkt: Individet er utgangspunktet: Utgangspunktet i denne tankegangen er at individets behov og rettigheter står sentralt. Politikk og økonomi bør først og fremst ta hensyn til enkeltindividets velferd.
+
+Privat eiendomsrett som middel, ikke mål: Privat eiendomsrett er et middel, ikke et mål: Her sees privat eiendomsrett som et verktøy for å oppnå individuelle og samfunnsmessige mål, ikke som et overordnet prinsipp i seg selv. Eiendom bør tjene menneskers behov, ikke nødvendigvis beskyttes for enhver pris.
+
+Kontrast til libertarianske synspunkter: Større statlig rolle i omfordeling: I motsetning til libertarianere, som ser statlig intervensjon som en trussel mot frihet, tillater denne tilnærmingen staten å ha en mer aktiv rolle i omfordeling av ressurser for å sikre rettferdighet og sosial velferd.
+
+Svakere tro på frimarkedet: Det er en mindre rigid tro på at frie markeder alltid er den beste løsningen. Her anerkjennes det at markedet kan feile eller føre til uønskede utfall som krever korrigerende tiltak fra staten.
+
+Kapitalisme og Paretooptimal fordeling: Kapitalisme og Paretooptimalitet: Kapitalisme kan under visse betingelser føre til en Paretooptimal fordeling av ressurser, hvor ingen kan få det bedre uten at noen andre får det verre. Men det er også en bekymring for at kapitalisme kan forårsake skjev fordeling, noe som krever omfordeling.
+
+Omfordeling som mulig og ønskelig: Omfordeling mulig og ønskelig: Omfordeling av ressurser er ikke bare mulig, men også ønskelig for å korrigere for kapitalismens potensielle urettferdige fordelingsvirkninger. Målet er å sikre at alle individer får muligheten til å leve gode og rettferdige liv.
+
+Denne boka følger den liberale tradisjonen
+:::
+
+### 2.3.1 Utilitarisme
+
+-   Det utilitaristiske målet: Politikken bør søke å maksimere den totale nytten av samfunnets medlemmer
+    -   *max SWF=W(U^1^, U^2^, ..., U^n^)*
+        -   egalitært utfall dersom lik nyttefunksjon
+            -   nytte påvirket av inntekt, priser, helse osv.
+
+::: notes
+-   **Det utilitaristiske målet**: Hovedmålet i en utilitaristisk politikk er å maksimere den totale nytten blant alle samfunnets medlemmer.
+
+    -   *Formel*: **max SWF = W(U¹, U², ..., Uⁿ)**
+        -   Dette innebærer at samfunnets velferdsfunksjon (SWF) er en funksjon av nytten til hver enkelt individ.
+        -   **Egalitært utfall**: Hvis alle individer har samme nyttefunksjon, vil et egalitært utfall oppnås.
+            -   **Nytte**: Nytte er påvirket av faktorer som inntekt, priser, helse osv.
+:::
+
+### 2.3.2 Rawlsianisme
+
+-   John Rawls (1971): A Theory of Justice
+-   fokus på rettferdig fordeling av ressursene, men mest individuell frihet
+-   alternativ til utilitaristisk moralfilosofi
+-   opptatt av å fjerne ulikhet som skyldes forhold utenfor individenes kontroll
+-   den opprinnelige posisjonen og uvitenhetens slør
+    -   enes om maximin-prinsippet
+        -   **maksimere posisjonen til den dårligst stilte**
+-   Rawls sine prinsipper for rettferdighet
+    -   frihetsprinsippet
+        -   krav på like rettigheter
+            -   stemmerett, ytringsfrihet, religionsfrihet, rett på lik beskyttelse for loven osv.
+    -   prinsippet om sosiale og økonomiske ulikheter
+        -   Prinsippet om sjanselikhet (ulikhet skal skyldes individuelle valg)
+        -   Forskjellsprisippet (fremme de dårligst stilte kår)
+            -   **enhver sosial eller økonomisk ulikhet i et samfunn er rettferdig bare dersom denne forskjellen er til størst fordel for de svakest stilte medlemmene i samfunnet**
+    -   prioritering i denne rekkefølgen (derfor liberalisme)
+-   målet: politikken bør komme til gode for den dårligst stilte
+
+::: notes
+-   **John Rawls (1971)**: Introducerer sin teori i *A Theory of Justice*.
+-   **Rettferdig fordeling og individuell frihet**: Rawls fokuserer på rettferdig fordeling av ressurser, men uten å gå på bekostning av individuell frihet.
+-   **Alternativ til utilitarisme**: Rawls tilbyr en annen moralfilosofi enn utilitarismen, med fokus på rettferdighet fremfor total nytte.
+-   **Fjerning av ulikhet**: Rawls er opptatt av å eliminere ulikheter som individer ikke kan kontrollere.
+-   **Den opprinnelige posisjonen og uvitenhetens slør**:
+    -   Tankeeksperiment som leder til en enighet om maximin-prinsippet.
+    -   **Maximin-prinsippet**: Målet er å maksimere posisjonen til de dårligst stilte i samfunnet.
+-   **Rawls' prinsipper for rettferdighet**:
+    -   **Frihetsprinsippet**: Alle har krav på like rettigheter som stemmerett, ytringsfrihet, religionsfrihet, og rett på lik beskyttelse under loven.
+    -   **Prinsippet om sosiale og økonomiske ulikheter**:
+        -   **Prinsippet om sjanselikhet**: Ulikheter skal skyldes individuelle valg, ikke forhold utenfor individets kontroll
+        -   **Forskjellsprinsippet**: Økonomiske og sosiale ulikheter er bare rettferdige hvis de er til størst fordel for de dårligst stilte.
+    -   **Prioriteringsrekkefølge**: Frihetsprinsippet har forrang, hvilket understøtter Rawls' liberale grunnlag.
+-   **Mål**: Politikkens mål bør være å forbedre situasjonen til de dårligst stilte i samfunnet.
+:::
+
+## 2.4 Kollektivistiske teorier
+
+### 2.4.1 Demokratisk sosialisme
+
+-   sosialistiske mål: frihet, likestilling, brorskap.
+-   demokratisk sosialisme argumenterer for at myndighetenes inngrep har gjort det mulig å utnytte markedssystemet til sosialistiske mål
+-   støtter derfor en blandingsøkonomi
+
+::: notes
+-   **Sosialistiske mål**: Demokratisk sosialisme bygger på kjerneverdiene frihet, likestilling, og brorskap – grunnleggende idealer for å fremme rettferdighet i samfunnet.
+
+-   **Regjeringens intervensjon**: Demokratisk sosialisme hevder at statlig intervensjon er avgjørende for å korrigere markedssvikt og sikre at markedssystemet bidrar til sosialistiske mål, som økonomisk likhet og sosial velferd.
+
+-   **Blandingsøkonomi**: Demokratisk sosialisme støtter en blandingsøkonomi, der både privat og offentlig eierskap eksisterer. Målet er å kombinere markedsøkonomiens effektivitet med statens evne til å omfordele ressurser for å oppnå sosial rettferdighet.
+:::
+
+### 2.4.2 Marxisme
+
+-   Den marxistiske tilnærmingen
+-   Utnyttelse av arbeidskraft under kapitalismen
+-   Myndighetenes rolle i et kapitalistisk samfunn er å beskytte kapitalismen
+-   Den marxistiske staten har en hovedrolle i produksjon og allokering, samt omfordeling.
+
+::: {notes}
+-   **Den marxistiske tilnærmingen**: Marxisme analyserer samfunnet gjennom en konflikt mellom klasser, spesielt mellom kapitalister (som eier produksjonsmidlene) og arbeidere (som selger sin arbeidskraft).
+
+-   **Utnyttelse av arbeidskraft under kapitalismen**: Marxisme hevder at kapitalismen utnytter arbeiderklassen ved å tilegne seg merverdi fra arbeidet deres, noe som skaper økonomisk ulikhet og fremmedgjøring.
+
+-   **Myndighetenes rolle i et kapitalistisk samfunn**: I følge marxismen fungerer staten som en beskytter av kapitalismen, og opprettholder den økonomiske og sosiale orden som favoriserer kapitalistklassen.
+
+-   **Den marxistiske staten**: Under en marxistisk tilnærming spiller staten en sentral rolle i produksjon og allokering av ressurser, samt omfordeling for å sikre at samfunnets ressurser fordeles mer rettferdig og uten klasseutbytting.
+:::
+
+## 2.5.2 Implikasjoner for statens rolle
+
+-   De ulike samfunnsteoriene har svært forskjellige syn på
+    -   privat eiendom
+    -   beskatning
+    -   omfordeling
+    -   offentlig produksjon
+
+::: notes
+-   **Ulike samfunnsteorier**: Vi ser nå på hvordan forskjellige samfunnsteorier påvirker synet på statens rolle i samfunnet.
+    -   **Privat eiendom**: Noen teorier, som libertarianisme, vektlegger sterk beskyttelse av privat eiendom, mens andre, som marxisme, kritiserer privat eiendom som en kilde til utnyttelse og ulikhet.
+
+    -   **Beskatning**: Holdningene til beskatning varierer sterkt – fra libertarianernes motstand mot omfordelende skatter til demokratisk sosialisme som ser beskatning som et nødvendig verktøy for å finansiere velferdsstaten og redusere ulikhet.
+
+    -   **Omfordeling**: Omfordeling er sentral i teorier som marxisme og demokratisk sosialisme, hvor det ses som et middel til å oppnå større sosial rettferdighet. Libertarianere, derimot, er generelt imot statlig omfordeling, da de ser det som et inngrep i individets rettigheter.
+
+    -   **Offentlig produksjon**: Marxisme fremmer statlig kontroll over produksjonsmidlene som en måte å sikre rettferdig fordeling på, mens liberale og libertariske teorier foretrekker privat produksjon og minimal statlig innblanding.
+-   **Oppsummering**: Disse forskjellene viser hvordan valg av samfunnsteori har direkte implikasjoner for hvordan vi ser på og strukturerer statens rolle i økonomi og samfunn.
+:::
+
+## 2.5.3 Holdninger til velferdsstaten
+
+-   Naturrettslibertarianere avskyr velferdsstaten
+    -   undertrykker frihet og individualisme
+-   Empiriske libertarianere ser en rolle for en svært mager velferdsstat, hvis hovedmål er fattigdomshjelp
+-   Liberaler (utilitarister og rawlsianere) og demokratiske sosialister anser velferdsstaten for det meste som gunstig
+-   Marxister er ambivalente:
+    -   er velferdsstaten en seier for arbeiderne?
+    -   eller er hovedfunksjonen for å beskytte det kapitalistiske systemet?
+
+::: notes
+-   **Naturrettslibertarianere**: De avviser velferdsstaten helt, da de mener den undertrykker individuell frihet og selvbestemmelse. For dem er enhver form for statlig omfordeling et brudd på individets rettigheter.
+
+-   **Empiriske libertarianere**: Selv om de er skeptiske til statens rolle, aksepterer de en minimal velferdsstat som kun fokuserer på fattigdomshjelp. Her ses velferdsstaten som et nødvendig onde for å sikre et minimumsnivå av støtte til de aller svakeste.
+
+-   **Liberale og demokratiske sosialister**: Både utilitarister, rawlsianere, og demokratiske sosialister anser velferdsstaten som hovedsakelig gunstig. De ser den som et verktøy for å fremme sosial rettferdighet, likhet og velferd for alle samfunnets medlemmer.
+
+-   **Marxister**: De har en mer ambivalent holdning til velferdsstaten. På den ene siden kan den sees som en seier for arbeiderklassen, som har oppnådd bedre levekår. På den andre siden kan velferdsstaten også tolkes som et middel for å opprettholde og beskytte kapitalismens stabilitet, og dermed forhindre mer radikale endringer.
+:::
