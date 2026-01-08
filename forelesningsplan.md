@@ -11,8 +11,8 @@
 | 7 |  |  |  |  |  |  |
 | 8 |  |  | **S.U1 – [Utfordring 1](Innlevering2.md)** |  | **Frist – [Utfordring 1](Innlevering2.md)** |  |
 | 9 |  | **F3.1 – Minstelønn (AM)** <br> Boeri & van Ours k. 2 | **F3.2 – Fagforeninger (AM)** <br> Boeri & van Ours k. 3 | Videoer:[v3.1 - v3.5](video.md#tema3) | **S3.1** (DT-lab) |  |
-| 10 |  | **F3.3 – Den nordiske arbeidsmarkedsmodellen (AM)** <br> NOU 2021:9 kap. 3 |  |  | **S.T2 [Flervalgstest 2](Innlevering3.md)** |  |
-| 11 |  |  |  |  |  |  |
+| 10 |  | **F3.3 – Den nordiske arbeidsmarkedsmodellen (AM)** <br> NOU 2021:9 kap. 3 |  |  |  |  |
+| 11 |  |  |  |  | **S.T2 [Flervalgstest 2](Innlevering3.md)** |  |
 | 12 |  | **S.U2 – [Utfordring 2](Innlevering4.md)** |  |  | **Frist – [Utfordring 2](Innlevering4.md)** |  |
 | 13 |  | **F4.1 – Argumenter for offentlig finansiert trygd (1) (MM)** <br> Barr k. 4 og 6 | **F4.2 – Argumenter for offentlig finansiert trygd (2)(MM)** <br> Barr k. 4 og 6 |Videoer: [v4.2 - v4.3](video.md#tema4) |  |  |
 | 14 |  |  |  |  |  |  |
@@ -22,7 +22,8 @@
 | 18 |  | **F5.1 – Migrasjon** (AM)<br> Boeri & van Ours k. 9; NOU 2011:7 kap. 3–5 | **F5.2 – Fremtidige utfordringer for den norske modellen** (MM)<br> Barr k. 12 |  | **S5.1 (DT-lab)** |  |
 | 19 |  | **F – Oppsummering av kurset** |  |  | **S.T3 (Wiseflow)[Flervalgstest 3](Innlevering6.md)** |  |
 | 20 |  |  |  |  |  |  |
-| 21 | [Muntlig eksamen](muntligeksamen.md) | [Muntlig eksamen](muntligeksamen.md) | [Muntlig eksamen](muntligeksamen.md) | [Muntlig eksamen](muntligeksamen.md) | [Muntlig eksamen](muntligeksamen.md) |  |
+| 21 |  |  |  |  |  |  |
+| 22 | [Muntlig eksamen (preliminær dato)](muntligeksamen.md) | [Muntlig eksamen (preliminær dato)](muntligeksamen.md) | [Muntlig eksamen (preliminær dato)](muntligeksamen.md) |  |  |  |
 
    
 
