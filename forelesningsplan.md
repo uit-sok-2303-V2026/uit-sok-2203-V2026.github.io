@@ -23,7 +23,8 @@
 | 19 |  | **F – Oppsummering av kurset** |  |  | **S.T3 (Wiseflow)[Flervalgstest 3](Innlevering6.md)** |  |
 | 20 |  |  |  |  |  |  |
 | 21 |  |  |  |  |  |  |
-| 22 | [Muntlig eksamen (preliminær dato)](muntligeksamen.md) | [Muntlig eksamen (preliminær dato)](muntligeksamen.md) | [Muntlig eksamen (preliminær dato)](muntligeksamen.md) |  |  |  |
+| 22 |  |  |  |  |  |  |
+| 23 | [Muntlig eksamen (preliminær dato)](muntligeksamen.md) | [Muntlig eksamen (preliminær dato)](muntligeksamen.md) | [Muntlig eksamen (preliminær dato)](muntligeksamen.md) |  |  |  |
 
    
 
