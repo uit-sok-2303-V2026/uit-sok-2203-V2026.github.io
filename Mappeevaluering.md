@@ -10,7 +10,7 @@ Enhver **skriftlig innlevering** (utfordring) kan gi 0 til 3 poeng. Enhver **fle
 Skriftlige innleveringer kan gjennomføres i grupper om 1 - 3 personer.
 Flervalgstest gjennomføres individuelt. 
 
-**Frister** (klikk på lenkene her nede for å finne innleveringsoppgavene).
+**Tabell 1. Frister** (klikk på lenkene her nede for å finne innleveringsoppgavene).
 
 | **Innlevering** | **Frist** | **Plass** |
 | ------------- |------- |------ |
@@ -48,7 +48,7 @@ Utfodringene skal leveres i Canvas. Kode og redegjørelser for bruk av kunstig i
 Vi trenger kandidatnummer for å gi en eventuell klagekommisjon tilgang til din oppgave. 
  
 ### Evaluering av utfordringer
-Utfordringene blir bedømt i henhold til regelen i Tabell 2. Det vil være mulig å få halve og hele poeng på utfordringene. Hver innlevering kan gi maks tre poeng.
+Utfordringene blir bedømt i henhold til regelen i Tabell 2. Hver innlevering kan gi maks tre poeng. Det vil være mulig å få halve og hele poeng på utfordringene (altså 0, 0.5, 1, 1.5, 2, 2.5, eller 3).
 
 **NB: Hver utfordring består av flere deloppgaver. Alle deloppgavene må besvares. Hvis minst én av deloppgavene ikke er besvart, eller er besvart svært ufullstendig eller feilaktig, er det fullt mulig å få null poeng på innleveringen.**
 
