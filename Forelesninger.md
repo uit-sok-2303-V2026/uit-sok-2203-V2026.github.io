@@ -12,6 +12,7 @@ Her finner du lenker til alle forelesninger på kurset. Siden oppdateres fortlø
 ## Forelesninger [Tema 1](temaer.md#tema1)<a name="f_t1"></a>
 * F1:1 Den norske velferdsmodellen [slides](https://uit-sok-2303-V2026.github.io/assets/forelesning_2_modellen.html) [qmd](https://uit-sok-2303-V2026.github.io/assets/forelesning_2_modellen.qmd)
 * F1:2 Velferdsstaten og Politisk teori [slides](https://uit-sok-2303-V2026.github.io/assets/f2_kap_1_2.html) [ideologisk kompass - resultater](https://uit-sok-2303-V2026.github.io/assets/ideologikompass_pdf.pdf)
+* F1:3 Introduksjon til arbeidsmarkedsteori [Slides](https://uit-sok-2303-V2026.github.io/assets/F1.3_IntrotilArbeidsmarkedsokonomi_v26.pdf)  [Reservasjonslønn](https://uit-sok-2303-V2026.github.io/assets/Reservasjonslonn_arbtilbud_pres.html)
 
 ## Forelesninger [Tema 2](temaer.md#tema2)<a name="f_t2"></a>
 
