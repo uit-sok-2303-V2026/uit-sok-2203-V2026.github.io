@@ -6,7 +6,7 @@
 ## Seminaroppgaver blir publisert fortløpende
 
 ### Tema 1
-* [Seminar 1.1](https://uit-sok-2008-h24.github.io/assets/seminar_1_T1.html)
+* [Seminar 1.1](https://uit-sok-2008-h24.github.io/assets/Seminar_1_T1.pdf)
 
 ### Tema 2
 
