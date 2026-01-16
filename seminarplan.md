@@ -7,6 +7,7 @@
 
 ### Tema 1
 * [Seminar 1.1](https://uit-sok-2303-V2026.github.io/assets/Seminar_1_T1.pdf)
+* [Seminar 1.1 Løsning](https://uit-sok-2303-V2026.github.io/assets/Seminar_1_T1_losn.pdf)
 
 ### Tema 2
 
