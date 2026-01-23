@@ -15,6 +15,7 @@ Her finner du lenker til alle forelesninger på kurset. Siden oppdateres fortlø
 * F1:3 Introduksjon til arbeidsmarkedsteori [Slides](https://uit-sok-2303-V2026.github.io/assets/F1.3_IntrotilArbeidsmarkedsokonomi_v26.pdf)  [Reservasjonslønn](https://uit-sok-2303-V2026.github.io/assets/Reservasjonslonn_arbtilbud_pres.html)
 
 ## Forelesninger [Tema 2](temaer.md#tema2)<a name="f_t2"></a>
+* F2:1 Intro til Tema 2 - Høy yrkesdeltakelse, og Familiepolitikk [Slides](https://uit-sok-2303-V2026.github.io/assets/F2.1_familiepolitikk_26.pdf)
 
 ## Forelesninger [Tema 3](temaer.md#tema3)<a name="f_t3"></a>
 
