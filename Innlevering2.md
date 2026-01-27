@@ -13,10 +13,14 @@
 - **NB! Filen skal ha navn med følgende struktur: kandidatnrstudent1_utf1.pdf (eller docx)**
 - Oppgaven skal leveres som word-fil eller pdf-fil. Filer som ikke er rendret vil behandlet som blank innlevering.
 - Koden skal leveres i et separat dokumentet (qmd-fil er ok) eller som appendiks til oppgaven.
-- Bruk av KI skal rapporteres i en appendiks til oppgaven. Sjekk at eventuelle lenker fungerer.
+- Husk KI-erklæring.
 - Du vil få mulighet å jobbe med oppgavene på et utfordringsseminar knyttet til temaet. Foreleseren på kurset vil være tilstede for å svare på spørsmål. 
 
 ## Førberedelser og støtte
+
+For å gjennomføre utfodring 1 må du hente data fra Arbeidskraftsundersøkelsen (AKU) 3. kvartal 2025 på [Surveybanken](https://sikt.no/surveybanken). Du har fått tilgang til datamaterialet fra Sikt. For å bruke datamaterialet må lage deg en bruker på Sikt og signere avtalen som du finner under "Min forskning". Når du har signert avtalen vil du kunne laste ned data.  
+
+**NB: Du må følge avtalen i din bruk av data. Dette betyr at du ikke får laste opp datamaterialet til KI-verktøy. Du er selv ansvarlig for bruken av data**. 
 
 Litteratur:
 
@@ -28,6 +32,40 @@ Litteratur:
 [Videoer](video.md#v_t1)
 
 ## Oppgaver
+### Utfordring 1.1
+Hvert kvartal samler Statistisk sentralbyrå (SSB) inn informasjon om arbeidskraften via Arbeidskraftsundersøkelsen (AKU). AKU 3. kvartal 2025 inneholder svar fra 14841 personer. Din utfordring består i å bruke data fra AKU 3. kvartal 2025 til å bruke økonomisk teori til å analysere menn og kvinners arbeidstimer og deltakelse i arbeidsstyrken. 
+
+**A.** Tegn to figurer som viser hvordan valget av fritid og konsum henger sammen med individets preferanser. Grafene skal vise optimalt valg for 1) kvinner og 2) menn. Gå ut ifra at menn og kvinner har lik timelønn, men at kvinner av en eller annen grunn verdsetter tid med familien ("fritid") mer enn menn. Analyser forskjeller i menn og kvinners optimale valg av arbeid og fritid. Gå ut ifra at markedet er perfekt og at menn og kvinner kan velge arbeidstimer fritt.
+
+**NB: Oppgaven skal innholde figurer tegnet for hånd, og figurer tegnet "digitalt" (ved bruk av tegningsverktøy eller script)**
+
+**B.** Lag to grafer med empiriske data:
+
+Graf 1: Fordeling av arbeidstimer for menn og kvinner som har arbeid (er sysselsatte). Bruk variabelen "hwactual" for å måle antall arbeidstimer (noter at denne variabelen er målt i antall arbeidstimer x 10). Bruk variabelen "ilostat" for å identifisere personer som er sysselsatt. Bruk variabelen "sex" for å identifisere menn og kvinner. Bruk variabelen "alder_periode_nr" til å dele inn deltakerne i tre aldersgrupper: 1) "Under 30 år", 2) "30 - 49 år", 3) "Eldre enn 50" og lag grafen slik at den viser fordelingen av arbeidstimer for disse tre gruppene (bruk f.eks "facet_wrap()"funksjonen i R-studio).  
+
+Graf 2: Andel menn og kvinner som deltar i arbeidsstyrken. Bruk variabelen "ilostat" for å identifisere personer i arbeidsstyrken. Bruk variabelen "sex" for å identifisere menn og kvinner. NB: Her trenger du ikke å dele opp deltakerne i ulike aldersgrupper.  
+
+Diskutter i hvilken grad dine teoretiske prediksjoner ser ut å være forenlig med det du ser i data.
+
+### Utfordring 1.2
+Dette [datasettet](https://github.com/uit-sok-2303-V2026/uit-sok-2303-V2026.github.io/blob/main/assets/women.csv) inneholder informasjon om generøsiteten av foreldrepermisjonsordninger og mødres yrkesdeltakelse i 24 OECD land i 2021. For å gjøre ulike lands rettigheter sammenlignbare presenteres permisjonsordningenes gunstighet ved hjelp av «full rate equivalent» (tot_full_rate = uker med 100% støtte), hvilket tilsvarer foreldrepermisjonens varighet i uker multiplisert med utbetalingssats i prosent av gjennomsnittlig inntekt. 
+
+Bruk datasettet til å lage to diagrammer som viser sammenhengen mellom lengde på betalt foreldrepermisjon og yrkesdeltakelse blant kvinner. I det ene diagrammet skal du bruke data som beskriver sysselsetting blant kvinner med barn i alderen 0-2 år (fem_emp_rate_0_2), og det andre skal du bruke data på kvinner med barn i alderen 6-14 år (fem_emp_rate_6_14). 
+
+Diskuter, basert på disse diagrammene og økonomisk teori, følgende påstand: *«Gunstige permisjonsordninger ved fødsel sikrer høy yrkesdeltakelse blant kvinner på lang sikt»*.
+
+Forklar hvorfor høy yrkesdeltakelse blant norske kvinner og høye barnetall er viktig for at den norske velferdsmodellen skal være økonomisk bærekraftig.
+
+### Utfordring 1.3
+I en situasjon med økende kostnader i helsetjenesten og strammere offentlige budsjetter blir høyere egenandeler ofte diskutert som et virkemiddel for å påvirke etterspørselen etter helsetjenester og redusere atferdsrisiko (moral hazard). I denne oppgaven skal du analysere utviklingen i bruken av fastlegetjenester i Norge og drøfte hvordan egenandeler kan påvirke forbruket av helsetjenester.
+
+**A.** Lag en figur som viser utviklingen i antall fastlegekonsultasjoner per innbygger i perioden 2012–2024 ved hjelp av SSB-tabell 10141. Beskriv utviklingen du observerer. Analyser hvilke diagnosegrupper som ser ut til å bidra mest til endringene i det totale antallet fastlegekonsultasjoner over tid.
+
+**B.** Bruk økonomisk teori om atferdsrisiko fra forelesninger og pensum til å forklare hvordan økte egenandeler påvirker etterspørselen etter helsetjenester. Illustrer forklaringen grafisk ved hjelp av tilbuds- og etterspørselsdiagrammer eller andre relevante figurer. Vis også, ved hjelp av figurer, hvordan en økning i egenandelen kan påvirke forbruket forskjellig på tvers av ulike diagnosegrupper (for eksempel akutte vs. mindre alvorlige tilstander).
+
+**C.** Bruk økonomisk teori til å diskutere fordelingseffekter av økte egenandeler. Hvem rammes relativt sett hardest, og hvorfor? Drøft hvordan høyere egenandeler kan påvirke arbeidsevne og yrkesdeltakelse i befolkningen, både på kort og lang sikt.
+
+
 
 ### Evaluering av utfordringer
 Utfordringene blir bedømt i henhold til regelen i Tabell 1. Det vil være mulig å få halve og hele poeng på utfordringene. Hver innlevering kan gi maks tre poeng.
