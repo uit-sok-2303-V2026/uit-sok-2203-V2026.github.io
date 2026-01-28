@@ -18,14 +18,14 @@
 
 ## Førberedelser og støtte
 
-For å gjennomføre utfodring 1 må du hente data fra Arbeidskraftsundersøkelsen (AKU) 3. kvartal 2025 på [Surveybanken](https://sikt.no/surveybanken). Du har fått tilgang til datamaterialet fra Sikt. For å bruke datamaterialet må lage deg en bruker på Sikt og signere avtalen som du finner under "Min forskning". Når du har signert avtalen vil du kunne laste ned data.  
+For å gjennomføre utfodring 1 må du hente data fra Arbeidskraftsundersøkelsen (AKU) 3. kvartal 2025 på [Surveybanken](https://sikt.no/surveybanken). Du har fått tilgang til datamaterialet fra Sikt. For å bruke datamaterialet må du lage deg en bruker på Sikt og signere avtalen som du finner under "Min forskning". Når du har signert avtalen vil du kunne laste ned data.  
 
-**NB: Du må følge avtalen i din bruk av data. Dette betyr at du ikke får laste opp datamaterialet til KI-verktøy. Du er selv ansvarlig for bruken av data**. 
+**NB: Du må følge avtalen i din bruk av data. Dette betyr at du ikke får laste opp datamaterialet til KI-verktøy eller dele det med andre mennesker. Du er selv ansvarlig for bruken av data**. Spør oss gjerne hvis du lurer på hva du har lov og ikke lov å gjøre med data.
 
 Litteratur:
 
 - Barr. Kapittel 3, 4 og 9-11
-- Boeri og van Ours. Kapittel 7
+- Boeri og van Ours. Kapittel 1 og 7
 
 [Forelesningsnotater](forelesninger.md#f_t1)
 
