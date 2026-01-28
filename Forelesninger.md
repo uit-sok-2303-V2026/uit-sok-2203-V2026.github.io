@@ -16,8 +16,8 @@ Her finner du lenker til alle forelesninger på kurset. Siden oppdateres fortlø
 
 ## Forelesninger [Tema 2](temaer.md#tema2)<a name="f_t2"></a>
 * F2:1 Intro til Tema 2 - Høy yrkesdeltakelse, og Familiepolitikk [Slides](https://uit-sok-2303-V2026.github.io/assets/F2.1_familiepolitikk_26.pdf)
-* F2.2a Økonomisk teori og offentlige inngrep (kap.3) [slides](https://uit-sok-2303-V2026.github.io/assets/F_2_2_a.html)
-* F2.2b Utdanning og offentlige inngrep (kap. 10 og 11) [slides](https://uit-sok-2303-V2026.github.io/assets/F_2_2_b.html)
+* F2.2a Økonomisk teori og offentlige inngrep [slides](https://uit-sok-2303-V2026.github.io/assets/F_2_2_a.html)
+* F2.2b Utdanning og offentlige inngrep [slides](https://uit-sok-2303-V2026.github.io/assets/F_2_2_b.html)
 
 ## Forelesninger [Tema 3](temaer.md#tema3)<a name="f_t3"></a>
 
