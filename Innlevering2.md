@@ -128,7 +128,7 @@ Utfordringene blir bedømt i henhold til regelen i Tabell 1. Det vil være mulig
 Det er tillatt å arbeide med oppgavene sammen med andre, men hver gruppe skal produsere sin egen tekst, figurer, koder og så videre. Det er ikke lov å levere inn tekster som er produsert av KI. Vi bruker URKUND for å sjekke for plagiering. 
 
 ### Bruk av kunstig intelligens (KI)
-Hver innlevering **skal** inneholde en deklarasjon om bruk av KI. Deklarasjonen skal settes inn i et appendiks til oppgaven. **Du må ha med deklarasjonen selv om du ikke har brukt KI**. Dersom dere bruker kunstig intelligens for å løse oppgaven skal dere oppgi hvilken KI dere brukte. Dere er selve ansvarlige for de tekster leverer inn. 
+Hver innlevering **skal** inneholde en deklarasjon om bruk av KI. Deklarasjonen skal settes inn i et appendiks til oppgaven. **Du må ha med deklarasjonen selv om du ikke har brukt KI**. Dersom dere bruker kunstig intelligens for å løse oppgaven skal dere oppgi hvilken KI dere brukte. Dere er selve ansvarlige for de tekster dere leverer inn. 
 
 ### Tips og triks for hvordan du skriver en god besvarelse
 
