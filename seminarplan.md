@@ -10,7 +10,7 @@
 * [Seminar 1.1 Løsning](https://uit-sok-2303-V2026.github.io/assets/Seminar_1_T1_losn.pdf)
 
 ### Tema 2
-* [Seminar 2.1](https://uit-sok-2303-V2026.github.io/assets/Seminar_2_T2.pdf)
+* [Seminar 2.1](https://uit-sok-2303-V2026.github.io/assets/Seminar_2_T2_2026.01.29.pdf)
 
 ### Tema 3
 
