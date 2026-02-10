@@ -13,7 +13,7 @@
 * [Seminar 2.1](https://uit-sok-2303-V2026.github.io/assets/Seminar_2_T2_2026.01.29.pdf)
 * [Seminar 2.1 - Løsningssforslag](https://uit-sok-2303-V2026.github.io/assets/Seminar_2_T2_løsning_2026.01.29.pdf)
 * [Seminar 2.2](https://uit-sok-2303-V2026.github.io/assets/seminar_2_2.html)
-* [Seminar 2.2 - løsningsforslag](https://uit-sok-2303-V2026.github.io/assets/seminar_2_2_løsning.html)
+* [Seminar 2.2 - løsningsforslag](https://uit-sok-2303-V2026.github.io/assets/seminar_tema_2_2_løsning.html)
   
 ### Tema 3
 
