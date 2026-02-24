@@ -32,6 +32,7 @@ Her finner du video-forelesninger lenket til Tema 2
 ## Videoer [Tema 3](tema3.md)<a name="v_t3"></a>
 Her finner du video-forelesninger lenket til Tema 3
 * [v.3.1 - Monopsoni på arbeidsmarkedet](https://youtu.be/I3l3wnAVugs)
+ * [Tutor2U - Video om monopsoni på arbeidsmarkedet](https://www.youtube.com/watch?v=LNR7IbJktNE) 
 * [v.3.2 - Monopsoni med matematikk](https://youtu.be/N392E_4pmEc)
 * [v.3.3 - Monopsoni og minstelønn](https://youtu.be/RNvWEqEYPs4)
 * [v.3.4 - Fagforeningsmonopol uten forhandling](https://youtu.be/8DlLYuSlUCE)
