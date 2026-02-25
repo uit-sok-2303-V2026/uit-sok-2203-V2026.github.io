@@ -36,6 +36,7 @@ Her finner du video-forelesninger lenket til Tema 3
 * [v.3.2 - Monopsoni med matematikk](https://youtu.be/N392E_4pmEc)
 * [v.3.3 - Monopsoni og minstelønn](https://youtu.be/RNvWEqEYPs4)
 * [v.3.4 - Fagforeningsmonopol uten forhandling](https://youtu.be/8DlLYuSlUCE)
+ * [EconPlusPal: Fagforeningsmonopol med monopsonistiske arbeidsgivere](https://www.youtube.com/watch?v=9m80D5h43Yo)
 * [v.3.5 - Kollektive lønnsforhandlinger](https://youtu.be/ACNGSS2LO3o)
 
 
