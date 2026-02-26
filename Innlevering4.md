@@ -15,15 +15,16 @@
 - Bruk av KI skal rapporteres i en appendiks til oppgaven. Sjekk at eventuelle lenker fungerer.
 - Du vil få mulighet å jobbe med oppgavene på et utfordringsseminar knyttet til temaet. Foreleseren på kurset vil være tilstede for å svare på spørsmål.
 
+## Frist: 20. Mars kl 16:00 i Canvas. 
+
 **Førberedelser og støtte:**
 Litteratur:
-
 - Boeri og van Ours. Kapittel 2 og 3
 - NOU 2021:9
 
-[Forelesningsnotater](forelesninger.md#f_t1)
+[Forelesningsnotater](forelesninger.md#f_t2)
 
-[Videoer](video.md#v_t1)
+[Videoer](video.md#v_t2)
 
 # Oppgaver
 
