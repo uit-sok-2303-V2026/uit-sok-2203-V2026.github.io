@@ -9,10 +9,10 @@
 - For å kvalifisere til poeng må dere ha prøvd å løse alle oppgavene. Innleveringer med blanke svar vil ikke bli evaluert.
 - De ulike deloppgavene teller nødvendigvis ikke likt til totalpoeng.
 - Oppgaven skal leveres inn skriftlig i Canvas.
-- **NB! Filen skal ha navn med følgende struktur: [ditt kandidatnummer]sok_2008_h24_utf2.pdf (eller docx)**
+- **NB! Filen skal ha navn med følgende struktur: [ditt kandidatnummer]sok_2303_v26_utf2.pdf (eller docx)**
 - Oppgaven skal leveres som word-fil eller pdf-fil. Filer som ikke er rendret vil behandlet som blank innlevering.
 - Koden skal leveres i et separat dokumentet (qmd-fil er ok) eller som appendiks til oppgaven.
-- Bruk av KI skal rapporteres i en appendiks til oppgaven. Sjekk at eventuelle lenker fungerer.
+- Bruk av KI skal rapporteres.
 - Du vil få mulighet å jobbe med oppgavene på et utfordringsseminar knyttet til temaet. Foreleseren på kurset vil være tilstede for å svare på spørsmål.
 
 ## Frist: 20. Mars kl 16:00 i Canvas. 
