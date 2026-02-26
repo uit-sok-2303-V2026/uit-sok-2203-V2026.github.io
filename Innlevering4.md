@@ -30,6 +30,56 @@ Litteratur:
 
 # Oppgaver
 
+## Utfordring 2.1 - Minstelønn
+I Norge har vi ikke minstelønninger, men kollektivavtalene setter i praktikken lønnsgulv på arbeidsmarkedet. Hvis vi er litt raus med begrepene kan vi tolke disse lønnsgulvene som minstelønninger. 
+
+
+### 2.1.1 Teoretisk analyse
+
+Samfunnsøkonomer er ikke enige om det å innføre et lønnsgulv er en god eller dårlig idé. Noen mener at **minstelønninger fører til økt fattigdom**, mens andre mener at **minstelønninger fører til mindre fattigdom**. Bruk grafisk analyse til å vise at begge disse påstandene kan være riktig i henhold til økonomisk teori. Vær nøye med å gjøre rede for dine antakelser og gi økonomisk intusijon. 
+
+ - Besvarelsen skal innholde figurer som er tegnet for hånd (med fysisk eller digital penn), og figurer som er tegnet ved bruk av et program (f.eks. power-point, R-studio, Python).
+ 
+#### 2.1.2 Empirisk analyse
+
+1. Bruk data fra Arbeidskraftsundersøkelsen (AKU 3. kvartal 2025) til å lage én graf som viser andelen arbeidsledige i aldersgruppene: 15 - 24 år, 25 - 34 år, 35 - 44 år, 45 - 54 år, og over 55 år). 
+
+2. Bruk t-test til å evaluere om det er en signifikant forskjell i gjennomsnittlig alder mellom arbeidsledige og sysselsatte. 
+
+3. Hvis du ønsker (tas ikke med i vurderingen av oppgaven) kan du kjøre en regresjon der du tester om alder har en innvirkning på sannsynligheten å være arbeidsledig når vi kontrollerer for utdanning. Du kan bruke en vanlig linjer modell. I dette tilfellet blir modellen en linjer sannsynlighetsmodell. For å estimere modellen må du først lage en variabel tar verdien 1 hvis individet er arbeidsledig, og 0 hvis det er sysselsatt (bruk kun personer som deltar på arbeidsmarkedet). Du kan enten bruke alder som kategori-variabel eller som kontinuerlig variabel (alder_periode_nr). For å inkludere utdanning i analysen kan du bruke variabelen hatlevel_sikt. Denne variabelen har mange kategorier. Vi foreslår at du lager 4 kategorier: 
+
+* hatlevel_sikt == 1 | hatlevel_sikt == 0 | hatlevel_sikt == 10 | hatlevel_sikt == 20 ~ "Lavere enn videregående",
+
+* hatlevel_sikt == 34  | hatlevel_sikt == 35 ~ "Videregående",
+
+* hatlevel_sikt == 45 |  hatlevel_sikt == 55 ~ "Folkhøyskole eller yrkesskole",
+
+* hatlevel_sikt == 54 | hatlevel_sikt == 60 | hatlevel_sikt == 70 | hatlevel_sikt == 80  ~ "Universitetsutdanning"
+
+Til sist kan du, hvis du ønsker, inkludere kjønn som forklaringsvariabel. 
+
+**Diskutter dine empiriske observasjoner ved bruk av økonomisk teori.** 
+
+
+### Utfordring 2.2 - Fagforeninger
+
+#### 2.2.1 - Teoretisk analyse
+
+Bruk økonomisk teori og grafisk analyse til å evaluere påstanden «Sterke fagforeninger reduserer velferden». Gjør rede for dine antakelser og gi økonomisk intusijon. 
+
+ - Besvarelsen skal innholde figurer som er tegnet for hånd (med fysisk eller digital penn), og figurer som er tegnet ved bruk av et program (f.eks. power-point, R-studio, Python).
+
+#### 2.2.2 - Empirisk analyse
+
+OECD har informasjon om organisasjonsgraden i fagforeninger (union density) og arbeidsledighetsraten i ulike land. Din utfordring består i å analysere sammenhengen mellom organisasjonsgrad og arbeidsledighet for innenlandskt og utenlandskt fødte i ulike land. 
+
+Datasettet «TUD» i R-pakken «oecd» inneholder data på organisasjonsgrad (ObsValue = organisasjonsgrad). Datasettet «MIG_NUP_RATES_GENDER» inneholder informasjon om arbeidsledighet i ulike grupper (ObsValue = arbeidsledighetsrate). Bruk data for år 2018, og for begge kjønn (GENDER = TOT). Dersom du bruker ggplot i Rstudio, kan du bruke kommandoen: «geom_smooth(method=lm, se=FALSE)» til å få fram en korrelasjonslinje.
+
+- Bruk data for innenlandsfødte (BIRTH = NB) og utenlandsfødte (BIRTH = FB) til å lage to grafer som viser sammenhengen mellom organisasjonsgraden i fagforeninger og nivået på arbeidsledigheten i ulike land for de to gruppene. 
+
+- Diskuter dine empiriske observasjoner ut fra økonomisk teori om forhandling mellom arbeidsmarkedets parter og medlemsbasens sammensetning.
+
+
 
 ### Innlevering
 Innleveringene skal skje individuelt.
