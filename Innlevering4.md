@@ -16,9 +16,6 @@
 - Du vil få mulighet å jobbe med oppgavene på et utfordringsseminar knyttet til temaet. Foreleseren på kurset vil være tilstede for å svare på spørsmål.
 
 **Førberedelser og støtte:**
-Kode:
--  [Hjelpe-dokument for å lage figurene R](https://uit-sok-2008-h24.github.io/assets/Utf2_kodehjelp.R)
-  
 Litteratur:
 
 - Boeri og van Ours. Kapittel 2 og 3
