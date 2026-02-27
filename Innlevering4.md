@@ -4,7 +4,7 @@
 
 # Utfordring 2
 ## Generell informasjon
-- <span style="color:OrangeRed;"> Fristen for innlevering er: </span>
+- <span style="color:OrangeRed;"> Fristen for innlevering er: 20. mars 16:00 </span>
 - Innleveringen kan gi maks tre poeng 
 - For å kvalifisere til poeng må dere ha prøvd å løse alle oppgavene. Innleveringer med blanke svar vil ikke bli evaluert.
 - De ulike deloppgavene teller nødvendigvis ikke likt til totalpoeng.
