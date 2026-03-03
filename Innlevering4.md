@@ -71,7 +71,9 @@ Bruk økonomisk teori og grafisk analyse til å evaluere påstanden «Sterke fag
 
 OECD har informasjon om organisasjonsgraden i fagforeninger (union density) og arbeidsledighetsraten i ulike land. Din utfordring består i å analysere sammenhengen mellom organisasjonsgrad og arbeidsledighet for innenlandskt og utenlandskt fødte i ulike land. 
 
-Datasettet «TUD» i R-pakken «oecd» inneholder data på organisasjonsgrad (ObsValue = organisasjonsgrad). Datasettet «MIG_NUP_RATES_GENDER» inneholder informasjon om arbeidsledighet i ulike grupper (ObsValue = arbeidsledighetsrate). Bruk data for år 2018, og for begge kjønn (GENDER = TOT). Dersom du bruker ggplot i Rstudio, kan du bruke kommandoen: «geom_smooth(method=lm, se=FALSE)» til å få fram en korrelasjonslinje.
+Det finnes to forskjellige måter å hente data. Du kan enten hente data rett fra OECD [her](https://data-explorer.oecd.org/vis?df[ds]=DisseminateFinalDMZ&df[id]=DSD_MIG%40DF_MIG_NUP_SEX&df[ag]=OECD.ELS.IMD&dq=..A.UNE_RATE....&lom=LASTNPERIODS&lo=2&to[TIME_PERIOD]=false&vw=tb) og [her](https://data-explorer.oecd.org/vis?lc=en&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_TUD_CBC%40DF_TUD&df[ag]=OECD.ELS.SAE&dq=..&pd=2000%2C&to[TIME_PERIOD]=false&vw=tb). Du kan også benytte data fra pakken "oecd" i R. Datasettet «TUD» i R-pakken inneholder data på organisasjonsgrad (ObsValue = organisasjonsgrad). Datasettet «MIG_NUP_RATES_GENDER» inneholder informasjon om arbeidsledighet i ulike grupper (ObsValue = arbeidsledighetsrate). Bruk data for år 2024, og for begge kjønn (SEX = _T). 
+
+Dersom du bruker ggplot i Rstudio, kan du bruke kommandoen: «geom_smooth(method=lm, se=FALSE)» til å få fram en korrelasjonslinje.
 
 - Bruk data for innenlandsfødte (BIRTH = NB) og utenlandsfødte (BIRTH = FB) til å lage to grafer som viser sammenhengen mellom organisasjonsgraden i fagforeninger og nivået på arbeidsledigheten i ulike land for de to gruppene. 
 
