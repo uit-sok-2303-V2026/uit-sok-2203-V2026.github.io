@@ -16,7 +16,7 @@ Flervalgstest gjennomføres individuelt.
 | ------------- |------- |------ |
 | [Innlevering 1 - Flervalgstest](Innlevering1.md) | <span style="color:OrangeRed;">23. januar 10:15 - 12:00</span>  | HHT 02.216 Økonomen |
 | [Innlevering 2 - Utfordring 1](Innlevering2.md) | <span style="color:OrangeRed;">20. februar 16:00</span> | Canvas-innlevering |
-| [Innlevering 3 - Flervalgstest](Innlevering3.md) | <span style="color:OrangeRed;">6. mars  10:15 - 12:00</span> | HHT 02.216 Økonomen |
+| [Innlevering 3 - Flervalgstest](Innlevering3.md) | <span style="color:OrangeRed;">13. mars  10:15 - 12:00</span> | HHT 02.216 Økonomen |
 | [Innlevering 4 - Utfordring 2](Innlevering4.md) | <span style="color:OrangeRed;">20. mars 16:00</span> | Canvas-innlevering |
 | [Innlevering 5 - Utfordring 3](Innlevering5.md) | <span style="color:OrangeRed;">24. april 16:00</span> | Canvas - innlevering |
 | [Innlevering 6 - Flervalgstest](Innlevering6.md) | <span style="color:OrangeRed;"> 8. mai 10:15 - 12:00</span>  | HHT 02.216 Økonomen |
