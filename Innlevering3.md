@@ -3,7 +3,7 @@
 <!-- Gjør endringer under her -->
 
 # Flervalgstest 2
-### <span style="color:OrangeRed;"> Tid: 6. mars, kl 10:15 - 12:00</span>
+### <span style="color:OrangeRed;"> Tid: 13. mars, kl 10:15 - 12:00</span>
 ### <span style="color:OrangeRed;"> Testen gjennomføres fysisk i sal HHT 02.216, Økonomen </span>
 
 Denne testen innholder spørsmål knyttet til **Tema 2 og Tema 3**. Hvert spørsmål har ett riktig svar, og tre feilsvar.
