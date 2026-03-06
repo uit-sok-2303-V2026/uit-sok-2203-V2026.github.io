@@ -17,7 +17,7 @@
   
 ### Tema 3
 * [Seminar 3.1](https://uit-sok-2303-V2026.github.io/assets/seminar_4_T3.pdf)
-* [Seminar 3.1 - Løsning del 1](https://uit-sok-2303-V2026.github.io/assets/seminar_4_T3_losning_del_1.pdf)
+* [Seminar 3.1 - Løsning del 1 og 2](https://uit-sok-2303-V2026.github.io/assets/seminar_4_T3_losning.pdf)
 
 ### Tema 4
 
