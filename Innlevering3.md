@@ -7,7 +7,8 @@
 ### <span style="color:OrangeRed;"> Testen gjennomføres fysisk i sal HHT 02.216, Økonomen </span>
 
 Denne testen innholder spørsmål knyttet til **Tema 2 og Tema 3**. Hvert spørsmål har ett riktig svar, og tre feilsvar.
-Makspoeng på testen er 2 poeng. For å få poeng på testen må du ha minst 25% riktige svar. Gitt at du har minst 25% riktige svar beregnes poengen prosent riktige svar x 2. Poengen blir avrundet til en desimal. Testen skal tas individuelt. 
+Makspoeng på testen er 2 poeng. For å få poeng på testen må du ha minst 25% riktige svar. Gitt at du har minst 25% riktige svar beregnes poengen prosent riktige svar x 2. Poengen blir avrundet til en desimal. Testen skal tas individuelt.
+Når forelesere gir beskjed om det, skal dere før testen klikke på [denne hyperlenken](https://raw.githubusercontent.com/uit-sok-2303-V2026/uit-sok-2303-V2026.github.io/main/assets/flervalgstest2.seb) for å laste ned testen i Safe Exam Browser.
 
 Lykke til!
 
