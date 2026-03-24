@@ -25,6 +25,7 @@ Her finner du lenker til alle forelesninger på kurset. Siden oppdateres fortlø
 * F3:2 Fagforeninger [Slides](https://uit-sok-2303-V2026.github.io/assets/F3.2_fagforeninger.pdf)
 * F3:3 Den nordiske modellen [Slides](https://uit-sok-2303-V2026.github.io/assets/F3.3_NOU_Fagf_2026.03.02.pdf)
 ## Forelesninger [Tema 4](temaer.md#tema4)<a name="f_t4"></a>
+* F4:1 Intro til Tema 4 - Inntektssikring [slides](https://uit-sok-2303-V2026.github.io/assets/kap_6.html) [qmd](https://uit-sok-2303-V2026.github.io/assets/kap_6.qmd)
 
 ## Forelesninger [Tema 5](temaer.md#tema5)<a name="f_t5"></a>
 
