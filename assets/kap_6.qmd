@@ -1,0 +1,932 @@
+---
+title: "Inntektssikring"
+subtitle: "Kap. 6 i Barr"
+author:
+  - Mikko Moilanen
+format: 
+  revealjs:
+    smaller: true
+    scrollable: true
+   # chalkboard: true
+    multiplex: true
+    self-contained: true
+    footer: "[uit-sok-2303-V26.github.io/](https://uit-sok-2303-V26.github.io/)"
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: title_slide.png
+      data-background-size: cover
+date: today
+css: style.css
+editor: visual
+from: markdown+emoji
+---
+
+## Tema 4 - Inntektssikring
+
+-   mål: å sikre en akseptabel inntekt når arbeidsinntekten faller bort av årsaker den enkelte ikke har kontroll over, som arbeidsledighet, uførhet eller sykdom
+-   utformingen av inntektssikringssystemet kan bidra til å svekke de økonomiske insentivene til å delta på arbeidsmarkedet
+-   vi vil først gå gjennom de teoretiske argumentene hvorfor det offentlige tilbyr inntekts- og sosialforsikring
+-   deretter vil vi se på positive og negative insentiveffekter av trygd
+    -   ser på behovet av trygd og insentivproblemer med slike støtteordninger
+
+## Et meget viktig tema
+
+![Kilde: Statsbudsjettet 2026](utgiftene.png)
+
+Det største utgiftsområdet er ytelser fra folketrygden, blant annet alderspensjon, uføretrygd, sykepenger, arbeidsavklaringspenger, dagpenger, foreldrepenger og enkelte helsestønader.
+
+## Offentlige sosiale ytelser per innbygger i Europa
+
+```{r,message=FALSE,warning=FALSE}
+library(eurostat)
+library(countrycode)
+library(ggflags)
+library(tidyverse)
+disable<-get_eurostat("spr_exp_type")
+disable_l <- label_eurostat(disable,fix_duplicated = TRUE)
+disable_l <- disable_l %>%
+  mutate(year = as.numeric(format(TIME_PERIOD, "%Y")))
+disable_l$iso2 <- tolower(countrycode(disable_l$geo, "country.name", "iso2c"))
+disable_l%>%
+  filter(year %in% "2023")%>%
+  filter(spdeps %in% "Social protection benefits")%>%
+  drop_na(iso2)%>%
+  filter(unit %in% "Purchasing power standard (PPS) per inhabitant")%>%
+arrange(values)->disable_l_clean
+
+disable_l_clean %>%
+  ggplot(aes(x = reorder(geo, values), y = values)) + 
+  geom_bar(stat = "identity", width = 0.7, color = "#0a85e5", fill = "#0a85e5") + 
+  ggflags::geom_flag(aes(x = geo, y = values, country = iso2), size = 6) +
+  labs(
+      title = "Offentlige sosiale ytelser per innbygger i Europa",
+      subtitle = "Per innbygger, kjøpekraftjustert (PPS), 2023",
+      caption = "Kilde: Eurostat"
+      ) +
+  xlab("") + 
+  ylab("") +
+  theme(axis.text.x = element_blank())  
+```
+
+## Et meget viktig tema 
+![](retningsvalg.png)
+
+## Hva skal vi gå gjennom?
+
+-   kapittel 4 i Barr 
+    -   risiko for å bli arbeidsledig eller fraværende fra arbeid av helsemessige årsaker (uføretrygd og sykefravær)
+    -   fokuserer mest på hvorfor aktuarisk forsikring (en kontrakt der premien er lik forventet tap) ikke passer godt for disse risikoene, og peker mot tvungen sosialforsikring (Folketrygd) som en bedre tilnærming
+-   insentiveffekter av trygd
+    -   hvordan trygdeordninger kan påvirke arbeidstilbudet (Boeri and Ours, kapittel 12 og 13) 
+    -   pensjon (Barr 3, 4 & 7)
+
+## Velferdssstaten
+
+![Nettavisen 06.09.2024](arbeidslinja.png)
+
+## Velferdsstaten
+
+-   «Arbeidslinja»
+    -   økt deltakelse i arbeidslivet
+    -   har vært en sentral målsetting i oppbyggingen av den norske velferdsstaten
+-   Inntektssikring
+    -   Arbeidsledighetstrygd, arbeidsavklaringspenger(AAP), sykepenger, uføretrygd (kap 6), alderspensjon (kap 7)
+    -   å sikre inntekt mot uforutsette hendelser
+    -   **utbetalinger er betinget på at en har betalt inn til folketrygden**
+-   ~~Sosialhjelp (kap 8) --~~
+    -   ~~Fattigdom: enpersonshusholdning har mindre enn 50 prosent av medianinntekt i tre år~~
+-   ~~Universelle ordninger (kap 8) --~~
+    -   ~~Grunnpensjoner, barnetrygd~~
+
+**Ikke forveksle kunnskap om institusjoner med å forstå den underliggende økonomiske teorien!**
+
+## Hva er de store spørsmålene?
+
+-   Mål:
+    -   fattigdomsbekjempelse
+    -   forsikring
+    -   konsumglatting
+-   Spørsmål:
+    -   **Hvorfor er det offentlig organisert?**
+    -   **Er dette forsikring?**
+
+## Inntektssikring
+
+![](https://www.nav.no/_/attachment/download/7aef04cf-f9c0-465a-9b13-ec9177012c40:3c7eed2bcec3df45466cc8a93016ef551e71be9b/naerhet-til-arbeidsmarkedet-2018.png)
+
+![](fra_vugge_til_grav.png)
+
+## Arbeidsledighetstrygd (dagpenger)
+
+-   For å ha krav på dagpenger må man ha fått redusert arbeidstiden med minst 50 prosent
+-   krav til at man har tjent mer enn 1,5G (G=grunnbeløp, 130 161 kr, i folketrygden) de siste 12 månedene
+-   eller minst 3G de siste 36 månedene
+-   må være registrert som arbeidssøker
+-   dagpengene er 2,4 promille av dagpengegrunnlaget
+    -   tilsvarer i gjennomsnitt 62,4 prosent av tidligere inntekt før skatt
+-   Dagpenger beregnes ikke av inntekter som er større enn 6 G
+    -   Maksimal dagpengeutbetaling (2024) blir dermed 470-480 000 kroner pr.år
+-   Dagpengegrunnlaget består av arbeidsinntekt og eventuelle folketrygdytelser (dagpenger, foreldrepenger ved fødsel og adopsjon, omsorgspenger, opplæringspenger, pleiepenger,svangerskapspenger, sykepenger)
+
+## Dagpenger
+::: fragment
+```{r,message=FALSE,warning=FALSE}
+library(PxWebApiData)
+library(tidyverse)
+library(scales)
+
+# Hent data
+dp <- ApiData(
+  "https://data.ssb.no/api/v0/no/table/10454/",
+  Inntekter225 = "05",
+  LigningStatus = "B17+",
+  Tid = TRUE,
+  ContentsCode = "PersBelop"
+)
+
+dp <- dp$dataset
+
+# Gjør Tid numerisk
+dp$Tid <- as.numeric(dp$Tid)
+
+# Finn start- og sluttår
+start_aar <- min(dp$Tid, na.rm = TRUE)
+siste_aar <- max(dp$Tid, na.rm = TRUE)
+
+# Plot
+dp %>%
+  ggplot(aes(x = Tid, y = value, group = 1)) +
+  geom_line(linewidth = 1.2, color = "steelblue") +
+  
+  # 👉 Tving alle år på x-aksen
+  scale_x_continuous(breaks = seq(start_aar, siste_aar, by = 1)) +
+  
+  scale_y_continuous(
+    limits = c(0, NA),
+    labels = label_number(big.mark = " ", decimal.mark = ",")
+  ) +
+  labs(
+    title = paste0("Dagpengemottakere ", start_aar, "–", siste_aar),
+    subtitle = "Årlig gjennomsnitt",
+    caption = "Kilde: SSB"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.title = element_blank(),
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(face = "bold")
+  )
+```
+:::
+
+# De helserelaterte ytelsene
+
+![](helserelaterte.png)
+
+## Sykepenger
+
+-   Arbeidsgiveren utbetaler sykepenger for de første 16 kalenderdagene
+-   100 % dekning: man kan få sykepenger som tilsvarer full lønn fra arbeidsgiveren din, men man har ikke rett til et sykepengegrunnlag som overstiger 6G
+-   52 uker makstid
+-   Egenmelding betyr at du melder fra til arbeidsgiveren din om at du er syk, uten at du leverer sykmelding
+-   Ved gradert (delvis) sykmelding har du rett til sykepenger for den delen du er syk
+    -   sykepengene kan graderes fra 100 prosent og ned til 20 prosent
+
+## Sykefravær, egenmeldt og legemeldt
+
+::: fragment
+```{r,message=FALSE,warning=FALSE}
+library(PxWebApiData)
+library(tidyverse)
+library(zoo)
+library(scales)
+
+# Hent data fra SSB API
+syk <- ApiData(
+  "https://data.ssb.no/api/v0/no/table/12440/",
+  Kjonn = "0",
+  Sykefraver2 = c("Alt", "E", "L"),
+  NACE2007 = "A-U",
+  Tid = TRUE,
+  ContentsCode = "SykefravProsent"
+)
+
+syk <- syk$dataset %>%
+  mutate(
+    Tid = zoo::as.yearqtr(Tid, format = "%YK%q"),
+    Sykefraver2 = recode_factor(
+      Sykefraver2,
+      Alt = "Totalt",
+      E   = "Egenmeldt",
+      L   = "Legemeldt"
+    )
+  ) %>%
+  arrange(Sykefraver2, Tid)
+
+# STL-basert sesongjustering per serie
+syk_sa <- syk %>%
+  group_by(Sykefraver2) %>%
+  group_modify(~{
+    x <- .x
+
+    ts_data <- ts(
+      x$value,
+      frequency = 4,
+      start = c(
+        as.numeric(format(min(x$Tid), "%Y")),
+        as.numeric(format(min(x$Tid), "%q"))
+      )
+    )
+
+    stl_fit <- stl(ts_data, s.window = "periodic")
+    x$sa <- as.numeric(ts_data - stl_fit$time.series[, "seasonal"])
+    x
+  }) %>%
+  ungroup()
+
+# Dynamisk start og slutt
+start_tid <- min(syk_sa$Tid, na.rm = TRUE)
+slutt_tid <- max(syk_sa$Tid, na.rm = TRUE)
+
+format_kvartal <- function(x) {
+  paste0(format(x, "%Y"), "K", as.integer(cycle(x)))
+}
+
+start_label <- format_kvartal(start_tid)
+slutt_label <- format_kvartal(slutt_tid)
+
+# Data til etiketter ved siste punkt
+data_ends <- syk_sa %>%
+  filter(Tid == slutt_tid) %>%
+  arrange(sa)
+
+# Årslinjer
+years <- seq(
+  from = floor(as.numeric(start_tid)),
+  to   = floor(as.numeric(slutt_tid)),
+  by   = 1
+)
+
+year_lines <- zoo::as.yearqtr(years)
+
+# Figur
+ggplot(syk_sa, aes(x = Tid, group = Sykefraver2)) +
+  geom_line(
+    aes(y = value, colour = Sykefraver2),
+    linewidth = 0.7,
+    alpha = 0.35
+  ) +
+  geom_line(
+    aes(y = sa, colour = Sykefraver2),
+    linewidth = 1.3
+  ) +
+  geom_text(
+    data = data_ends,
+    aes(y = sa, label = Sykefraver2, colour = Sykefraver2),
+    hjust = -0.05,
+    fontface = "bold",
+    size = 4,
+    show.legend = FALSE
+  ) +
+  geom_vline(
+    xintercept = as.numeric(year_lines),
+    linetype = "dashed",
+    color = "grey85",
+    linewidth = 0.3
+  ) +
+  scale_x_yearqtr(format = "%Y") +
+  scale_y_continuous(
+    limits = c(0, NA),
+    labels = label_number(decimal.mark = ",")
+  ) +
+  expand_limits(x = slutt_tid + 1) +
+  labs(
+    title = paste0("Sykefraværsprosent ", start_label, "–", slutt_label),
+    subtitle = "Tynn linje = rådata, tykk linje = sesongjustert",
+    caption = "Kilde: SSB"
+  ) +
+  coord_cartesian(clip = "off") +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.margin = margin(5.5, 60, 5.5, 5.5),
+    axis.title = element_blank(),
+    legend.position = "none",
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+```
+:::
+
+## Sykefravær pr. kjønn
+::: fragment
+```{r,message=FALSE,warning=FALSE}
+library(PxWebApiData)
+library(tidyverse)
+library(zoo)
+library(scales)
+
+# Hent data fra SSB API
+syk <- ApiData(
+  "https://data.ssb.no/api/v0/no/table/12440/",
+  Kjonn = c("1", "2"),
+  Sykefraver2 = "Alt",
+  NACE2007 = "A-U",
+  Tid = TRUE,
+  ContentsCode = "SykefravProsent"
+)
+
+syk <- syk$dataset %>%
+  mutate(
+    Tid = zoo::as.yearqtr(Tid, format = "%YK%q"),
+    Kjonn = recode_factor(
+      Kjonn,
+      `1` = "Menn",
+      `2` = "Kvinner"
+    )
+  ) %>%
+  arrange(Kjonn, Tid)
+
+# STL-basert sesongjustering per serie
+syk_sa <- syk %>%
+  group_by(Kjonn) %>%
+  group_modify(~{
+    x <- .x
+
+    ts_data <- ts(
+      x$value,
+      frequency = 4,
+      start = c(
+        as.numeric(format(min(x$Tid), "%Y")),
+        as.numeric(format(min(x$Tid), "%q"))
+      )
+    )
+
+    stl_fit <- stl(ts_data, s.window = "periodic")
+    x$sa <- as.numeric(ts_data - stl_fit$time.series[, "seasonal"])
+    x
+  }) %>%
+  ungroup()
+
+# Dynamisk start og slutt
+start_tid <- min(syk_sa$Tid, na.rm = TRUE)
+slutt_tid <- max(syk_sa$Tid, na.rm = TRUE)
+
+format_kvartal <- function(x) {
+  paste0(format(x, "%Y"), "K", as.integer(cycle(x)))
+}
+
+start_label <- format_kvartal(start_tid)
+slutt_label <- format_kvartal(slutt_tid)
+
+# Data til etiketter ved siste punkt
+data_ends <- syk_sa %>%
+  filter(Tid == slutt_tid) %>%
+  mutate(
+    label = case_when(
+      Kjonn == "Menn" ~ "Menn",
+      Kjonn == "Kvinner" ~ "Kvinner"
+    )
+  ) %>%
+  arrange(sa)
+
+# Årslinjer
+years <- seq(
+  from = floor(as.numeric(start_tid)),
+  to   = floor(as.numeric(slutt_tid)),
+  by   = 1
+)
+
+year_lines <- zoo::as.yearqtr(years)
+
+# Figur
+ggplot(syk_sa, aes(x = Tid, group = Kjonn)) +
+  geom_line(
+    aes(y = value, colour = Kjonn),
+    linewidth = 0.7,
+    alpha = 0.35
+  ) +
+  geom_line(
+    aes(y = sa, colour = Kjonn),
+    linewidth = 1.3
+  ) +
+  geom_text(
+    data = data_ends,
+    aes(y = sa, label = label, colour = Kjonn),
+    hjust = -0.05,
+    fontface = "bold",
+    size = 4,
+    show.legend = FALSE
+  ) +
+  geom_vline(
+    xintercept = as.numeric(year_lines),
+    linetype = "dashed",
+    color = "grey85",
+    linewidth = 0.3
+  ) +
+  scale_x_yearqtr(format = "%Y") +
+  scale_y_continuous(
+    limits = c(0, NA),
+    labels = label_number(decimal.mark = ",")
+  ) +
+  expand_limits(x = slutt_tid + 1) +
+  labs(
+    title = paste0("Sykefraværsprosent etter kjønn ", start_label, "–", slutt_label),
+    subtitle = "Tynn linje = rådata, tykk linje = sesongjustert",
+    caption = "Kilde: SSB"
+  ) +
+  coord_cartesian(clip = "off") +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.margin = margin(5.5, 60, 5.5, 5.5),
+    axis.title = element_blank(),
+    legend.position = "none",
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+```
+:::
+
+## Hva blir folk syk av
+::: fragment
+```{r,message=FALSE,warning=FALSE}
+library(rvest)
+library(xml2)
+library(stringr)
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(scales)
+library(tibble)
+
+# -------------------------------------------------------
+# 1. Finn riktig Excel-lenke automatisk fra NAV-siden
+# -------------------------------------------------------
+nav_page <- "https://www.nav.no/no/nav-og-samfunn/statistikk/sykefravar-statistikk/sykefravar"
+
+page <- read_html(nav_page)
+
+links <- page %>%
+  html_elements("a") %>%
+  {
+    tibble(
+      text = html_text2(.) |> str_squish(),
+      href = html_attr(., "href")
+    )
+  }
+
+xlsx_href <- links %>%
+  filter(str_detect(
+    text,
+    fixed("Legemeldt sykefravær etter diagnosegruppe - 4. kvartal 2010-2025 (xlsx)")
+  )) %>%
+  pull(href)
+
+if (length(xlsx_href) == 0) {
+  stop("Fant ikke diagnosegruppe-xlsx på NAV-siden.")
+}
+
+xlsx_url <- url_absolute(xlsx_href[1], nav_page)
+
+# -------------------------------------------------------
+# 2. Last ned arbeidsboken midlertidig
+# -------------------------------------------------------
+tmp <- tempfile(fileext = ".xlsx")
+download.file(xlsx_url, tmp, mode = "wb")
+
+# -------------------------------------------------------
+# 3. Les arket 'Tapte dagsverk'
+# -------------------------------------------------------
+raw <- read_excel(tmp, sheet = "Tapte dagsverk", col_names = FALSE)
+
+# -------------------------------------------------------
+# 4. Hent år fra rad 1, kolonne 2:17
+# -------------------------------------------------------
+years <- raw %>%
+  slice(1) %>%
+  select(-1) %>%
+  unlist(use.names = FALSE) %>%
+  as.integer()
+
+# -------------------------------------------------------
+# 5. Finn første diagnoseblokk:
+#    rad 2 = I alt
+#    rad 4:... = diagnosegrupper
+#    vi stopper ved første tomme rad
+# -------------------------------------------------------
+diag_rows <- raw %>%
+  mutate(
+    row_id = row_number(),
+    diag = .[[1]]
+  ) %>%
+  filter(row_id >= 4) %>%
+  mutate(is_blank = is.na(diag) | diag == "")
+
+end_row <- diag_rows %>%
+  filter(is_blank) %>%
+  slice(1) %>%
+  pull(row_id)
+
+if (length(end_row) == 0) {
+  stop("Fant ikke slutten på diagnoseblokken i øverste tabell.")
+}
+
+end_row <- end_row - 1
+
+# -------------------------------------------------------
+# 6. Hent diagnosegruppene i øverste tabell
+#    kolonne 1 = navn
+#    kolonne 2:17 = tall
+# -------------------------------------------------------
+diag_df <- raw %>%
+  slice(2:end_row) %>%
+  transmute(
+    diagnosegruppe = .[[1]],
+    across(2:ncol(raw), as.numeric)
+  )
+
+colnames(diag_df)[-1] <- years
+
+# -------------------------------------------------------
+# 7. Gjør om til long-format og behold 2011-2025
+# -------------------------------------------------------
+tapte_dagsverk_long <- diag_df %>%
+  pivot_longer(
+    cols = -diagnosegruppe,
+    names_to = "year",
+    values_to = "tapte_dagsverk"
+  ) %>%
+  mutate(
+    diagnosegruppe = as.character(diagnosegruppe),
+    year = as.integer(year)
+  ) %>%
+  filter(year >= 2011, year <= 2025) %>%
+  filter(!is.na(tapte_dagsverk))
+
+# Finn rekkefølge basert på nivå i 2025
+order_2025 <- tapte_dagsverk_long %>%
+  filter(year == 2025) %>%
+  arrange(desc(tapte_dagsverk)) %>%
+  pull(diagnosegruppe)
+
+# Sett faktor-rekkefølge
+tapte_dagsverk_long <- tapte_dagsverk_long %>%
+  mutate(
+    diagnosegruppe = factor(diagnosegruppe, levels = order_2025)
+  )
+
+ggplot(
+  tapte_dagsverk_long %>% filter(diagnosegruppe != "I alt"),
+  aes(x = year, y = tapte_dagsverk, colour = diagnosegruppe)
+) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 1.5) +
+  scale_x_continuous(breaks = 2011:2025) +
+  scale_y_continuous(labels = label_number(big.mark = " ", decimal.mark = ",")) +
+  labs(
+    title = "Tapte dagsverk per diagnosegruppe, 2011–2025",
+    subtitle = "Legemeldt sykefravær",
+    x = NULL,
+    y = "Tapte dagsverk",
+    colour = "Diagnosegruppe",
+    caption = "Kilde: NAV"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+:::
+
+
+## Sykefravær med diagnoser under gruppen psykiske lidelser
+
+![Sykefravær med enkelte diagnoser under gruppen psykiske lidelser. Andel tapte dagsverk per 10 000 avtalte dagsverk. 2. kvartal i årene 2015 – 2024. Kilde: NAV](sykefravær_diagnose.webp)
+
+## Norge har høyt sykefravær
+
+![](figur-2-sykefravret-i-no.png)
+
+## Arbeidsavklaringspenger
+
+-   skal sikre inntekt til personer mellom 18 og 67 år som på grunn av **sykdom**, **skade** eller **lyte** har fått nedsatt arbeidsevne
+    -   Arbeidsevnen skal være nedsatt med minst halvparten
+-   rettet mot personer med redusert arbeidsevne, og der det er mulighet for at arbeidsevnen kan bli bedre gjennom behandling, arbeidsrettede tiltak eller oppfølging fra NAV
+-   **Målet med ordningen er å skaffe eller beholde arbeid og dermed unngå overgang til uføretrygd**
+
+## Arbeidsavklaringspenger
+::: fragment
+```{r,message=FALSE,warning=FALSE}
+library(PxWebApiData)
+
+url <- paste0(
+  "https://data.ssb.no/api/pxwebapi/v2/tables/13058/data",
+  "?lang=no",
+  "&outputFormat=json-stat2",
+  "&valuecodes[ContentsCode]=AapMottakPros",
+  "&valuecodes[Tid]=*",
+  "&valuecodes[Region]=0",
+  "&valuecodes[Kjonn]=1,2",
+  "&valuecodes[Alder]=18-24,25-34,35-44,45-54,55-61,62-67"
+)
+
+aap <- get_api_data(url)
+
+library(dplyr)
+library(ggplot2)
+library(scales)
+
+# Klargjør data
+aap_df <- aap$dataset %>%
+  filter(!is.na(value)) %>%
+  mutate(
+    Tid = as.integer(Tid),
+    value = as.numeric(value),
+    Kjønn = factor(
+      Kjonn,
+      levels = c("1", "2"),
+      labels = c("Menn", "Kvinner")
+    ),
+    Alder = factor(
+      Alder,
+      levels = c("18-24", "25-34", "35-44", "45-54", "55-61", "62-67")
+    )
+  )
+
+# Dynamisk tittel
+min_aar <- min(aap_df$Tid, na.rm = TRUE)
+max_aar <- max(aap_df$Tid, na.rm = TRUE)
+
+plot_tittel <- paste0(
+  "Mottakere av arbeidsavklaringspenger (AAP), ",
+  min_aar, "–", max_aar
+)
+
+plot_undertittel <- "Andel av befolkningen etter alder og kjønn"
+
+# Plot
+ggplot(aap_df, aes(x = Tid, y = value, color = Kjønn)) +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 2) +
+  facet_wrap(~ Alder, ncol = 3) +
+  scale_x_continuous(breaks = seq(min_aar, max_aar, by = 1)) +
+  scale_y_continuous(
+    labels = label_number(decimal.mark = ",", suffix = " %")
+  ) +
+  labs(
+    title = plot_tittel,
+    subtitle = plot_undertittel,
+    x = NULL,
+    y = "Prosent av befolkningen",
+    color = "Kjønn",
+    caption = "Kilde: SSB, tabell 13058"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "bottom"
+  )
+```
+:::
+
+## Uføretrygd
+
+-   for å ha rett til å få uføretrygd, må sykdom og/eller skade være hovedårsaken til at man har nedsatt arbeids- og inntektsevne
+-   må som hovedregel fylle disse vilkårene:
+    -   må være mellom 18 og 67 år
+    -   må ha vært medlem av folketrygden de siste 5 årene før du ble syk eller skadet
+    -   må ha minst 50 prosent redusert arbeids- og inntektsevne
+-   må ha gjennomført
+    -   hensiktsmessig behandling som kan bedre arbeidsevnen
+    -   arbeidsrettede tiltak for å bedre inntektsevnen og avklare hvor mye man kan jobbe
+-   sammenlignet med andre land er det en høy andel av den voksne befolkningen i Norge som mottar uføreytelser
+
+## Uføretrygd
+::: fragment
+
+```{r,message=FALSE,warning=FALSE}
+library(PxWebApiData)
+library(dplyr)
+library(ggplot2)
+library(scales)
+
+# -------------------------------------------------------
+# Uføretrygd etter utdanningsnivå
+# -------------------------------------------------------
+
+url <- paste0(
+  "https://data.ssb.no/api/pxwebapi/v2/tables/11714/data",
+  "?lang=no",
+  "&outputFormat=json-stat2",
+  "&valuecodes[ContentsCode]=UforetrygdPros",
+  "&valuecodes[Tid]=*",
+  "&valuecodes[UtdNivaa]=*",
+  "&valuecodes[Kjonn]=0",
+  "&heading=ContentsCode,Tid,Kjonn",
+  "&stub=UtdNivaa"
+)
+
+ufore_utd <- get_api_data(url)
+
+# -------------------------------------------------------
+# Klargjør data
+# -------------------------------------------------------
+
+ufore_utd_df <- ufore_utd$dataset %>%
+  filter(!is.na(value)) %>%
+  mutate(
+    Tid = as.integer(Tid),
+    value = as.numeric(value),
+    UtdNivaa = recode(
+      UtdNivaa,
+      "TOT" = "Utdanningsnivå i alt",
+      "1-2" = "Grunnskolenivå",
+      "3-5" = "Videregående skolenivå",
+      "6-8" = "Universitets- og høgskolenivå",
+      "0_9" = "Uoppgitt eller ingen fullført utdanning",
+      .default = UtdNivaa
+    )
+  )
+
+# -------------------------------------------------------
+# Dynamisk tittel
+# -------------------------------------------------------
+
+min_aar <- min(ufore_utd_df$Tid, na.rm = TRUE)
+max_aar <- max(ufore_utd_df$Tid, na.rm = TRUE)
+
+plot_tittel <- paste0(
+  "Uføretrygdede etter utdanningsnivå, ",
+  min_aar, "–", max_aar
+)
+
+plot_undertittel <- "Andel av befolkningen, begge kjønn"
+
+# -------------------------------------------------------
+# Lag plotdatasett uten totalen
+# -------------------------------------------------------
+
+df_plot <- ufore_utd_df %>%
+  filter(UtdNivaa != "Utdanningsnivå i alt")
+
+# -------------------------------------------------------
+# Sorter legend etter nivå i siste år
+# -------------------------------------------------------
+
+order_levels <- df_plot %>%
+  filter(Tid == max(Tid, na.rm = TRUE)) %>%
+  arrange(desc(value)) %>%
+  pull(UtdNivaa)
+
+df_plot <- df_plot %>%
+  mutate(
+    UtdNivaa = factor(UtdNivaa, levels = order_levels)
+  )
+
+# -------------------------------------------------------
+# Plot
+# -------------------------------------------------------
+
+ggplot(df_plot, aes(x = Tid, y = value, color = UtdNivaa)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2) +
+  scale_x_continuous(breaks = seq(min_aar, max_aar, by = 1)) +
+  scale_y_continuous(
+    labels = label_number(decimal.mark = ",", suffix = " %")
+  ) +
+  labs(
+    title = plot_tittel,
+    subtitle = plot_undertittel,
+    x = NULL,
+    y = "Prosent av befolkningen",
+    color = "Utdanningsnivå",
+    caption = "Kilde: SSB, tabell 11714"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "right"
+  )
+```
+:::
+
+## Størst økning blant unge voksne uføre
+
+![Nye mottakere av uføretrygd per 1000 ikke-ufør person i samme aldersgruppe. 1995--2019. Kilde: Arbeids- og velferdsdirektoratet](uføre95_19.jpg)
+
+## Uførhet og diagnose
+
+![Nye uføre etter utvalgte diagnose- og aldersgrupper. Prosent. 1. halvår 2016. Kilde: Arbeids- og velferdsdirektoratet](https://www.regjeringen.no/contentassets/2943e48dbf4544b8b5f456c850dcccbe/no/hfig/fig10-4.jpg)
+
+## Høy andel uføretrygdede sammenlignet med andre land
+
+-   sammenlignet med andre land er det en høy andel av den voksne befolkningen i Norge som mottar uføreytelser
+-   det er ingenting som tyder på at den generelle helsetilstanden er dårligere i Norge enn i andre land
+-   institusjonelle forskjeller som forklarer forskjellene i uføreandeler
+
+
+
+## Argument for offentlig **tvungen** sosialforsikring: Effektivitet 1: Regulering
+
+-   Hvorfor er medlemskapet obligatorisk?
+    -   Eksternaliteter
+        -   I mange tilfeller er beslutningen om å forsikre overlatt til individet, siden kostnadene ved ikke-forsikring faller på den enkelte
+        -   Men hvis noen velger å ikke forsikre seg mot inntektstap på grunn av arbeidsledighet eller dårlig helse, vil kostnadene falle på
+            -   ektefeller, barn og familie
+            -   skattebetalerne, for eksempel gjennom økende kriminalitet &rarr; **negative eksternaliteter**
+        -   Når en aktivitet forårsaker en negativ eksternalitet, er en form for intervensjon en Pigou-skatt
+        -   Her er imidlertid målet å **hindre** manglende forsikring ![](neg_ext.jpg)
+        -   Å gjøre forsikring obligatorisk (dvs. regulering) vil derfor være mest effektivt
+    -   I sum er det store effektivitetsargumentet for å gjøre medlemskap obligatorisk (=regulering) at **uforsikrede tap kan påføre kostnader (= negative eksternaliteter) for andre**
+
+## Argument for offentlig sosialforsikring: Effektivitet 2: offentlig tilbud
+
+### Repetisjon: Privat tilbud av forsikring, forutsetninger
+
+$$\pi_i = (1+α) p_iL$$
+
+-   De individuelle sannsynlighetene for ulykke/skade ($p_i$) er uavhengig av hverandre (ingen systematisk risiko)
+
+-   Må ha usikkerhet, dvs. manglende kunnskap om framtidig utfall $p_i \le 1$
+    -   om $p_i = 1$, da blir $\pi = (1+α)L > L$
+
+-   Risiko, ikke usikkerhet (sannsynlighet må være kjent eller mulig å estimere (forsikringsselskapet må vite gjennomsnittlig $p_i$)
+
+-   Ingen asymmetrisk informasjon
+
+-   ingen ugunstig utvalg
+
+-   ingen adferdsrisiko
+    -   kan påvirke $p_i$ (ex ante -atferdsrisiko)
+        -   forsikringstakeren kan påvirke sannsynlighet for tap eller størrelse på potensielt tap, gjennom strategisk adferdsendring
+        -   for eksempel ingen forebygging
+
+### Arbeidsledighetstrygd (dagpenger): er forutsetningene for privat forsikring oppfylt?
+
+-   Det finnes systematisk risiko (konjunkturer)
+-   Framtidig utfall usikkert, $p_i < 1$
+-   Risikoen $p_i$ kan estimeres
+-   Problem med asymmetrisk informasjon
+    -   Uheldig utvalg
+        -   lavrisikogruppen vil ikke kjøpe forsikring
+    -   Adferdsrisiko
+        -   forsikringstakeren kan påvirke $p_i$ =\> hva er den rette forsikringspremien?
+            -   Et sentralt spørsmål er hvor kostbart (økonomisk og psykisk) det er for en person å forbli arbeidsledig
+                -   den psykiske kostnaden for den enkelte kan være høy, og **arbeidsledighet er forårsaket av mangel på jobber**
+                    -   en forsikringsbar risiko
+                -   den psykiske kostnaden er lav, og den enkelte forblir **arbeidsledig delvis etter eget valg**
+                    -   en ikke-forsikringsbar risiko
+                -   $p_i$ kan manipuleres av den forsikrede personen på måter forsikringsgiveren ikke kan overvåke, noe som gjør det umulig for forsikringsselskapet å beregne en premie (kan også påvirke ex post -atferdsrisiko) = redusere jobbsøkintensiteten)
+    -   problemet med asymmetrisk informasjon er verre for arbeidsledighetstrygd enn for sykepenger og uføretrygd
+        -   økonomisk teori: privat marked kan derfor ikke tilby arbeidsledighetstrygd
+
+### Sykepenger og uføretrygd: er forutsetningene for privat forsikring oppfylt?
+
+-   usystematisk risiko (vanligvis):
+    -   de individuelle sannsynlighetene $p_i$ er ikke relatert, bortsett fra under en stor epidemi
+-   framtidig utfall usikkert, $p_i < 1$ (ikke for kronisk syke)
+-   risikoen $p_i$ kan estimeres
+-   asymmetrisk informasjon
+    -   Uheldig utvalg
+        -   ikke noe stort problem
+        -   et privat forsikringsselskap kunne spørre om tidligere helse og fravær
+        -   sannsynligheten for fravær er stort sett eksogen, siden det **å gjøre seg selv** genuint syk er kostbart
+            -   påstått sykdom kan, i det minste opp til et punkt, kontrolleres ved å kreve at skadelidte skal fremlegge en legeerklæring (=egenmelding)
+    -   adferdsrisiko
+        -   ikke et alvorlig problem
+        -   et privat forsikringselskap kan påvirke $p$
+            -   karensdag, lavere dekningsgrad
+-   økonomisk teori: **ingen vesentlige problemer med privat tilbud av sykefraværsforsikring**, og slike institusjoner finnes i mange land
+
+## 6.2.4 Argument for offentlig sosialforsikring: Rettferdighet
+
+-   Horisontal ulikhet handler om minimumsstandarder og/eller lik tilgang til dem
+    -   om forbrukere er godt informert --\> ingen grunn til offentlig inngrep pga. horisontal ulikhet
+    -   om de er dårlig informert, kan man argumentere for offentlig sosialforsikring både på grunn av rettferdighet og effektivitet
+-   Vertikal ulikhet handler om omfordeling fra rik til fattig
+    -   trygdessystemet er omfordelende
+    -   fordelingsmålene burde generelt oppnås gjennom inntektsoverføringer
+
+## 6.3 Store spørsmål
+
+-   Skal sosialforsikringen være offentlig? **Ja**
+    -   effektivitetsargumentene hviler på
+        -   **negative eksternaliteter** (rettferdiggjør **tvungen** sosialforsikring), og
+        -   **asymmetrisk informasjon** på tilbudssiden av forsikringsmarkedet (**rettferdiggjør offentlig tilbud**)
+            -   en svakere argument for sykepenger enn for de andre ytelsene
+    -   De viktigste rettferdighetsargumentene:
+        -   de fattige kan føle seg mindre stigmatisert av forsikring
+        -   hvis forsikring tilbys offentlig av effektivitetshensyn, kan den brukes som en omfordelingsanordning
+    -   Disse argumentene er overbevisende
+        -   noen forsikringer kunne tilbys av privat sektor
+            -   for eksempel kortsiktige sykepenger
+-   Gir staten den optimale mengden forsikring? **Nei**
+    -   trygden som tilbys er et **gjennomsnitt** som ikke tar hensyn til forskjeller i preferanser
+    -   spørsmålet er ikke om sosialforsikring er optimal, men om hvis den er godt utformet, er den mindre ineffektiv enn frimarkedsløsning
+-   Er Folketrygden en forsikring?
+    -   Ytelsen er ikke knyttet til individuell risiko (fordi den er avhengig av tidligere inntekt)
+        -   Retten til ytelse er ikke bare avhengig av forekomsten av den forsikrede hendelsen
+    -   Ordningens finansiering er ikke basert på vurderinger av risiki av forskjellige slag (sannsynlighetsfordelinger)
+    -   Kontrakten er ikke fullstendig spesifisert (risikoen som dekkes kan endres over tid)
