@@ -1,0 +1,774 @@
+---
+title: "Disinsentiveffekter"
+subtitle: "6.3.2 i Barr og ss.585-86 og 589-90 i Boeri & Ours"
+author:
+  - Mikko Moilanen
+format: 
+  revealjs:
+    smaller: true
+    scrollable: true
+   # chalkboard: true
+    multiplex: true
+    self-contained: true
+    footer: "[uit-sok-2303-V26.github.io/](https://uit-sok-2303-V26.github.io/)"
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: title_slide.png
+      data-background-size: cover
+date: today
+css: style.css
+editor: visual
+from: markdown+emoji
+---
+
+## Sykepenger - kompensasjonsgrad
+
+Brutto kompensasjonsgrad i offentlige sykepengeordninger i 2015. Gjennomsnittlig ytelse de første 26 ukene i sykepengeperioden for enslig arbeidstaker med gjennomsnittlig industrilønn. Prosent av inntekt ![Kilde: Social Insurance Entitlements Dataset (SIED)](https://www.regjeringen.no/contentassets/2943e48dbf4544b8b5f456c850dcccbe/no/hfig/fig9-8.jpg?preset=fullsize)
+
+## Hvorfor er dette et viktig økonomisk spørsmål?
+
+-   Sykepenger er en forsikringsordning
+    -   skal beskytte inntekt når arbeidstakeren blir syk
+        -   en viktig velferdsgevinst
+-   Samtidig vil en sjenerøs ordning kunne redusere den private kostnaden ved å være borte fra arbeid
+    -   da kan ordningen også påvirke atferd.
+
+Dermed oppstår et klassisk økonomisk spenningsforhold mellom:
+
+-    **forsikring og trygghet**
+
+-   **insentiver til arbeid**
+
+## Modell for sykefravær
+
+Vi utvider først preferansene til å inkludere helse- og belastningsparameter: $\sigma$:
+
+$$
+U(c,l;\sigma)=c^{1-\sigma}l^\sigma
+$$
+
+-   $c$ = konsum\
+-   $l$ = fritid / ikke-markedstid\
+-   $\sigma \in (0,1)$
+
+### Tolkning
+
+-   $\sigma$ er ikke et rent medisinsk mål, men en **helse- og belastningsparameter**.
+    -   sykdom\
+    -   smerte\
+    -   utmattelse
+-   høy $\sigma$ → arbeid oppleves mer belastende → mer fritid ønskes (restitusjon)\
+-   lav $\sigma$ → arbeid oppleves mindre belastende → mer arbeid ønskes
+
+$$
+\sigma \uparrow \Rightarrow l^* \uparrow
+$$
+
+mer fritid → mer (implisitt) fravær
+
+## Indifferenskurver på ulike nivåer av $\sigma$
+
+```{r, warning=FALSE}
+library(patchwork)
+
+############ Frisk
+rm(list = ls())
+
+suppressPackageStartupMessages(library(tidyverse))
+
+l_1 <- seq(0, 60, by = .01)
+
+
+df <- data.frame(l_1)
+
+#lag aksen for tegningen
+
+axes_1 <- ggplot(df, aes(l_1))+
+  labs(x="Fritid", y="Konsum", title = "Frisk") +
+  theme(axis.title = element_text(size = 10),
+        plot.title = element_text(size = 14),
+        panel.background = element_blank(), # hvit bakgrunn
+        axis.line = element_line(colour = "black"), # sett inn akselinjer
+        axis.title.x = element_text(hjust = 1),
+        axis.title.y = element_text(angle = 0, vjust = 1, hjust=1))+ # juster labels på aksene  
+ # coord_fixed(ratio = 1)+ # lik skala for x og y aksen
+  scale_x_continuous(limits = c(0, 70), expand = c(0, 0))+
+  scale_y_continuous(limits = c(0, 10000), expand = c(0, 0))+ # begrense aksene
+  coord_fixed(ratio = (70 - 0) / (10000 - 0))
+
+# og sikre at akselinjene møttes i (0,0).
+
+# nyttefunkjsonen som brukes U=c^.5x l^.5 (Cobb-Douglas)
+
+# vi angir noen indifferenskurver
+I_1 <- function(l_1) ((77.4596669241483)/(l_1^0.5))^(1/0.5)  # nyttenivå 77.4596669241483
+I_2 <- function(l_1) (((107.4596669241483)/(l_1^0.5))^(1/0.5))  # nyttenivå 77.4596669241483
+I_3 <- function(l_1) (((137.4596669241483)/(l_1^0.5))^(1/0.5))  # nyttenivå 77.4596669241483
+
+
+#I_1 <- function(l_1) (109.544511501033^2)/(l_1) # nytte=109.544511501033
+
+figur_1 <- axes_1 +
+     stat_function(df,
+        fun=I_1,colour = "green",
+        mapping = aes()
+        ) +
+      stat_function(df,
+        fun=I_2,colour = "green",
+        mapping = aes()
+        ) +
+      stat_function(df,
+        fun=I_3,colour = "green",
+        mapping = aes()
+        ) + guides(colour = "none")+ 
+  theme(legend.position = "none")
+#  annotate("text",x=67,y=115, label=expression(u[0]))+
+ # annotate("text",x=67,y=195, label=expression(u[1]))+
+#annotate("text",x=67,y=300, label=expression(u[2]))
+
+############ Litt syk
+
+l_1 <- seq(0, 60, by = .01)
+
+
+df <- data.frame(l_1)
+
+#lag aksen for tegningen
+
+axes_1 <- ggplot(df, aes(l_1))+
+  labs(x="Fritid", y="Konsum", title="Litt syk") +
+  theme(axis.title = element_text(size = 10),
+        plot.title = element_text(size = 14),
+        panel.background = element_blank(), # hvit bakgrunn
+        axis.line = element_line(colour = "black"), # sett inn akselinjer
+        axis.title.x = element_text(hjust = 1),
+        axis.title.y = element_text(angle = 0, vjust = 1, hjust=1))+ # juster labels på aksene  
+ # coord_fixed(ratio = 1)+ # lik skala for x og y aksen
+  scale_x_continuous(limits = c(0, 70), expand = c(0, 0))+
+  scale_y_continuous(limits = c(0, 10000), expand = c(0, 0))+ # begrense aksene
+  coord_fixed(ratio = (70 - 0) / (10000 - 0)) 
+# og sikre at akselinjene møttes i (0,0).
+
+# nyttefunkjsonen som brukes U=c^.5x l^.5 (Cobb-Douglas)
+
+# vi angir noen indifferenskurver
+I_4 <- function(l_1) ((77.4596669241483)/(l_1^0.7))^(1/0.3)  # 
+I_5 <- function(l_1) ((67.4596669241483)/(l_1^0.7))^(1/0.3)  # 
+I_6 <- function(l_1) ((57.4596669241483)/(l_1^0.7))^(1/0.3)  # 
+
+
+
+#I_1 <- function(l_1) (109.544511501033^2)/(l_1) # nytte=109.544511501033
+
+figur_2 <- axes_1 +
+     stat_function(df,
+        fun=I_4,colour = "orange",
+        mapping = aes()
+        ) +
+      stat_function(df,
+        fun=I_5,colour = "orange",
+        mapping = aes()
+        ) +
+      stat_function(df,
+        fun=I_6,colour = "orange",
+        mapping = aes()
+        ) + guides(colour = "none")+ 
+  theme(legend.position = "none")
+ # annotate("text",x=67,y=50, label=expression(u[0]))+
+#  annotate("text",x=67,y=85, label=expression(u[1]))+
+#annotate("text",x=67,y=150, label=expression(u[2]))
+
+####################
+################### Syk
+
+l_1 <- seq(0, 60, by = .01)
+
+
+df <- data.frame(l_1)
+
+#lag aksen for tegningen
+
+axes_1 <- ggplot(df, aes(l_1))+
+  labs(x="Fritid", y="Konsum", title= "Ordentlig syk") +
+  theme(axis.title = element_text(size = 10),
+        plot.title = element_text(size = 14),
+        panel.background = element_blank(), # hvit bakgrunn
+        axis.line = element_line(colour = "black"), # sett inn akselinjer
+        axis.title.x = element_text(hjust = 1),
+        axis.title.y = element_text(angle = 0, vjust = 1, hjust=1))+ # juster labels på aksene  
+ # coord_fixed(ratio = 1)+ # lik skala for x og y aksen
+  scale_x_continuous(limits = c(0, 70), expand = c(0, 0))+
+  scale_y_continuous(limits = c(0, 10000), expand = c(0, 0))+ # begrense aksene
+  coord_fixed(ratio = (70 - 0) / (10000 - 0)) 
+# og sikre at akselinjene møttes i (0,0).
+
+# nyttefunkjsonen som brukes U=c^.1x l^.9 (Cobb-Douglas)
+
+# vi angir noen indifferenskurver
+I_7 <- function(l_1) ((37.4596669241483)/(l_1^0.9))^(1/0.1)  # nyttenivå 77.4596669241483
+I_8 <- function(l_1) ((47.4596669241483)/(l_1^0.9))^(1/0.1)  # nyttenivå 77.4596669241483
+I_9 <- function(l_1) ((57.4596669241483)/(l_1^0.9))^(1/0.1)  # nyttenivå 77.4596669241483
+
+
+
+#I_1 <- function(l_1) (109.544511501033^2)/(l_1) # nytte=109.544511501033
+
+figur_3 <- axes_1 +
+     stat_function(df,
+        fun=I_7,colour = "red",
+        mapping = aes()
+        ) +
+      stat_function(df,
+        fun=I_8,colour = "red",
+        mapping = aes()
+        ) +
+      stat_function(df,
+        fun=I_9,colour = "red",
+        mapping = aes()
+        ) + guides(colour = "none")+
+  theme(legend.position = "none")
+#  annotate("text",x=67,y=40, label=expression(u[0]))+
+#  annotate("text",x=67,y=95, label=expression(u[1]))+
+#annotate("text",x=67,y=350, label=expression(u[2]))
+
+
+patchwork::plot_layout(figur_1, figur_2, figur_3, ncol = 3)
+```
+
+## Hvordan fungerer sykepenger
+
+### Kompensasjonsgrad
+
+Når individet er borte fra arbeid, mottar det sykepenger.
+
+La kompensasjonsgraden være
+$
+\delta
+$
+
+Dette betyr at individet ikke mister hele lønna ved fravær.
+
+### Budsjett uten sykepenger $\delta=0$
+
+Uten sykepenger er budsjettbetingelsen:
+
+$$
+c = m + w(T-l)
+$$ Helningen til budsjettkurven:$-w$
+
+Det innebærer at fravær er kostbart.
+
+### Budsjett med sykepenger
+
+Budsjettet består av tre deler: $$c = m + \underbrace{w h}_{\text{arbeid}} + \underbrace{\delta w (T - h)}_{\text{sykepenger}}$$ $$c = m + \delta w T + w(1-\delta)h$$ $$c = (m + wT) - w(1-\delta)l$$ Med sykepenger endres helningen til busjettkurven til til:
+
+$$
+-w(1-\delta)
+$$ Dette er lavere enn før. Fritiden er blitt relativt billigere: $$
+\delta \uparrow \Rightarrow w(1-\delta)\downarrow
+$$
+
+### Tilpasning uten sykepenger
+
+```{r,warning=FALSE}
+# Last inn de nødvendige pakkene
+library(ggplot2)
+library(grid)  # For ekstra funksjoner som 'arrow'
+# Oppretter en sekvens og lagre den i l_1
+l_1 <- seq(0, 60, by = .01)  # l_1 representerer fritid, går fra 0 til 60
+
+# Konverterer sekvensen til en data.frame
+df <- data.frame(l_1)  # Dette gjør det enklere å håndtere i ggplot
+
+# Forbereder en ggplot-graf med definerte estetiske verdier og navn på aksene
+axes_1 <- ggplot(df, aes(l_1)) +  # Plottet basert på 'l_1' (fritid)
+  labs(x="Fritid", y="Konsum i 10-tall") +  # Merker aksene
+  theme(
+    axis.title = element_text(size = 10),  # Tilpasser størrelsen på aksen titlene
+    plot.title = element_text(size = 10),  # Tilpasser størrelsen på plottets tittel
+    panel.background = element_blank(),  # Fjern bakgrunnen
+    axis.line = element_line(colour = "black"),  # Gjør akselinjene svarte
+    axis.title.x = element_text(hjust = 1),  # Justering av x-akse tittelen
+    axis.title.y = element_text(angle = 0, vjust = 1, hjust=1)  # Justering av y-akse tittelen
+  ) +
+  #coord_fixed(ratio = 1) +  # Holder forholdet mellom x- og y-aksene konstant
+  scale_x_continuous(limits = c(0, 70), expand = c(0, 0)) +  # Definerer grensene for x-aksen
+  scale_y_continuous(limits = c(0, 1000), expand = c(0, 0)) +  # Definerer grensene for y-aksen
+  coord_fixed(ratio = (70 - 0) / (1000 - 0))  # Sørger for at akselinjene møtes i (0,0)
+
+# Definerer indifferenskurver (Cobb-Douglas nyttefunksjoner) i optimale punkter i oppgavene a), b) og c)
+# vi angir noen indifferenskurver
+I_0 <- function(l_1) ((140.11310323534026984156338498747)/(l_1^0.6))^(1/0.4)# maksimalt nyttenivå (som funksjon av c) når Gertrud er LITT SYK (vi setter inn de optimale verdiene av c og l som vi har funnet ved hjelp  
+# av Lagrange for å finne verdien for U)  og kompensasjonsgraden er 100%
+I_2 <- function(l_1) ((199.323531563868829097371190248)/(l_1^0.28571428571428571428571428571429))^(1/0.71428571428571428571428571428571)  # maksimalt nyttenivå (som funksjon av c) når Gertrud er FRISK (vi setter inn de #optimale verdiene av c og l)
+I_3 <- function(l_1) ((63.144586748935524613551813968465)/(l_1^0.9))^(1/0.1) # # maksimalt nyttenivå (som funksjon av c) når Gertrud er LITT SYK (vi setter inn de optimale verdiene av c og l som vi har funnet ved hjelp av #Lagrange for å finne verdien for U) og kompensasjonsgraden er 25%
+
+# Definerer budsjettlinjer med og uten sykepenger
+wr <- function(l_1) {
+  return(700 - 10 * l_1)  # Budsjettlinje uten sykepenger
+}
+wrsp_0 <- function(l_1) {
+  return(500 - 0*10* l_1)  # Budsjettlinje med 100% sykepenger
+}
+
+wrsp_1 <- function(l_1) {
+  return(650 - 0.75*10* l_1)  # Budsjettlinje med 25% sykepenger
+}
+# Tegner den optimale tilpasningen uten sykepenger
+figur_1 <- axes_1 +  # Basen av plottet
+  #    stat_function(df,
+  #                  fun=I_0,
+  #                  mapping = aes()
+  #    )+
+  # stat_function(df,
+  #              fun=I_1,
+  #             mapping = aes()
+  #  )+
+  stat_function(df,
+                fun=I_2,
+                mapping = aes()
+  )+
+     stat_function(df,
+                    fun=I_3,
+                    mapping = aes()
+      )+
+  annotate("text",
+           x=65,
+           y=350,
+           label=expression(u[1]))+
+  geom_segment(aes(x = 0, y = wr(0), xend = 60, yend = wr(60)), color="darkblue") +  # Tegner budsjettlinje
+  annotate("text", x=40,y=200, size = 3, 
+           label= expression(helning: -w))+
+  #  geom_segment(aes(x = 20, y = wrsp_0(20), xend = 60, yend = wrsp_0(60)), color="blue") +
+  #  geom_segment(aes(x = 20, y = wrsp_1(20), xend = 60, yend = wrsp_1(60)), color="blue") +
+  #  annotate("text",x=40,y=430, size = 3, 
+  #          label= expression(helning: -w(1-/delta))+
+  geom_segment(aes(x=60, y=0, xend=60, yend=100))+
+  # geom_segment(aes(x=60, y=100, xend=60, yend=500), color="darkgray", linewidth=2)+
+  # geom_segment(aes(x=60, y=100, xend=60, yend=200), color="black", linewidth=2)+
+  geom_segment(aes(x=0, y=100, xend=60, yend=100), linetype="dashed")+
+  annotate("text",x=2,y=60, 
+           label="m")+
+  geom_segment(aes(x=2, y=80, xend=2, yend=100),
+               arrow = arrow(length = unit(0.25, "cm")))+
+  geom_segment(aes(x=20, y=0, xend=20, yend=500), linetype="dashed", color="red")+
+  annotate("text",x=24,y=30, 
+           label=expression(T-h^{ht}))+
+  annotate("text",
+           x=65,
+           y=90,
+           label=expression(u[syk]))
+figur_1
+```
+
+## Tilpasning med sykepenger i norsk kontekst (100 % kompensasjonsgrad)
+
+```{r,warning = FALSE}
+# Last inn de nødvendige pakkene
+library(ggplot2)
+library(grid)  # For ekstra funksjoner som 'arrow'
+# Oppretter en sekvens og lagre den i l_1
+l_1 <- seq(0, 60, by = .01)  # l_1 representerer fritid, går fra 0 til 60
+
+# Konverterer sekvensen til en data.frame
+df <- data.frame(l_1)  # Dette gjør det enklere å håndtere i ggplot
+
+# Forbereder en ggplot-graf med definerte estetiske verdier og navn på aksene
+axes_1 <- ggplot(df, aes(l_1)) +  # Plottet basert på 'l_1' (fritid)
+  labs(x="Fritid", y="Konsum i 10-tall") +  # Merker aksene
+  theme(
+    axis.title = element_text(size = 10),  # Tilpasser størrelsen på aksen titlene
+    plot.title = element_text(size = 10),  # Tilpasser størrelsen på plottets tittel
+    panel.background = element_blank(),  # Fjern bakgrunnen
+    axis.line = element_line(colour = "black"),  # Gjør akselinjene svarte
+    axis.title.x = element_text(hjust = 1),  # Justering av x-akse tittelen
+    axis.title.y = element_text(angle = 0, vjust = 1, hjust=1)  # Justering av y-akse tittelen
+  ) +
+  #coord_fixed(ratio = 1) +  # Holder forholdet mellom x- og y-aksene konstant
+  scale_x_continuous(limits = c(0, 70), expand = c(0, 0)) +  # Definerer grensene for x-aksen
+  scale_y_continuous(limits = c(0, 1000), expand = c(0, 0)) +  # Definerer grensene for y-aksen
+  coord_fixed(ratio = (70 - 0) / (1000 - 0))  # Sørger for at akselinjene møtes i (0,0)
+
+# Definerer indifferenskurver (Cobb-Douglas nyttefunksjoner) i optimale punkter i oppgavene a), b) og c)
+# vi angir noen indifferenskurver
+I_0 <- function(l_1) ((140.11310323534026984156338498747)/(l_1^0.6))^(1/0.4)# maksimalt nyttenivå (som funksjon av c) når Gertrud er LITT SYK (vi setter inn de optimale verdiene av c og l som vi har funnet ved hjelp  
+# av Lagrange for å finne verdien for U)  og kompensasjonsgraden er 100%
+I_2 <- function(l_1) ((74.170827748764376051241635152041)/(l_1^0.9))^(1/0.1)  # maksimalt nyttenivå (som funksjon av c) når Gertrud er FRISK (vi setter inn de #optimale verdiene av c og l)
+I_3 <- function(l_1) ((63.144586748935524613551813968465)/(l_1^0.9))^(1/0.1) # # maksimalt nyttenivå (som funksjon av c) når Gertrud er LITT SYK (vi setter inn de optimale verdiene av c og l som vi har funnet ved hjelp av #Lagrange for å finne verdien for U) og kompensasjonsgraden er 25%
+
+# Definerer budsjettlinjer med og uten sykepenger
+wr <- function(l_1) {
+  return(700 - 10 * l_1)  # Budsjettlinje uten sykepenger
+}
+wrsp_0 <- function(l_1) {
+  return(500 - 0*10* l_1)  # Budsjettlinje med 100% sykepenger
+}
+
+wrsp_1 <- function(l_1) {
+  return(650 - 0.75*10* l_1)  # Budsjettlinje med 25% sykepenger
+}
+# Tegner den optimale tilpasningen uten sykepenger
+figur_2 <- axes_1 +  # Basen av plottet
+  #    stat_function(df,
+  #                  fun=I_0,
+  #                  mapping = aes()
+  #    )+
+  # stat_function(df,
+  #              fun=I_1,
+  #             mapping = aes()
+  #  )+
+  stat_function(df,
+                fun=I_2,
+                mapping = aes()
+  )+
+  stat_function(df,
+                fun=I_3,
+                mapping = aes()
+  )+
+  annotate("text",
+           x=65,
+           y=350,
+           label=expression(u[1]))+
+  geom_segment(aes(x = 0, y = wr(0), xend = 60, yend = wr(60)), color="darkblue") +  # Tegner budsjettlinje
+  annotate("text", x=40,y=200, size = 3, 
+           label= expression(helning: -w))+
+    geom_segment(aes(x = 20, y = wrsp_0(20), xend = 60, yend = wrsp_0(60)), color="blue") +
+  #  geom_segment(aes(x = 20, y = wrsp_1(20), xend = 60, yend = wrsp_1(60)), color="blue") +
+   annotate("text",x=40,y=430, size = 3, 
+           label= expression(helning: -w(1-delta)))+
+  geom_segment(aes(x=60, y=0, xend=60, yend=100))+
+   geom_segment(aes(x=60, y=100, xend=60, yend=500), color="darkgray", linewidth=2)+
+  # geom_segment(aes(x=60, y=100, xend=60, yend=200), color="black", linewidth=2)+
+  geom_segment(aes(x=0, y=100, xend=60, yend=100), linetype="dashed")+
+  annotate("text",x=2,y=60, 
+           label="m")+
+  geom_segment(aes(x=2, y=80, xend=2, yend=100),
+               arrow = arrow(length = unit(0.25, "cm")))+
+  geom_segment(aes(x=20, y=0, xend=20, yend=500), linetype="dashed", color="red")+
+  annotate("text",x=24,y=30, 
+           label=expression(T-h^{ht}))+
+  annotate("text",
+           x=65,
+           y=90,
+           label=expression(u[syk]))
+figur_2
+```
+
+## 100 % kompensasjonsgrad: modell og virkelighet
+
+I den enkle modellen innebærer full kompensasjon ($\delta = 1$) at den økonomiske kostnaden ved fravær forsvinner. Fritid blir da “gratis” , og individet vil alltid velge maksimal fritid og ingen arbeidstid.
+
+Dette er imidlertid ikke det vi observerer i virkeligheten
+
+-   yrkesdeltakelsen fortsatt høy
+
+-   sykefraværet langt fra 100%
+
+Modellen tar ikke med flere viktige mekanismer:
+
+-   Arbeid gir ikke bare inntekt, men også mening, struktur og sosial tilhørighet\
+-   Det finnes normer og forventninger om å møte på jobb\
+-   Fravær følges opp av arbeidsgiver, lege og NAV\
+-   Arbeid påvirker framtidige muligheter (karriere, lønn, jobbsikkerhet)
+
+## Modell: misbruk av sykefraværsordningen Boeri and Ours ss. 589-90
+
+### Egenmelding
+
+-   Egenmelding gir arbeidstakere mulighet til å være borte fra jobb uten legeerklæring i en begrenset periode
+-   Ordningen gjelder vanligvis i opptil tre kalenderdager per fravær (ofte utvidet til 8 dager i IA-virksomheter)
+-   tillitsbasert ordning som reduserer administrative kostnader og behovet for legebesøk
+-   reduserer kontrollen med fravær, noe som kan øke rommet for tilpasning på marginen
+-   ordningen påvirker ikke kompensasjonsgraden direkte, men senker de praktiske og institusjonelle kostnadene ved fravær
+-   virker som en reduksjon i “ikke-monetære kostnader” ved fravær.
+
+### Nå starter vi modellen
+
+Tenk først at individet står fritt til å velge arbeidstid. - vil det velge den kombinasjonen av konsum og fritid som maksimerer nytten.
+
+Dette gir punkt **A** i figuren:
+
+-   den marginale verdien av fritid lik lønna\
+-   individet har sin foretrukne arbeidstid\
+-   individet arbeider akkurat så mye som det selv ønsker\
+-   det er ingen grunn til å redusere arbeidstiden
+
+![](figur_13_9.jpg)
+
+### Arbeidstiden bestemmes av arbeidsgiver
+
+I praksis bestemmes arbeidstiden av arbeidsgiver gjennom en kontrakt,la denne arbeidstiden være $h_B$
+
+Hvis den kontraktsfestede arbeidstiden er høyere enn individets foretrukne arbeidstid, oppstår et spenn:
+
+$$
+h_B > h_A
+$$
+
+-   individet arbeider mer enn det ønsker
+
+-   har mindre fritid enn optimalt
+
+-   oppnår lavere nytte enn i punkt A
+
+## Shirking
+
+Individet kan ikke fritt velge arbeidstiden.
+
+Men det kan i praksis påvirke hvor mye det faktisk arbeider gjennom fravær.
+
+Fravær blir dermed en måte å:
+
+-   redusere faktisk arbeidstid
+-   og bevege seg nærmere ønsket nivå av fritid
+
+Dette er kjernen i modellen.
+
+## Innføring av sykepenger
+
+Når individet er borte fra arbeid, mottar det sykepenger.
+
+La kompensasjonsgraden være $\delta$
+
+Dette betyr at individet ikke mister hele lønna ved fravær.
+
+### Budsjett med og uten sykepenger
+
+Uten sykepenger er budsjettbetingelsen:
+
+$$
+c = m + w(T-l)
+$$ Med sykepenger endres helningen til busjettkurven til til:
+
+$$
+-w(1-\delta)
+$$ ![](figur_13_9.jpg)
+
+## Punkt D: ny tilpasning
+
+Når fritid blir billigere, vil individet velge mer fritid.
+
+Det nye optimum er punkt **D**:
+
+-   høyere fritid\
+-   lavere arbeidstid\
+-   og dermed mer fravær
+
+Bevegelsen fra B til D er modellens kjerne:
+
+-   individet bruker fravær for å redusere arbeidstiden\
+-   når dette blir mindre kostbart når kompensasjonsgraden øker ==\> gir en systematisk økning i fravær
+
+![](figur_13_9.jpg)
+
+## Utvidelse: $\sigma$ og egenmelding
+
+I praksis er arbeidstakere forskjellige.
+
+Vi bruker $\sigma$ til å fange opp forskjeller i:
+
+-   helse\
+-   belastning\
+-   behov for restitusjon
+
+:point_right: $\sigma$ er privat informasjon
+
+Arbeidsgiver observerer ikke fullt ut hvor belastende arbeid oppleves - asymmetrisk informasjon
+
+### Hvordan påvirker $\sigma$ punkt A?
+
+Punkt A er individets foretrukne tilpasning.
+
+Når $\sigma$ varierer:
+
+-   lav $\sigma$ → individet ønsker mye arbeid\
+-   høy $\sigma$ → individet ønsker mindre arbeid
+
+:point_right: $\sigma$ bestemmer hvor punkt A ligger
+
+![](figur_13_9.jpg)
+
+### Kontrakt og punkt B
+
+Arbeidsgiveren fastsetter arbeidstid $h_B$.
+
+Alle arbeidstakere møter samme kontrakt.
+
+Men hvordan denne oppleves, varierer:
+
+-   lav $\sigma$ → liten forskjell mellom A og B\
+-   høy $\sigma$ → stor forskjell mellom A og B
+
+:point_right: høy $\sigma$ gir sterkere ønske om å redusere arbeid
+
+## Hvor kommer egenmelding inn?
+
+Egenmelding påvirker ikke preferanser.
+
+Den påvirker hvor lett individet kan tilpasse seg.
+
+Med egenmelding:
+
+-   lavere kontroll\
+-   lavere praktiske kostnader ved fravær
+
+:point_right: det blir enklere å være borte
+
+### Kobling: $\sigma$ og egenmelding
+
+Sammenhengen er:
+
+-   $\sigma$ bestemmer hvor mye individet ønsker mer fritid\
+-   egenmelding bestemmer hvor lett det er å få det
+
+:point_right: begge virker på tilpasningen fra B til D
+
+![](figur_13_9.jpg)
+
+### Hvordan påvirker $\sigma$ responsen?
+
+Når egenmelding gjør fravær enklere:
+
+-   lav $\sigma$ → liten endring i atferd\
+-   høy $\sigma$ → sterkere respons
+
+:point_right: individer med høy opplevd belastning (=syk) vil i større grad bruke fravær
+
+------------------------------------------------------------------------
+
+### Gråsonetilfeller
+
+Effekten er særlig sterk når:
+
+-   individet kan arbeide\
+-   men opplever arbeid som belastende
+
+:point_right: her er $\sigma$ moderat
+
+:point_right: og egenmelding gjør det lettere å velge fravær
+
+## To typer drivkrefter
+
+Vi kan skille mellom:
+
+### 1. Preferanser
+
+-   hvor mye individet ønsker fritid\
+-   påvirkes av helse og belastning ($\sigma$)
+
+### 2. Insentiver
+
+-   hvor dyrt det er å være borte fra arbeid\
+-   påvirkes av kompensasjonsgrad ($\delta$) og egenmelding
+
+:point_right: begge er nødvendige for å forstå fravær
+
+## Moral hazard
+
+Moralsk hasard oppstår når:
+
+-   individet har privat informasjon om egen situasjon\
+-   og samtidig kan påvirke sin egen atferd
+
+I vår modell betyr dette:
+
+-   arbeidsgiver observerer ikke $\sigma$ perfekt\
+-   individet velger selv fravær
+
+## Hvorfor oppstår moral hazard?
+
+Når kompensasjonsgraden øker:
+
+$$
+\delta \uparrow \Rightarrow \text{lavere kostnad ved fravær}
+$$
+
+Når egenmelding gjør fravær enklere:
+
+:point_right: lavere kontroll og færre barrierer
+
+Moral hazard er mest relevant når:
+
+-   individet kan arbeide\
+-   men opplever arbeid som belastende
+
+:point_right: her påvirker insentiver valget
+
+## Det klassiske dilemmaet: forsikring vs. insentiver
+
+Vi står overfor en avveining:
+
+### Mer forsikring
+
+-   øker kompensasjonsgraden: høyere $\delta$\
+-   mer trygghet\
+-   men svakere insentiver
+
+### Sterkere insentiver
+
+-   lavere $\delta$\
+-   mindre fravær\
+-   men svakere forsikring
+
+:point_right: dette er kjernen i policyproblemet
+
+:point_right: ingen enkel løsning
+
+------------------------------------------------------------------------
+
+## Sluttpoeng
+
+Sykefravær handler ikke bare om sykdom.
+
+Det handler om:
+
+-   hvordan mennesker reagerer på insentiver\
+-   innenfor rammene av institusjoner og kontrakter
+
+:point_right: økonomisk analyse gir oss et språk for å forstå denne balansen
+
+## Sykepenger
+
+### Kompensasjonsgrad
+
+-   **Når sykefravær ikke innebærer noe direkte økonomisk tap for arbeidstaker, kan det bidra til høyere sykefravær**
+-   en stram sykepengeordning, med lav kompensasjonsgrad, kan føre til at personer som ut fra helsetilstand og arbeidsevne ikke burde jobbe, likevel går på jobb
+    -   For vanlige årsaker til sykefravær som muskel- og skjelettlidelser og lettere psykiske lidelser vil likevel arbeid i mange tilfeller kunne være gunstig
+-   en fallende kompensasjonsgrad i løpet av en sykepengeperiode vil gi arbeidstaker et økonomisk insentiv til å komme tilbake i arbeid
+    -   vil også gi arbeidstaker et økonomisk insentiv til å ha gradert sykmelding, siden lønnen er høyere enn sykepengene
+    -   Med full kompensasjon vil ikke arbeidstaker ha kortsiktige økonomiske gevinster ved gradering
+-   sykefravær påvirkes av andres fravær, som venner, naboer og kolleger
+    -   kan forsterke virkningen av økonomiske insentiver og andre faktorer som påvirker sykefraværet
+
+## Sykefraværet og konjunkturer
+
+-   I den økonomisk litteraturen fokuseres det på tre forhold for å forklare konjunkturbevegelsene i sykefraværet: disiplineringseffekter, sammensetningseffekter og helseeffekter.
+
+#### Disiplineringseffekt
+
+-   Arbeidsgivere vet at sykepenger kan gi arbeidstakere insentiver til å sykmelde seg uten å være (tilstrekkelig) syk
+
+    -   arbeidstakeren disiplineres av frykt for at arbeidsgiveren vil oppfatte fraværet som negativt.
+
+-   høy ledighet kan øke sannsynligheten for å miste jobben og gjøre det vanskeligere å finne nytt arbeid --\> det å bli arbeidsledig vil få større konsekvenser enn når det er lav ledighet
+
+-   disiplineringseffekten virker sterkest når arbeidsledigheten er høy
+
+-   hindrer friske i å være borte fra jobben
+
+-   bidrar også til at syke går på jobb
+
+#### Sammensetningseffekt
+
+-   oppstår ved at sysselsettingens sammensetning endres når aktivitetsnivået i økonomien endres
+-   Ved et høyt aktivitetsnivå vil mer marginale grupper være sysselsatt
+    -   Disse gruppene antas å ha mer fravær --\> sykefraværet vil være høyere (lavere) i perioder med høy (lav) økonomisk aktivitet og høy (lav) sysselsetting
+
+#### Helseeffekt
+
+-   hver enkelt arbeidstakers helse svinger med konjunkturene
+    -   flere kan føle seg utbrente i en høykonjunktur (lav ledighet) på grunn av at et høyt aktivitetsnivå på arbeidsplassen fører til økt fysisk og psykisk belastning
+
+### Referanser:
+
+-   Barmby, T., Sessions, J., & Treble, J. (1994). Absenteeism, efficiency wages and shirking.*The Scandinavian Journal of Economics*, 96(4), 561-566.
