@@ -264,11 +264,13 @@ Budsjettet består av tre deler: $$c = m + \underbrace{w h}_{\text{arbeid}} + \u
 
 $$
 -w(1-\delta)
-$$ Dette er lavere enn før. Fritiden er blitt relativt billigere: $$
+$$ 
+Dette er lavere enn før. Fritiden er blitt relativt billigere: 
+$$
 \delta \uparrow \Rightarrow w(1-\delta)\downarrow
 $$
 
-### Tilpasning uten sykepenger
+## Tilpasning uten sykepenger
 
 ```{r,warning=FALSE}
 # Last inn de nødvendige pakkene
@@ -484,7 +486,9 @@ Modellen tar ikke med flere viktige mekanismer:
 
 ### Nå starter vi modellen
 
-Tenk først at individet står fritt til å velge arbeidstid. - vil det velge den kombinasjonen av konsum og fritid som maksimerer nytten.
+Tenk først at individet står fritt til å velge arbeidstid.
+
+-   velger den kombinasjonen av konsum og fritid som maksimerer nytten.
 
 Dette gir punkt **A** i figuren:
 
