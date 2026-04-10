@@ -18,6 +18,34 @@
 
 # Oppgaver
 
+## Oppgave 1: Arbeidsledighetsttrygd
+
+### Oppgave 1.1
+Asmund er utdannet filosof. Han er veldig glad i å sitte i fjæra eller på kafe og tenke store tanker om verden. Dessverre må han også spise og ha en plass bo. Asmund sin nytte kan beskrives ved bruk av Cobb-Douglas funksjonen under:
+
+$U(c,l) = c^\gamma \cdot l^{1-\gamma}$
+
+der $c$ er sammensatt konsum (f.eks mat og bolig), $l$ er fritid, og $\gamma = 0.4$ beskriver Asmund sine preferanser for konsum relativt fritid. 
+
+Arbeidsmarkedet er "perfekt", men dessverre kan Asmund ikke velge sin arbeidstid helt fritt. Dersom Asmund velger å ta en jobb, må han jobbe 37.5 timer per uke. Han kan maksimalt jobbe 60 timer per uke ($l_0 = 60$). 
+
+Siden Asmund er så glad i sin fritid er han ikke så veldig glad i å jobbe. I tillegg er det svært vanskelig å finne jobb som filosof. Dersom Asmund tar en jobb må han derfor akseptere å jobbe med noen annet, til en relativt lav real timelønn $w = 7.5$ (i ti-talls kr). Heldigvis gir Asmund sine foreldre gir ham ($m$) lik 50 (i ti-tall kroner) i støtte hver uke. 
+
+
+a) Utled Asmund sin statiske reservasjonslønn i disse to situasjonene: 1) hvis Asmund ikke tar en jobb, har han ikke tilgang til dagpenger, 2) hvis Asmun ikke tar en jobb har han tilgang til dagpenger tilsvarende 50 (i ti-talls kr) per uke. Gjør rede for dine matematiske beregninger.
+
+b) Gi økonomisk intuisjon til hvorfor reservasjonslønna er ulik i disse to situasjonene. Illustrer grafisk. Inkluder grafiske illustrasjoner som er "tegnet for hånd" (digitalt eller på penn og papir).
+
+
+### Oppgave 1.2
+
+På et perfekt arbeidsmarked eksisterer ikke ufrivillig arbeidsledighet, og de fleste rike land har derfor noen type arbeidsledighetstrygd. Alle den nordiske landene har relativt sjenerøs arbeidsledighetstrygd. Økonomisk teori predikerer at arbeidsledighetstrygd har flere negative effekter på arbeidsmarkedet under ufullkommen konkurranse. Forklar hvilke disse effektene er og hvorfor de oppstår. Gi økonomisk intuisjon. 
+
+### Oppgave 1.3
+I de nordiske landene kombineres den sjenerøse trygden med aktive arbeidsmarkedstiltak (ALMP) og krav til mottakeren av trygden. Forklar hvordan kombinasjonen av høy erstatningsnivå, aktive arbeidsmarkedstiltak, og krav til mottakeren kan redusere disinsentiveffekter og kan føre til en bedre fungerende arbeidsmarked.  
+
+### Oppgave 2 (kommer)
+
 ### Evaluering av utfordringer
 Utfordringene blir bedømt i henhold til regelen i Tabell 1. Det vil være mulig å få halve og hele poeng på utfordringene. Hver innlevering kan gi maks tre poeng.
 
