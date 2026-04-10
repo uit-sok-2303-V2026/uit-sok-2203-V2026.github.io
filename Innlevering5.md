@@ -48,7 +48,9 @@ I de nordiske landene kombineres den sjenerøse trygden med aktive arbeidsmarked
 ### Oppgave 2.1
 
 a) Studer teksten i sangen Tredagern av Gatas Parlament. Bruk modellen for arbeidstilbud og fravær fra kurset til å analysere hvordan individets ønskede arbeidstid kan avvike fra den kontraktsfestede arbeidstiden. Forklar hvordan dette skaper et potensial for fravær. Illustrer grafisk, gjør rede for modellens antakelser, og forklar økonomisk intuisjon.
+
 b) Anta deretter at fravær fra kontraktsfestet arbeid kompenseres gjennom sykepenger. Bruk modellen til å analysere hvordan en høy kompensasjonsgrad slik vi i har i Norge, påvirker kostnaden ved fravær og dermed arbeidsinsentivene. Analyser hva som skjer dersom kompensasjonsgraden reduseres, og hvordan individets tilpasning avhenger av hans selvopplevd helse-/belastningssituasjon.  Illustrer dine svar grafisk, gjør rede for modellens antakelser, og forklar økonomisk intuisjon.
+
 c) Diskuter hvordan teksten kan forstås som et eksempel på moralsk hasard i lys av modellen. Diskuter dilemmaet mellom inntektssikring ved sykdom og moralsk hasard. Kommenter også kort hvilken rolle egenmelding kan spille i denne sammenhengen. Bruk økonomisk teori fra kurset og illustrer grafisk der det er relevant.
 
 ### Oppgave 2.2
