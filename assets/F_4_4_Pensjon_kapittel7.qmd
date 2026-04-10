@@ -1,0 +1,660 @@
+---
+title:  "Alderspensjon"
+subtitle: "Kapittel 7 i Barr"
+author:
+  - Mikko Moilanen
+format: 
+  revealjs:
+ #   smaller: true
+    scrollable: true
+    chalkboard: true
+    multiplex: true
+ #   self-contained: true
+    footer: "[uit-sok-2008-V26.github.io/](https://uit-sok-2008-V26.github.io/)"
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: title_slide.png
+      data-background-size: cover
+date: last-modified
+date-format: "DD/MM/YYYY"
+css: style.css
+editor: visual
+from: markdown+emoji
+---
+
+## Introduksjon
+
+## Økonomisk bærekraft av pensjonssystemet i Norge
+
+Bærekraft handler om at pensjonssystemet kan finansieres over tid uten store kutt eller skatteøkninger.
+
+-   økonomisk bærekraft er en hovedprioritet\
+-   gir trygghet for fremtidige pensjoner\
+-   press fra:
+    -   økt levealder\
+    -   svakere vekst i yrkesaktiv befolkning\
+-   stabil utgiftsutvikling er avgjørende\
+-   levealdersjustering demper utgiftspresset\
+-   høyere yrkesdeltakelse styrker finansieringen
+
+## Demografi og økonomiske utfordringer
+
+-   færre yrkesaktive per pensjonist → svakere finansieringsgrunnlag\
+-   økt levealder → flere år med pensjonsutbetalinger\
+-   ⇒ behov for tilpasninger for å opprettholde bærekraft
+
+## Flere eldre vil legge press på offentlige finanser
+
+![Utgifter til alderspensjon fra folketrygden. Mrd. 2023-kroner (lønnsdeflatert). Framskrevet etter 2022 Kilde: Statistisk sentralbyrå](https://www.regjeringen.no/contentassets/5d8550e1045d4f8684acdf893bd10b50/no/hfig/fig5-1.gif?preset=fullsize)
+
+## Endringer i befolkningssammensetning fører til økt forsørgelsesbyrde
+
+![Befolkning fordelt på aldersgrupper 1900 til 2100 i 1000 personer. Registrert og middelalternativet i befolkningsframskrivingene fra 2022 (BF2022). Kilde: Statistisk sentralbyrå](https://www.regjeringen.no/contentassets/5d8550e1045d4f8684acdf893bd10b50/no/hfig/fig5-3.gif?preset=fullsize)
+
+![Prosentandel av befolkningen etter aldersgrupper, framskrevne tall middelalternativet i befolkningsframskrivingene fra 2022. Kilde: Statistisk sentralbyrå](https://www.regjeringen.no/contentassets/5d8550e1045d4f8684acdf893bd10b50/no/hfig/fig5-4.gif?preset=fullsize)
+
+![Utviklingen i samlet forsørgelsesbyrde 1950–2100. Prosent. Historiske tall 1950–2022. Framskriving 2023–2100 fra middelalternativet i befolkningsframskrivingen 2022.Kilde: Statistisk sentralbyrå.](https://www.regjeringen.no/contentassets/5d8550e1045d4f8684acdf893bd10b50/no/hfig/fig5-6.gif?preset=fullsize)
+
+## Pensjonenes hovedmål
+
+-   konsumglatting
+    -   individer maksimerer sin nytte over tid, ikke bare på ett tidspunkt
+    -   pensjoner gjør det mulig å overføre forbruk fra de produktive midtårene til pensjonistårene
+    -   gir ønsket forbruksprofil over tid ![Fisher-modellen](fisher.png)
+-   forsikring
+    -   levealder er usikker
+    -   uten forsikring kan individer enten spare for lite eller for mye
+-   hvorfor statlig inngrep?:
+    -   markedssvikt i private løsninger
+    -   rettferdighetshensyn
+        -   fattigdomsbekjempelse og omfordeling
+
+### Sekundære mål
+
+-   **økonomisk vekst**
+    -   pensjonssystemet påvirker insentiver i økonomien\
+    -   dårlig utforming kan:
+        -   redusere arbeidstilbud (tidligpensjonering, svake insentiver)
+        -   fortrenge privat sparing\
+    -   godt utformede systemer kan:
+        -   øke yrkesdeltakelse og pensjoneringsalder\
+        -   bidra til høyere samlet sparing og kapitalakkumulering\
+        -   støtte velfungerende arbeids- og kapitalmarkeder
+
+## Effektivitetsargumenter for statlig intervensjon
+
+### Mikroøkonomiske aspekter
+
+### Tilbudssiden: Ufullstendig forsikring
+
+-   effektiv konsumglatting krever at enkeltpersoner kjøper det sanfunnsøkonomisk optimale nivået av pensjon
+    -   ville folk bidratt frivillig til en pensjonsordning?
+    -   hvorfor gjør staten pensjonsinnbetalingen obligatorisk?
+    -   hvorfor tilbyr myndighetene pensjoner?
+
+#### Ville folk bidratt frivillig til en pensjonsordning?
+
+-   i en verden med perfekt informasjon og fullstendige markeder:
+    -   individer kan selv oppnå konsumglatting gjennom frivillig sparing\
+    -   ingen behov for obligatoriske ordninger
+-   i praksis:
+    -   usikker levealder skaper behov for forsikring (longevity risk)\
+    -   effektive løsninger krever en kombinasjon av sparing og risikodeling (f.eks. livrenter)
+-   en rasjonell, risikoavers person vil etterspørre en pensjonsordning dersom: $$
+    \text{betalingsvilje for forsikring} \geq \text{nettokostnad}
+    $$
+
+#### Hvorfor gjør staten pensjonsinnbetalingen obligatorisk?
+
+-   uten obligatorisk sparing kan individer velge å spare for lite til egen alderdom\
+-   dette skaper **negative eksternaliteter**:
+    -   kostnadene bæres av fellesskapet (skattebetalerne)
+
+![](neg_ext.jpg)
+
+## Hvorfor tilbyr myndighetene pensjoner?
+
+## Tilbudssiden: pensjonsutbetalinger og inflasjon
+
+-   på tilbudssiden oppstår to sett med problemer
+-   er markedene for pensjonsutbetalinger effektive?
+-   hvordan takler pensjoner inflasjon?
+-   er forholdene til stede for at det private markedet skal kunne tilby forsikring effektivt?
+
+### Repetisjon: Privat tilbud av forsikring, forutsetninger
+
+$$\pi_i = (1+α) p_iL$$
+
+-   de individuelle sannsynlighetene for ulykke/skade ($p_i$) er uavhengig av hverandre (ingen systematisk risiko)
+
+-   Må ha usikkerhet, dvs. manglende kunnskap om framtidig utfall $p_i \le 1$
+
+    -   om $p_i = 1$, da blir $\pi = (1+α)L > L$
+
+-   Risiko, ikke usikkerhet (sannsynlighet må være kjent eller mulig å estimere (forsikringsselskapet må vite gjennomsnittlig $p_i$)
+
+-   Ingen asymmetrisk informasjon
+
+    -   ingen ugunstig utvalg
+    -   ingen adferdsrisiko
+        -   kan påvirke $p_i$ (ex ante -atferdsrisiko)
+            -   forsikringstakeren kan påvirke sannsynlighet for tap eller størrelse på potensielt tap, gjennom strategisk adferdsendring
+            -   for eksempel ingen forebygging
+
+## Pensjonsutbetalinger: ville det private markedet kunne tilbudt dem effektivt
+
+-   Sannsynligheten for at pensjonist A lever til en gitt alder er uavhengig av pensjonist B :white_check_mark:\
+-   Risikoen for å leve til en viss alder er mindre enn én :white_check_mark:\
+-   Den gjennomsnittlige risikoen er kjent :white_check_mark:
+    -   dødelighetsdata er lett tilgjengelige
+-   Ved første øyekast små problemer med uheldig utvalg og moralsk hasard :white_check_mark:
+    -   individer kjenner ikke egen dødstid\
+    -   atferd som påvirker utbetaling (f.eks. selvmord) er ikke et klassisk moralsk hasardproblem
+-   **→ utbetalingsmarkedene ser ut til å oppfylle betingelsene for effektiv forsikring**
+    -   men dette må nyanseres:
+
+    -   systematisk undervurdering av økt levealder
+
+        -   flere når pensjonsalder\
+        -   flere år som pensjonist\
+        -   høyere og mer usikre utbetalingsforpliktelser
+
+    -   økt usikkerhet om kostnader (“tvilstrakt”)
+
+        -   er dødelighet risiko eller genuin usikkerhet?\
+        -   usikkerhet ⇒ uforutsette kostnader
+
+    -   i Norden:
+
+        -   staten bærer risikoen\
+        -   kostnader deles med skattebetalerne
+-   **Inflasjon**
+    -   konsumglatting avhenger av realverdien av pensjon
+
+    -   privat inflasjonsforsikring er vanskelig fordi:
+
+        -   sannsynlighetsfordelingen for inflasjon er ukjent\
+        -   inflasjon er et felles sjokk
+            -   perfekt korrelert risiko (ikke diversifiserbar)
+
+## Etterspørselssiden: Informasjons- og atferdsproblemer
+
+-   spørsmålet er om individer tar gode pensjonsvalg **dersom alt overlates til private markeder**
+
+-   i en først-best økonomi:
+
+    -   individet møter et komplett sett av finansielle produkter til konkurransedyktige priser\
+    -   velger optimalt:
+        -   sparing\
+        -   portefølje\
+        -   fondsforvalter\
+        -   utbetalingsprofil\
+    -   maksimerer livsløpsnytte gitt rammebetingelser
+
+### Informasjonsproblemer
+
+-   optimale pensjonsvalg krever at individer forstår:
+    -   usikkerhet (levealder, avkastning)\
+    -   tilgjengelige markedsalternativer
+-   i praksis:
+    -   mange utsetter sparing → for lav eller for sen oppbygging av pensjon\
+    -   skyldes begrenset framsyn, kunnskap og beslutningskapasitet
+-   typiske informasjonsproblemer:
+    -   svak forståelse av risiko og fremtidige pensjonsytelser\
+    -   uklarhet om forskjellen mellom ytelses- og innskuddsbaserte ordninger\
+    -   begrenset forståelse av sannsynligheter\
+    -   lav finansiell kompetanse
+-   fordelingsimplikasjoner:
+    -   informasjonsfattigdom henger tett sammen med økonomisk fattigdom\
+    -   kan forsterke ulikhet i pensjonsutfall
+-   **Informasjonsproblemer kan føre til systematisk under-sparing og gi et argument for standardisering, regulering og offentlig involvering**
+
+### Atferdsproblemer
+
+-   **begrenset viljestyrke** ("vil ikke")
+    -   vet hva som er optimalt, men følger det ikke\
+    -   nåtidspreferanser → kortsiktig tilfredsstillelse dominerer
+        -   tidsinkonsistens: fremtiden blir alltid “nå”\
+    -   konsekvenser:
+        -   prokrastinering (utsetter sparing)\
+        -   tidligpensjonering selv om det gir lav levestandard\
+        -   påvirkes av kortsiktige insentiver\
+        -   inertia:
+            -   automatisk innmelding ⇒ langt høyere deltakelse
+-   **begrenset rasjonalitet** ("kan ikke")
+    -   pensjonsvalg er komplekse (lang horisont, usikkerhet, mange valg)\
+    -   fører til systematiske feil:
+        -   **framing:** valg påvirkes av presentasjon\
+        -   **kjennskap:** dårlig diversifisering (f.eks. egen arbeidsgiver)\
+        -   **overdreven trading:** høye kostnader, dårlig avkastning\
+        -   **inaktivitet:** gjør ingenting når valgene blir for komplekse
+-   **implikasjoner for politikk**
+    -   gir grunnlag for obligatorisk standardsikring\
+    -   men ikke nødvendigvis full offentlig organisering
+        -   kan også løses via:
+            -   obligatorisk tjenestepensjon\
+            -   krav om individuell pensjonsforsikring
+-   **Atferdsproblemer kan gi systematisk undersparing og svake valg, noe som styrker argumentet for obligatoriske pensjonsløsninger**
+
+## Rettfedighetsargumenter for offentlige inngrep
+
+### Offentlig versus privat pensjonsordning
+
+-   ligner diskusjonen om rettferdighet i trygdesystemet
+
+-   **horisontal rettferdighet** (minstestandarder, like muligheter):
+
+    -   kan i teori oppnås uten offentlig inngrep (perfekt informasjon)\
+    -   i praksis: informasjonsproblemer og ulik forhandlingsmakt\
+    -   ⇒ argument for **minimumsstandarder og regulering**
+
+-   svak støtte for full offentlig ordning kun basert på rettferdighet alene
+
+-   sterkere argument når kombinert med effektivitet:
+
+    -   obligatorisk medlemskap reduserer adverse selection\
+    -   felles ordning kan være kostnadseffektiv
+
+-   omfordeling:
+
+    -   kan begrunnes som et **formyndergode** (paternalistisk motiv)\
+    -   når offentlig drift er effektiv, kan omfordeling skje uten store effektivitetstap
+
+### De omfordelende effektene av pensjoner
+
+-   **intergenerasjonell omfordeling**
+    -   Et PAYG-system (Pay-As-You-Go, dagens arbeidstakere betaler for dagens pensjonister) gjør det mulig for en hel generasjon å motta mer enn summen av sine tidligere bidrag
+    -   fullt fondssystem (du sparer opp din egen pensjon):
+        -   ytelser ≈ egne bidrag (lite omfordeling)\
+    -   uventet inflasjon:
+        -   omfordeling mellom generasjoner (ofte fra gamle til unge)
+-   **omfordeling fra rik til fattig**
+    -   progressive pensjonsformler:
+        -   lav inntekt → relativt høyere pensjon\
+-   **motvirkende mekanismer**
+    -   høyinntektsgrupper lever lenger → mottar mer over tid\
+    -   lengre utdanning → senere innbetalinger :
+        -   folk med høyere inntekt har en lengre forventet levealder
+        -   får derfor pensjon i lengre tid
+        -   også en tendens til å være lengre i utdanning, og begynner dermed å betale bidrag senere
+
+## Pensjonssystemet i Norge
+
+-   dagens norske alderspensjonssystem bygger på et pay-as-you-go-system (PAYG)
+    -   dagens skatter finansierer dagens pensjonsutbetalinger
+    -   prinsippet kan føres tilbake til teorien om en overlappende generasjonsmodell (Samuelson, 1958)
+        -   man går over livsløpet gjennom ulike faser, hvor man er produktiv i arbeidsfør alder og ikke arbeider i siste del av livet
+            -   man ønsker å konsumere relativt jevnt over hele livsløpet, også som pensjonist
+    -   teorien viser at det bør inngås en samfunnskontrakt mellom de som er i arbeid og de som er pensjonister ved at det overføres penger fra de sysselsatte til pensjonistene
+        -   de som er pensjonister i dag, har stått ovenfor den samme kontrakten da de var i arbeid og finansierte pensjonene til de som var pensjonister da
+        -   de som er i arbeid vil stå overfor den samme samfunnskontrakten når de i fremtiden blir pensjonister.
+
+## Mål og prinsipper for det norske pensjonssystemet
+
+-   Hovedmålet er økonomisk og sosial trygghet for alle pensjonister
+-   Pensjonssystemet skal sikre både grunnsikring (minstepensjon) og standardsikring (pensjon basert på inntekt)
+-   Pensjonen fungerer som en forsikring mot usikkerhet knyttet til levealder, helse og økonomiske forhold
+-   Sosial omfordeling er sentralt for å redusere økonomiske forskjeller blant pensjonistene
+
+## Hvorfor trenger vi pensjonsreformer?
+
+-   Levealderen øker, mens fødselstallene er lave
+-   Flere pensjonister må forsørges av hver yrkesaktiv
+-   Pensjonsutgiftene øker, og bærekraften i pensjonssystemet må ses i sammenheng med bærekraften i offentlige finanser
+
+:point_right: Klassisk dilemma:
+
+-   høyere skatter?
+
+-   lavere pensjoner?
+
+-   eller flere i arbeid?
+
+## Tre hovedstrategier i europeiske reformer
+
+1.  **Lavere pensjonsnivå**
+    -   lavere erstatningsgrad
+    -   svakere regulering
+    -   levealdersjustering
+2.  **Flere må jobbe lenger**
+    -   høyere pensjonsalder
+    -   mindre tidligpensjon
+    -   sterkere belønning for utsatt avgang
+3.  **Styrke private / ikke-statlige elementer**
+    -   tjenestepensjon
+    -   privat sparing
+    -   skattefordeler
+
+:point_right: Norge legger hovedvekten på strategi 2
+
+## Å oppmuntre flere til å jobbe lenger: insentiver til arbeid og utviklingen i yrkesaktiviteten etter Pensjonsreformen 2011
+
+-   styrket insentivene til å forbli lengre i arbeidslivet
+
+-   Pensjonsopptjening er nå tettere knyttet til arbeidsinntekten hvert år
+
+-   Fleksibelt uttak av pensjon gir insentiv til å utsette pensjonsuttaket for å få høyere utbetalinger
+
+-   Eldre arbeidstakere har hatt økt yrkesdeltakelse siden forrige reformen i 2011
+
+-   Tre viktige elementer påvirker arbeidsinsentiver:
+
+    1.  Alleårsopptjening
+    2.  Fleksibelt uttak av pensjon
+    3.  Levealdersjustering
+
+## Økonomiske insentiver i folketrygdens alderspensjon
+
+-   før reformen i 2011
+    -   før reformen ga arbeid opptjening til alderspensjon til 70 år
+    -   opptjening utover 40 år ga normalt ikke økt pensjon
+    -   arbeidsinntekt ble avkortet mot pensjonen ved tidlig uttak
+-   etter reformen i 2011:
+    -   Alleårsopptjening: **opptjening gjennom hele yrkeslivet** (fra 13 til 75 år)
+    -   Private sektor: AFP ble omgjort til livsvarig tillegg.
+    -   Offentlig sektor: Vurdering av insentiver for ansatte født før 1963
+        -   Reformen styrket insentivene til å jobbe lengre
+        -   Tett sammenheng mellom arbeidsinntekt og pensjonsopptjening
+        -   Nøytrale uttaksregler stimulerer til senere pensjonering for høyere utbetalinger
+
+## Hvilken type politikk får effekt på arbeidstilbudet blant eldre?
+
+Vi skal bruke [en teoretisk modell fra Hernæs et al. (2016)](https://www-sciencedirect-com.mime.uit.no/science/article/pii/S0047272716300974) til å analysere pensjonsreformen 2011. Vi ser på to mekanismer:
+
+1.  **Gjorde arbeid mer attraktivt**
+
+2.  **Endret pensjonsalder**
+
+## Modellen
+
+Vi starter med en enkel to-periode modell
+
+-   i første periode kan individet fortsatt velge mellom arbeid og fritid
+
+-   i andre periode er individet fullt pensjonert:
+
+$$
+U = u(c_1, l) + u(c_2)
+$$
+
+med budsjettbetingelse
+
+$$
+c_1 + c_2 \leq w(1-l) + W + P
+$$
+
+-   $c_1$: konsum i periode 1
+-   $c_2$: konsum i periode 2
+-   $l$: fritid i periode 1
+-   $l_0-l$: arbeid i periode 1
+-   $w$: lønn
+-   $W$: likvid privat formue
+    -   oppsparte midler
+    -   finansformue
+    -   annen privat rikdom som kan brukes til konsum
+    -   høy $W$ gjør det lettere å finansiere konsum uten å jobbe
+    -   lav $W$ gjør individet mer avhengig av arbeidsinntekt eller pensjon
+-   $P$: pensjonsformue
+    -   ikke bare "pensjonen" i snever forstand
+    -   en oppsummering av:
+        -   når man kan gå av
+        -   hvor mye man får
+        -   hvordan uttakstidspunkt påvirker årlig pensjon
+        -   hvor generøst systemet er
+        -   nyttig å tenke $P$ som en funksjon $P = P(R)$, der $R$ er pensjonsalder eller uttakstidspunkt
+            -   en endring i $P$ kan derfor tolkes som:
+                -   en endring i pensjonsalderen
+                -   en endring i reglene for uttak
+                -   en endring i hvor generøs pensjonen er
+
+## Grafisk framstilling
+
+::::: columns
+::: {.column width="58%"}
+Vi komprimerer budsjettbetingelsen $$
+c = c_1+c_2= w(l_0-l) + W + P
+$$ Dermed ser vi at :
+
+-   helningen av budsjettlinjen er $-w$
+
+-   når individet ikke jobber (=har pensjonert seg) i $l=l_0$ er $c=W+P$
+:::
+
+::: {.column width="42%"}
+![](pensjon.png){width="100%"}
+:::
+:::::
+
+## Før reform: budsjettlinjen $ab$
+
+::::: columns
+::: {.column width="58%"}
+-   Den gamle budsjettlinjen er $ab$.
+
+    -   relativt flat:
+
+        -   lav netto lønn fordi pensjonen blir redusert når man jobber
+
+        -   høy pensjon (= lavere pensjonsalder)
+
+Det betyr:
+
+-   individet har svake insentiver til å fortsette å jobbe
+    1.  lav effektiv avkastning av arbeid (fritid er relativt billig)
+    2.  relativt attraktivt å leve av pensjon og privat formue
+
+:point_right: individet velger full pensjon ($l = l_0$) og oppnår nyttenivå $U^0$
+:::
+
+::: {.column width="42%"}
+![](pensjon.png){width="100%"}
+:::
+:::::
+
+## Reform: to endringer
+
+::::: columns
+::: {.column width="58%"}
+$$
+w \uparrow \quad \text{og} \quad P \downarrow
+$$
+
+-   budsjettlinjen roterer og flyttes ned: ny budsjettlinje cd
+
+### Ny optimal løsning
+
+:point_right: individet velger: $l = l^{**}$ og oppnår $U^2$
+
+:point_right: reformen øker nytten
+
+:point_right: refrmen øker arbeidstilbud (antall arbeidstimer)
+:::
+
+::: {.column width="42%"}
+![](pensjon.png){width="100%"}
+:::
+:::::
+
+## Den indre optimale løsningen er ikke alltid tilgjengelig:
+
+::::: columns
+::: {.column width="58%"}
+-   Å redusere arbeidstid krever:
+    -   arbeidsgivers samtykke
+    -   eller ny jobb
+    -   ofte vanskelig, spesielt for eldre arbeidstakere
+
+:point_right: Derfor er valget i praksis ofte begrenset til:
+
+-   fortsette som før, $l=l^*$
+-   eller slutte helt, $l=l_0$
+
+Etter reformen er likevel $U^1 > U^0$
+
+:point_right: individet fortsetter å jobbe
+
+:point_right: reformen øker også yrkesdeltakelse
+:::
+
+::: {.column width="42%"}
+![](pensjon.png){width="100%"}
+:::
+:::::
+
+## Reformen har to effekter
+
+::::: columns
+::: {.column width="58%"}
+-   Substitusjonseffekt:
+
+    -   $w \uparrow$ fritid dyrere :point_right: mer attraktivt å jobbe
+
+-   Inntektseffekt: $P \downarrow$ mindre inntekt uten arbeid :point_right: mer attraktivt å jobbe (antar at fritid er et normalt gode)
+:::
+
+::: {.column width="42%"}
+![](pensjon.png){width="100%"}
+:::
+:::::
+
+## Rolle til $W$
+
+::::: columns
+::: {.column width="58%"}
+Hvis $W$ er høy:
+
+-   individet har høyere arbeidsfri inntekt
+-   kan lettere velge fritid selv om $P$ faller
+
+Hvis $W$ er lav:
+
+-   individet har lavere arbeidsfri inntekt
+
+-   individet er mer avhengig av lønn og pensjon
+
+-   reagerer sterkere på reformen
+:::
+
+::: {.column width="42%"}
+![](pensjon.png){width="100%"}
+:::
+:::::
+
+## Hvem reagerer mest?
+
+::::: columns
+::: {.column width="58%"}
+Modellen tilsier at størst reformeffekt kommer for individer som:
+
+-   har lav $W$
+-   er nesten indifferente mellom arbeid og pensjon
+-   påvirkes sterkt av endringer i både $w$ og $P$
+:::
+
+::: {.column width="42%"}
+![](pensjon.png){width="100%"}
+:::
+:::::
+
+## Utvikling i yrkesaktivitet og avgangsalder etter 2011
+
+-   Økt yrkesdeltakelse blant eldre etter reformen
+-   flere velger å stå lengre i arbeid for å kompensere for levealdersjustering
+
+## Avgangsalderen har økt
+
+![Avgang fra arbeidslivet i 2010 og 2022 etter avgangsalder. Andel i prosent. Kilde: Arbeids- og velferdsdirektoratet.](https://www.regjeringen.no/contentassets/5d8550e1045d4f8684acdf893bd10b50/no/hfig/fig4-1.gif?preset=fullsize)
+
+![Median avgangsalder blant arbeidsføre etter sektor og fødselsår. Kilde: Arbeids- og velferdsdirektoratet.](https://www.regjeringen.no/contentassets/5d8550e1045d4f8684acdf893bd10b50/no/hfig/fig4-2.gif?preset=fullsize)
+
+![Forventet yrkesaktivitet etter fylte 50 år. Årsverk. Kilde: Arbeids- og velferdsdirektoratet.](https://www.regjeringen.no/contentassets/5d8550e1045d4f8684acdf893bd10b50/no/hfig/fig4-3.gif?preset=fullsize)
+
+## Pensjonsreformen i 2011 har gjort at flere står i jobb lengre
+
+![Lønnstakerprosent etter alder og utdanningsnivå for bosatte 60–70 år. Prosent av befolkningen i samme alder 2. kvartal 2008 og 2. kvartal 2016. Kilde: Nordby og Nesheim (2017).](https://www.regjeringen.no/contentassets/5d8550e1045d4f8684acdf893bd10b50/no/hfig/fig6-3.gif?preset=fullsize)
+
+### Andre faktorer som påvirker pensjoneringsbeslutningen
+
+-   Faktorer som påvirker når folk velger å pensjonere seg:
+    -   Trivsel på jobben
+    -   Helsetilstand
+    -   Familieforhold og ektefelles pensjonering
+    -   Arbeidsmarkedssituasjonen for eldre arbeidstakere
+
+## Hovedtrekk i pensjonsforliket 2024
+
+-   Pensjonsalderen skal økes i takt med levealderen
+    -   omtrent ett år per tiår
+-   Fleksibelt uttak videreføres
+-   Det innføres bedre skjerming for utsatte grupper
+    -   slitertillegg
+    -   skjerming av uføre
+-   Minstesatser og løpende pensjoner skal fortsatt reguleres slik at verdien opprettholdes
+
+:point_right: Reformen kombinerer: - sterkere arbeidsinsentiver - sosial skjerming
+
+## Levealdersjustering
+
+-   Når levealderen øker, må pensjonsformuen fordeles over flere år
+-   Tidlig uttak gir derfor lavere årlig pensjon
+-   Yngre årskull må jobbe lenger for å få samme årlige pensjon som eldre årskull
+
+## Fleksibelt uttak
+
+-   Pensjon kan tas ut mellom 62 og 75 år
+-   Arbeid og pensjon kan kombineres
+-   Utsatt uttak gir høyere årlig pensjon
+-   Tidlig uttak gir lavere årlig pensjon
+
+## Sosiale utfordringer
+
+-   Ikke alle kan jobbe lenger
+    -   helseproblemer
+    -   tungt fysisk arbeid
+-   Levealdersjustering kan derfor ramme skjevt
+
+:point_right: Derfor vurderes / innføres:
+
+-   slitertillegg
+
+-   skjerming av uføre
+
+-   andre kompensasjonsordninger
+
+## Fordelingsproblem
+
+-   Levealderen varierer mellom grupper
+-   Like regler for alle i et årskull favoriserer dem som lever lenge
+
+:point_right: Dette skaper et legitimt fordelingsspørsmål:
+
+-   økonomisk bærekraft versus sosial rettferdighet
+
+------------------------------------------------------------------------
+
+## Aldersgrenser i systemet
+
+Tre sentrale grenser:
+
+1.  **62 år**: laveste alder for uttak
+2.  **67 år**: normert pensjonsalder
+3.  **75 år**: øvre grense for opptjening og uttak
+
+:point_right: Utsatt avgang gir høyere årlig pensjon
+
+------------------------------------------------------------------------
+
+## Økende aldersgrenser
+
+-   Aldersgrensene skal øke i takt med levealderen
+-   Yngre kohorter må derfor jobbe lenger enn eldre kohorter
+
+:point_right: Reformens hovedidé: - lengre liv - skal delvis møtes med lengre arbeidsliv
+
+## Levealder og yrke - menn
+
+![Forventet levealder ved fødselen i ni yrkesfelt for menn. År. Femårsperioder 1981–2020. Kilde: Texmon (2022).](https://www.regjeringen.no/contentassets/5d8550e1045d4f8684acdf893bd10b50/no/hfig/fig6-4.gif?preset=fullsize)
+
+## Levealder og yrke - kvinner
+
+![Forventet levealder ved fødselen i ni yrkesfelt for kvinner År. Femårsperioder 1981–2020. Kilde: Texmon (2022).](https://www.regjeringen.no/contentassets/5d8550e1045d4f8684acdf893bd10b50/no/hfig/fig6-5.gif?preset=fullsize)
