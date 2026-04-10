@@ -5,7 +5,7 @@
 # Utfordring 3
 ## Generell informasjon
 - Innleveringen skal skje individuelt
-- <span style="color:OrangeRed;"> Fristen for innlevering er 01. november kl. 16:00 </span>
+- <span style="color:OrangeRed;"> Fristen for innlevering er 24. april kl. 16:00 </span>
 - Innleveringen kan gi maks tre poeng 
 - For å kvalifisere til poeng må dere ha prøvd å løse alle oppgavene. Innleveringer med blanke svar vil ikke bli evaluert.
 - De ulike deloppgavene teller nødvendigvis ikke likt til totalpoeng.
