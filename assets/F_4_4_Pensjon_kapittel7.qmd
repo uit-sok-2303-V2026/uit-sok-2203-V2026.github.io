@@ -5,18 +5,17 @@ author:
   - Mikko Moilanen
 format: 
   revealjs:
- #   smaller: true
+    smaller: true
     scrollable: true
-    chalkboard: true
+   # chalkboard: true
     multiplex: true
- #   self-contained: true
-    footer: "[uit-sok-2008-V26.github.io/](https://uit-sok-2008-V26.github.io/)"
+    self-contained: true
+    footer: "[uit-sok-2303-V26.github.io/](https://uit-sok-2303-V26.github.io/)"
     slide-number: c/t
     title-slide-attributes:
       data-background-image: title_slide.png
       data-background-size: cover
-date: last-modified
-date-format: "DD/MM/YYYY"
+date: today
 css: style.css
 editor: visual
 from: markdown+emoji
