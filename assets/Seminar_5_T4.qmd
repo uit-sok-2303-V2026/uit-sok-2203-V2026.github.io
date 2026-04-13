@@ -1,0 +1,98 @@
+---
+title: "SOK-2303: Seminar 5"
+author: "Andrea Mannberg og Mikko Moilanen"
+format: pdf
+editor: visual
+---
+
+# Oppgave 1
+
+Gertrud har nyttefunksjonen $U(c,l;\sigma)=c^{1-\sigma}l^\sigma$, der $c$ er konsum, $l$ er fritid og $\sigma \in (0,1)$ er en helse- og belastningsparameter.
+
+Anta videre at: $$m=100,\qquad w=10,\qquad l_0=60$$ der
+
+-   $m$ er arbeidsfri inntekt
+-   $w$ er timelønn
+-   $l_0$ er total tilgjengelig tid per uke
+
+Arbeidstid er gitt ved $h=l_0-l$. Anta videre at arbeidsgiver tilbyr en kontrakt med arbeidstid $h_B=40$ slik at kontraktsfestet fritid er $l_0-h_B=20$. Hvis Gertrud velger mer fritid enn dette, tolkes forskjellen som fravær.
+
+## Oppgave 1a
+
+Anta først at Gertrud har **moderat belastning** ved å arbeide, $\sigma=0.4$, og at det **ikke finnes sykepenger**.
+
+1.  Finn Gertruds optimale valg av fritid $l_A$, arbeidstid $h_A$ og konsum $c_A$ ved hjelp av Lagrange-metoden.
+2.  Sammenlign den ønskede arbeidstiden $h_A$ med den kontraktsfestede arbeidstiden $h_B$ og bruk økonomisk intuisjon til å forklare hva dennne forskjellen uttrykker.
+
+## Oppgave 1b
+
+Anta fortsatt at $\sigma=0.4$, men at det nå innføres sykepenger med kompensasjonsgrad $\delta=0.25$.
+
+1.  Finn Gertruds optimale valg av fritid, arbeidstid og konsum ved hjelp av Lagrange-metoden.
+2.  Sammenlign fraværet relativt til den kontraktsfestede fritiden og bruk økonomisk intuisjon til å forklare hva denne forskjellen uttrykker.
+
+### Viktig presisering før oppgave b), c), d) og e)
+
+I modellen med sykepenger er det viktig å forstå at sykepenger ifølge NAV beregnes ut fra **normal (kontraktsfestet) inntekt**, ikke fra all mulig arbeidsinntekt. Altså inngår for eksempel ikke overtid i sykepengegrunnlaget. Dette innebærer at:
+
+-   ekstra arbeid utover kontrakten gir full lønn, men påvirker ikke sykepengene
+
+-   fravær fra kontraktsfestet arbeid gir delvis kompensasjon
+
+Dermed får budsjettbetingelsen to ulike helninger:
+
+-   for fritid lavere enn kontraktsnivået ($l<l_B$): helning $-w$
+
+-   for fritid høyere enn kontraktsnivået ($l>l_B$): helning $-w(1-\delta)$
+
+Dette gir en **knekk i budsjettlinjen i punktet** $l_B$. Vi tar da utgangspunkt i at arbeidsgiver har satt en kontrakt $l_B=l_0-h_B$. Konsumet i kontraktspunktet er da $c_B = m + w h_B$. Dette er utgangspunktet for videre tilpasning. Hvis Gertrud øker fritiden utover $l_B$, tolkes dette som fravær.
+
+For hver ekstra time fritid mister hun lønn $w$, men får sykepenger $\delta w$. Netto inntektstap per time blir derfor $w - \delta w = w(1-\delta)$. Når vi måler fra kontraktspunktet $B$, får vi budsjettbetingelsen: $c = c_B - w(1-\delta)(l - l_B)$. Dette er budsjettet vi bruker i oppgavene b)–e), fordi det beskriver hvordan konsumet endres når Gertrud er borte fra kontraktsfestet arbeid.
+
+## Oppgave 1c
+
+Anta fortsatt at Gertruds $\sigma=0.4$, men at kompensasjonsgraden øker til $\delta=0.5$.
+
+1.  Finn Gertruds optimale valg av fritid, arbeidstid og konsum ved hjelp av Lagrange-metoden.
+2.  Finn fraværet relativt til kontrakten.
+3.  Sammenlign med oppgave b), og forklar økonomisk hvorfor tilpasningen endres.
+
+## Oppgave 1d
+
+Anta nå at Gertrud har **høy belastning** ved å arbeide (hun føler seg veldig sliten og syk), $\sigma=0.8$, og at kompensasjonsgraden er $\delta=0.25$
+
+1.  Finn først den ubundne løsningen ved hjelp av Lagrange-metoden
+2.  Undersøk om løsningen er mulig.
+3.  Finn den faktiske optimale tilpasningen og fraværet relativt til kontrakten.
+
+### Oppgave 1e
+
+Anta fortsatt at $\sigma=0.8$, men at kompensasjonsgraden øker til $\delta=0.5$.
+
+1.  Finn først den ubundne løsningen ved hjelp av Lagrange-metoden
+2.  Undersøk om løsningen er mulig.
+3.  Finn den faktiske optimale tilpasningen og fraværet relativt til kontrakten.
+
+# Oppgave 2
+
+Elianne er en nyutdannet marinbiolog fra Tromsø. Hun er glad i å det gå på tur og være sammen med venner. Hun er også glad i å spise og drikke godt, og hun liker å ha en plass å bo. Elianne vurderer om hun skal ta seg en jobb, og hvor mye hun skal velge å jobbe.Hun har totalt $l_0 = 80$ timer tilgjengelig til å jobbe. Disse timene kan hun bruke til å ha fri ($l$), og til å jobbe ($h$).
+
+La oss anta at vi kan skrive Elianne sin nytte som en funksjon av sammensatt konsum ($c$) og fritid ($l$): $U(c,l)$. Vi antar videre at konsum og fritid er normale goder og at grensenytten er avtakende. Nyttefunksjonen her nede tilfredsstiller disse antagelsene.
+
+$$
+U(c,l)=c^\alpha \cdot l^ {1-\alpha} \hspace{2 cm} \alpha = 0.5
+$$
+
+Elianne vurderer om hun skal ta en jobb. Hun vet at hun må jobbe 40 timer per uke dersom hun velger å jobbe ($\bar{h} = 40$). Dersom hun ikke jobber har hun tilgang til en arbeidsfri inntekt lik $m = 100$
+
+Den reale timelønna til marinbiologer er lik $w = \frac{W}{p} = 10$ pr. time. Vi antar at hun ikke sparer, og heller ikke kan låne penger.
+
+#### Oppgave 2a
+
+Velger Elianne å ta en jobb i dette tilfellet? Motiver ditt svar ved å ta fram hennes reservasjonslønn.
+
+### Oppgave 2b
+
+Akkurat nå finnes det ingen ledige stillinger innen marinbiologi på markedet, det finnes likevel andre jobber som Elianne kan ta. Disse gir dog en litt lavere reell timelønn: $w = 5$Siden det ikke finnes jobber som matcher Elianne sin kompetanse perfekt, har hun tilgang til dagpenger hvis hun velger å ikke ta en jobb. Hvis hun ikke har jobb en uke får hun $b=100$ i dagpenger.
+
+Velger hun å ta en jobb i denne situasjonen? Hvordan påvirker tilgangen til stønad Eliannes statiske reservasjonslønn?
