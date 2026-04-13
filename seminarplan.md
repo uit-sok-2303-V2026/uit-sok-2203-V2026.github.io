@@ -20,4 +20,4 @@
 * [Seminar 3.1 - Løsning del 1 og 2](https://uit-sok-2303-V2026.github.io/assets/seminar_4_T3_losning.pdf)
 
 ### Tema 4
-
+* [Seminar 4.1](https://uit-sok-2303-V2026.github.io/assets/Seminar_5_T4.pdf)
