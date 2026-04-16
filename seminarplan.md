@@ -21,3 +21,4 @@
 
 ### Tema 4
 * [Seminar 4.1](https://uit-sok-2303-V2026.github.io/assets/Seminar_5_T4.pdf)
+* [Seminar 4.1 - Løsning oppgave 2](https://uit-sok-2303-V2026.github.io/assets/Seminar_5_T4_losn.pdf)
