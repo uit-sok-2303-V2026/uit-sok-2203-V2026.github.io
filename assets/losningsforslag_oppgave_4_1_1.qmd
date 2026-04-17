@@ -1,0 +1,514 @@
+---
+title: "Løsningsforslag Oppgave 1"
+author: "Mikko Moilanen og Andrea Mannberg"
+format: pdf
+execute:
+  echo: false
+date: last-modified
+---
+
+# Seminaroppgave 1 med løsning
+
+Dette løsningsforslaget er bygget opp slik at vi først utleder **generelle løsninger**, og deretter setter inn tall. Dette gjør det lettere å forstå den økonomiske logikken.
+
+
+# Oppgave a)
+
+## Modell
+
+Nyttefunksjon:
+
+$$
+U(c,l;\sigma)=c^{1-\sigma}l^\sigma
+$$
+
+Budsjett:
+
+$$
+c=m+w(l_0-l)
+$$
+
+
+
+## Generell løsning (Lagrange)
+
+Lagrangefunksjon:
+
+$$
+\mathcal{L}=c^{1-\sigma}l^\sigma+\lambda(m+wl_0-c-wl)
+$$
+
+Førsteordensbetingelser:
+
+$$
+\frac{\partial U}{\partial c}
+=
+(1-\sigma)c^{-\sigma}l^\sigma
+=
+\lambda
+$$
+
+$$
+\frac{\partial U}{\partial l}
+=
+\sigma c^{1-\sigma}l^{\sigma-1}
+=
+w\lambda
+$$
+
+Dividerer $\frac{\partial U}{\partial l}$ med $\frac{\partial U}{\partial c}$, får vi tangensbetingelsen:
+
+$$
+\frac{\sigma}{1-\sigma}\frac{c}{l}=w
+$$
+
+Dermed:
+
+$$
+c=\frac{1-\sigma}{\sigma}wl
+$$
+
+## Sett inn i budsjettet
+
+$$
+l^*=\sigma\frac{m+wl_0}{w}
+$$
+
+
+
+## Sett inn tallene for numerisk løsning
+
+$$
+l_A=28, \quad h_A=32, \quad c_A=420
+$$
+
+
+
+# Oppgave b)–c): 
+
+## Generell løsning med Lagrange
+
+Budsjettbetingelsen er
+
+$$
+c = c_B - w(1-\delta)(l-l_B)
+$$
+
+som kan omskrives til
+
+$$
+c = c_B + w(1-\delta)l_B - w(1-\delta)l
+$$
+
+Vi ønsker å maksimere nyttefunksjonen
+
+$$
+U(c,l;\sigma)=c^{1-\sigma}l^\sigma
+$$
+
+under denne budsjettbetingelsen. Lagrange-funksjonen blir da
+
+$$
+\mathcal{L}
+=
+c^{1-\sigma}l^\sigma
++
+\lambda\Big(c_B + w(1-\delta)l_B - w(1-\delta)l - c\Big)
+$$
+
+### Førsteordensbetingelser
+
+Deriverer med hensyn på $c$, $l$ og $\lambda$:
+
+$$
+\frac{\partial \mathcal{L}}{\partial c}
+=
+(1-\sigma)c^{-\sigma}l^\sigma - \lambda
+=0
+$$
+
+$$
+\frac{\partial \mathcal{L}}{\partial l}
+=
+\sigma c^{1-\sigma}l^{\sigma-1} - \lambda w(1-\delta)
+=0
+$$
+
+Vi får dermed
+$$
+\lambda=(1-\sigma)c^{-\sigma}l^\sigma
+$$
+
+og
+
+$$
+\lambda=\frac{\sigma c^{1-\sigma}l^{\sigma-1}}{w(1-\delta)}
+$$
+
+Setter vi disse lik hverandre, får vi
+
+$$
+(1-\sigma)c^{-\sigma}l^\sigma
+=
+\frac{\sigma c^{1-\sigma}l^{\sigma-1}}{w(1-\delta)}
+$$
+
+Etter opprydding får vi
+
+$$
+\frac{\sigma}{1-\sigma}\frac{c}{l}
+=
+w(1-\delta)
+$$
+
+Dette er tangensbetingelsen. Den kan skrives som
+
+$$
+c
+=
+\frac{1-\sigma}{\sigma}w(1-\delta)l
+$$
+
+### Finn optimal fritid
+
+Setter vi dette inn i budsjettbetingelsen, får vi
+
+$$
+\frac{1-\sigma}{\sigma}w(1-\delta)l
+=
+c_B + w(1-\delta)l_B - w(1-\delta)l
+$$
+
+Samler ledd med $l$:
+
+$$
+\left(\frac{1-\sigma}{\sigma}+1\right)w(1-\delta)l
+=
+c_B + w(1-\delta)l_B
+$$
+
+Siden
+
+$$
+\frac{1-\sigma}{\sigma}+1=\frac{1}{\sigma},
+$$
+
+får vi
+
+$$
+\frac{1}{\sigma}w(1-\delta)l
+=
+c_B + w(1-\delta)l_B
+$$
+
+Dermed blir optimal fritid
+
+$$
+l^*
+=
+\sigma\frac{c_B + w(1-\delta)l_B}{w(1-\delta)}
+$$
+
+
+### Finn optimalt konsum
+
+Bruker vi uttrykket for $c$ som funksjon av $l$, får vi
+
+$$
+c^*
+=
+\frac{1-\sigma}{\sigma}w(1-\delta)l^*
+$$
+
+
+## Oppgave b)
+Sett inn tallene fra oppgaveteksten i ligningen ovenfor, så får du disse svarene
+
+$$
+l_b=34.67, \quad h_b=25.33, \quad c_b=390
+$$
+
+
+
+## Oppgave c)
+
+$$
+l_c=48, \quad h_c=12, \quad c_c=360
+$$
+
+
+
+# Oppgave d)–e): Hjørneløsning
+
+Vi bruker først det generelle resultatet for den ubundne løsningen:
+
+$$
+l^*
+=
+\sigma\frac{c_B + w(1-\delta)l_B}{w(1-\delta)}
+$$
+
+Dette uttrykket viser hva som ville vært optimal fritid dersom individet kunne velge fritt uten at løsningen måtte ligge innenfor det faktiske mulighetsområdet.
+
+
+## Hvorfor får vi hjørneløsning?
+
+Ved nyttemaksimering finner vi først den **ubundne** løsningen, altså punktet der indifferenskurven tangerer budsjettlinjen. I oppgave d) og e) gir dette et fritidsnivå som er større enn den totale tiden individet har tilgjengelig:
+
+$$
+l^* > l_0
+$$
+
+Da ligger tangenspunket utenfor mulighetsområdet og kan ikke velges. Den ubundne løsningen er derfor ikke gjennomførbar.
+
+Når dette skjer, må vi i stedet finne den **beste mulige løsningen innenfor restriksjonene**. Siden individet ikke kan velge mer enn
+
+$$
+l_0=60,
+$$
+
+blir den høyeste oppnåelige nytten gitt budsjettbetingelsen og tidsbegrensningen oppnådd i hjørnet:
+
+$$
+l=l_0.
+$$
+
+Hjørneløsningen er altså optimal fordi ingen andre gjennomførbare punkter gir høyere nytte.
+
+
+## Oppgave d)
+
+Den ubundne løsningen er
+
+$$
+l_d^{ub}=69.33 > 60
+$$
+
+Denne løsningen er ikke mulig å gjennomføre. Den optimale løsningen må derfor finnes blant de mulige punktene, og da gir hjørnet høyest nytte:
+
+$$
+l_d=60, \quad h_d=0, \quad c_d=200
+$$
+
+---
+
+## Oppgave e)
+
+Den ubundne løsningen er
+
+$$
+l_e^{ub}=96 > 60
+$$
+
+Også her ligger den ubundne løsningen utenfor mulighetsområdet. Den beste oppnåelige løsningen gitt restriksjonene blir derfor hjørneløsningen:
+
+$$
+l_e=60, \quad h_e=0, \quad c_e=300
+$$
+
+Når den ubundne optimumsløsningen ligger utenfor det mulige området, kan individet ikke nå tangenspunktet. Da må optimum ligge på randen av mulighetsområdet. I disse oppgavene betyr det at maksimal oppnåelig nytte fås ved full fritid og null arbeid.
+
+```{r,warning=FALSE,message=FALSE}
+library(ggplot2)
+library(dplyr)
+library(latex2exp)
+
+# Parametre
+m  <- 100
+w  <- 10
+T  <- 60
+hB <- 40
+lB <- T - hB
+cB <- m + w*hB
+
+# Punkter
+points_df <- bind_rows(
+    data.frame(punkt = "a",              l = 28.00, c = 420, type = "Faktisk"),
+    data.frame(punkt = "B",              l = 20.00, c = 500, type = "Kontrakt"),
+    data.frame(punkt = "b",              l = 34.67, c = 390, type = "Faktisk"),
+    data.frame(punkt = "c",              l = 48.00, c = 360, type = "Faktisk"),
+    data.frame(punkt = "d",              l = 60.00, c = 200, type = "Faktisk"),
+    data.frame(punkt = "e",              l = 60.00, c = 300, type = "Faktisk"),
+    data.frame(punkt = "d^{ub}",         l = 69.33, c = 130, type = "Ubundet"),
+    data.frame(punkt = "e^{ub}",         l = 96.00, c = 120, type = "Ubundet")
+)
+
+# Budsjettlinje innenfor mulig område
+make_budget_feasible <- function(delta, label) {
+    l_left  <- seq(0, lB, by = 0.1)
+    c_left  <- m + w*(T - l_left)
+    
+    l_right <- seq(lB, T, by = 0.1)
+    c_right <- cB - w*(1 - delta)*(l_right - lB)
+    
+    bind_rows(
+        data.frame(l = l_left,  c = c_left,  ordning = label, del = "Mulig område"),
+        data.frame(l = l_right, c = c_right, ordning = label, del = "Mulig område")
+    )
+}
+
+# Forlenget budsjettlinje utover mulig område
+make_budget_extended <- function(delta, label, l_max_ext) {
+    l_ext <- seq(T, l_max_ext, by = 0.1)
+    c_ext <- cB - w*(1 - delta)*(l_ext - lB)
+    
+    data.frame(
+        l = l_ext,
+        c = c_ext,
+        ordning = label,
+        del = "Utenfor mulig område"
+    )
+}
+
+budget_df <- bind_rows(
+    make_budget_feasible(0.00, "Ingen sykepenger ($\\delta=0$)"),
+    make_budget_feasible(0.25, "25 % kompensasjon ($\\delta=0.25$)"),
+    make_budget_feasible(0.50, "50 % kompensasjon ($\\delta=0.50$)")
+)
+
+budget_ext_df <- bind_rows(
+    make_budget_extended(0.25, "25 % kompensasjon ($\\delta=0.25$)", 100),
+    make_budget_extended(0.50, "50 % kompensasjon ($\\delta=0.50$)", 100)
+)
+
+# Indifferenskurve for Cobb-Douglas
+make_indiff <- function(l_star, c_star, sigma, label, l_min = 1, l_max = 100) {
+    Ubar <- c_star^(1 - sigma) * l_star^sigma
+    l_seq <- seq(l_min, l_max, by = 0.1)
+    c_seq <- (Ubar / (l_seq^sigma))^(1 / (1 - sigma))
+    
+    data.frame(
+        l = l_seq,
+        c = c_seq,
+        kurve = label
+    )
+}
+
+# Indifferenskurver for indre løsninger
+indiff_inner_df <- bind_rows(
+    make_indiff(28.00, 420, 0.4, "A: moderat belastning",                  l_max = 60),
+    make_indiff(34.67, 390, 0.4, "C: moderat belastning, $\\delta=0.25$",  l_max = 60),
+    make_indiff(48.00, 360, 0.4, "D: moderat belastning, $\\delta=0.50$",  l_max = 60)
+)
+
+# Indifferenskurver gjennom ubundne tangensløsninger
+indiff_unbound_df <- bind_rows(
+    make_indiff(69.33, 130, 0.8, "$E^{ub}$: høy belastning, $\\delta=0.25$", l_max = 100),
+    make_indiff(96.00, 120, 0.8, "$F^{ub}$: høy belastning, $\\delta=0.50$", l_max = 100)
+)
+
+# Indifferenskurver gjennom faktiske hjørneløsninger
+indiff_corner_df <- bind_rows(
+    make_indiff(60.00, 200, 0.8, "E: hjørneløsning", l_max = 100),
+    make_indiff(60.00, 300, 0.8, "F: hjørneløsning", l_max = 100)
+)
+
+ggplot() +
+    # Mulige budsjettlinjer
+    geom_line(
+        data = budget_df,
+        aes(x = l, y = c, color = ordning),
+        linewidth = 1.1
+    ) +
+    # Forlengede budsjettlinjer
+    geom_line(
+        data = budget_ext_df,
+        aes(x = l, y = c, color = ordning),
+        linewidth = 1,
+        linetype = "dotted"
+    ) +
+    # Indifferenskurver for indre løsninger
+    geom_line(
+        data = indiff_inner_df,
+        aes(x = l, y = c, linetype = kurve),
+        color = "black",
+        linewidth = 0.9
+    ) +
+    # Indifferenskurver for ubundne løsninger
+    geom_line(
+        data = indiff_unbound_df,
+        aes(x = l, y = c, linetype = kurve),
+        color = "grey35",
+        linewidth = 0.9
+    ) +
+    # Indifferenskurver for hjørneløsningene
+    geom_line(
+        data = indiff_corner_df,
+        aes(x = l, y = c, linetype = kurve),
+        color = "grey60",
+        linewidth = 0.9
+    ) +
+    # Vertikal grense ved l0 = 60
+    geom_segment(
+        aes(x = 60, xend = 60, y = 0, yend = 300),
+        color = "black",
+        linetype = "dashed",
+        linewidth = 1
+    ) +
+    # Punkter
+    geom_point(
+        data = points_df,
+        aes(x = l, y = c, shape = type),
+        size = 3
+    ) +
+    geom_text(
+        data = points_df,
+        aes(x = l, y = c, label = punkt),
+        parse = TRUE,
+        hjust = -0.05,
+        vjust = -0.7,
+        size = 3.5
+    ) +
+    # Kontraktspunkt / knekk
+    geom_vline(xintercept = lB, linetype = "dashed", color = "red") +
+    annotate(
+        "text",
+        x = lB + 1, y = 40,
+        label = TeX("$l_B$"),
+        color = "red", hjust = 0, size = 3.5
+    ) +
+    annotate(
+        "text",
+        x = 60.5, y = 40,
+        label = TeX("$l_0=60$"),
+        hjust = 0, size = 3.5
+    ) +
+    scale_x_continuous(
+        limits = c(0, 100),
+        breaks = seq(0, 100, by = 10),
+        expand = c(0, 0)
+    ) +
+    scale_y_continuous(
+        limits = c(0, 750),
+        breaks = seq(0, 700, by = 100),
+        expand = c(0, 0)
+    ) +
+    scale_shape_manual(
+        values = c(
+            "Faktisk" = 16,
+            "Kontrakt" = 17,
+            "Ubundet" = 1
+        )
+    ) +
+    labs(
+        x = "Fritid",
+        y = "Konsum",
+        color = "Budsjettlinje",
+        shape = "Punkttype",
+        linetype = "Indifferenskurver",
+        title = "Gertruds tilpasninger"
+    ) +
+    theme_minimal(base_size = 13) +
+    theme(
+        legend.position = "none",
+        panel.grid.minor = element_blank()
+    )
+```
+
+## Hovedpoeng
+
+Individets tilpasning bestemmes av et samspill mellom preferanser og insentiver. Parameteren $\sigma$ fanger i denne modellen hvor belastende jobben er: jo høyere \(\sigma\), desto mer belastende Samtidig bestemmer kompensasjonsgraden $\delta$ hvor kostbart det er å være borte fra jobb. En høy $\delta$ gjør fritid billigere, fordi inntektstapet ved fravær blir mindre.
+
+Disse to mekanismene trekker i samme retning. Både at man føler større belastning og generøse sykepenger bidrar til mer fravær. Når preferansen for belastning er moderat, vil endringer i insentivene ha tydelige effekter på atferden. Når belastningen for å gå til jobb derimot er høy (når man er skikkelig syk), ender invidet i en hjørneløsning med fravær med null jobbtimer, uavhengig av ytterligere endringer i insentiver.
+
+Sykepenger har derfor en dobbel rolle i modellen. På den ene siden fungerer de som en forsikringsordning som beskytter inntekten ved sykdom. På den andre siden påvirker de arbeidstilbudet ved å redusere kostnaden ved fravær. Hvor sterk denne insentiveffekten er, avhenger av individets preferanser.
