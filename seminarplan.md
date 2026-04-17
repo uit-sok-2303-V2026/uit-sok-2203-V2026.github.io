@@ -23,5 +23,5 @@
 * [Seminar 4.1](https://uit-sok-2303-V2026.github.io/assets/Seminar_5_T4.pdf)
 * [Seminar 4.1 - Løsning oppgave 2](https://uit-sok-2303-V2026.github.io/assets/Seminar_5_T4_losn.pdf)
 * [Seminar 4.1 - Løsning oppgave 2]
-  *  []
-  *  [qmd]
+  *  [pdf](https://uit-sok-2303-V2026.github.io/assets/losningsforslag_oppgave_4_1_1.pdf)
+  *  [qmd](https://uit-sok-2303-V2026.github.io/assets/losningsforslag_oppgave_4_1_1.qmd)
