@@ -31,5 +31,6 @@ Her finner du lenker til alle forelesninger på kurset. Siden oppdateres fortlø
 * F4:4 Alderspensjon [slides](https://uit-sok-2303-V2026.github.io/assets/F_4_4_Pensjon_kapittel7.html) [qmd](https://uit-sok-2303-V2026.github.io/assets/F_4_4_Pensjon_kapittel7.qmd)
 
 ## Forelesninger [Tema 5](temaer.md#tema5)<a name="f_t5"></a>
+* F5:| Introduksjon til Tema 5 + migrasjon [Slides](https://uit-sok-2303-V2026.github.io/assets/F5.1_migrasjon_2026.pdf)
 
 ## Oppsummering og instruks til muntlig eksamen
