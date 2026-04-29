@@ -32,7 +32,7 @@ Her finner du lenker til alle forelesninger på kurset. Siden oppdateres fortlø
 
 ## Forelesninger [Tema 5](temaer.md#tema5)<a name="f_t5"></a>
 * F5:| Introduksjon til Tema 5 + migrasjon [Slides](https://uit-sok-2303-V2026.github.io/assets/F5.1_migrasjon_2026.pdf)
-* F5:2 Oppslutningen om velferdsstaten
-* F5:3 Velferdsstatens framtid
+* F5:2 Oppslutningen om velferdsstaten [slides](https://uit-sok-2303-V2026.github.io/assets/tillit.html) [qmd](https://uit-sok-2303-V2026.github.io/assets/tillit.qmd)
+* F5:3 Velferdsstatens framtid [slides](https://uit-sok-2303-V2026.github.io/assets/framtid.html) [qmd](https://uit-sok-2303-V2026.github.io/assets/framtid.qmd)
 
 ## Oppsummering og instruks til muntlig eksamen
