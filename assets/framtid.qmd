@@ -1,0 +1,252 @@
+---
+title: "Velferdsstatens framtid" 
+subtitle: "NOU 2021:9, kap.4"
+author:
+  - Mikko Moilanen
+format: 
+  revealjs:
+ #   smaller: true
+    scrollable: true
+  #  chalkboard: true
+    multiplex: true
+    self-contained: true
+    footer: "[uit-sok-2303-V26.github.io/](https://uit-sok-2303-V26.github.io/)"
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: title_slide.png
+      data-background-size: cover
+date: last-modified
+date-format: "DD/MM/YYYY"
+css: style.css
+editor: visual
+from: markdown+emoji
+---
+
+## Velferdsstatens fremtid
+
+- stort behov for arbeidskraft i årene som kommer
+
+![](https://www.ssb.no/befolkning/befolkningsframskrivinger/statistikk/nasjonale-befolkningsframskrivinger/artikler/vi-blir-flere-men-ogsa-mye-eldre/_/image/55587655-f873-4a09-ba23-e872002c8af5:640286cd3716cc3399b47b8d53615df5cb4a1aec/max-850/folkfram-2024-06-05-fors%C3%B8rgerbyrde-linje.svg)
+
+- den demografiske utviklingen fører til lavere vekst i arbeidsstyrken og skatteinntektene
+
+![](https://www.ssb.no/befolkning/befolkningsframskrivinger/statistikk/nasjonale-befolkningsframskrivinger/artikler/vi-blir-flere-men-ogsa-mye-eldre/_/image/af2d590f-32f3-43a3-949d-d35a2a2e43bc:86c5be9faf7114be21a89746c0cb6b747f150256/max-850/folkfram-2024-06-05-befolkningsvekst.svg)
+
+## Inntektene fra oljevirksomheten er ventet å gå ned
+
+![Produksjon og anslått fremtidig produksjon av petroleum på norsk sokkel. Mill. Sm3 oljeekvivalenter. Kilder: Energidepartementet og Sokkeldirektoratet](https://www.regjeringen.no/contentassets/7400c9d08a5543b8912fbf700f3344fd/no/hfig/fig1-7.svg){.nostretch}
+
+![Statens netto kontantstrøm fra petroleumsvirksomheten. Andel av BNP for Fastlands-Norge. Prosent. Kilde: Finansdepartementet](https://www.regjeringen.no/contentassets/7400c9d08a5543b8912fbf700f3344fd/no/hfig/fig7-4.svg){.nostretch}
+
+## Summa summarum
+
+- presset på offentlige finanser øker
+- aldringen av befolkningen gir økt behov for arbeidskraft i helse- og omsorgssektoren
+- modellen må kontinuerlig vurderes, utvikles og styrkes
+
+## Den norske modellen er helt avhengig av **høy yrkesdeltakelse**
+
+- den norske modellen er helt avhengig av **høy yrkesdeltakelse** for å kunne finansiere velferdsordningene framover
+  - sysselsettingen faller etter fylte 62 år
+    - jo flere eldre i arbeidsstyrken → reduserer sysselsettingsandelen
+    - internasjonale trender (teknologisk utvikling og (anti-)globalisering) vil føre til at jobber både forsvinner og blir skapt
+      - nettoeffekten er usikker
+        - de nye jobbene vil sannsynligvis kreve mer kompetanse enn jobbene som forsvinner
+          - vanskeligere å inkludere sårbare grupper
+  - nedbygging av petroleumssektoren vil også innebære omstillingsbehov
+    - endringer i etterspørselen etter ulike typer arbeidskraft
+    - kan svekke sysselsettingen, særlig i omstillingsfasen
+
+## Økt press på offentlige finanser i årene fremover
+
+- veksten i underliggende skatteinntekter avtar som følge av lavere befolkningsvekst og aldring
+
+![Netto overføringer fra offentlig forvaltning etter alder. 1 000 2024-kroner. Basert på tallgrunnlag fra 2017. Omregnet til 2024-priser ved hjelp av utgiftsdeflatoren for statsbudsjettet. Kilder: Statistisk sentralbyrå og Finansdepartementet.](https://www.regjeringen.no/contentassets/7400c9d08a5543b8912fbf700f3344fd/no/hfig/fig7-1.svg){.nostretch}
+
+- innfasingen av oljepengebruk vil være betydelig lavere framover
+
+  - inntektene fra olje- og gassvirksomheten vil avta
+
+- aldringen av befolkningen øker utgiftene til alderspensjon og helse- og omsorgstjenester
+
+- På lengre sikt
+
+  - lavere inntekter og høyere utgifter fører til et **inndekningsbehov i offentlige finanser**
+
+- fire ulike strategier for å dekke inndekningsbehovet (Perspektivmeldingen 2017)
+
+  - økt sysselsetting
+    - det mest attraktive alternativet
+      - økt verdiskaping
+      - økte inntekter
+      - reduserte utgifter
+      - gunstig for individer som kommer i arbeid
+  - mer effektiv ressursbruk i offentlig sektor
+    - **kutt i budsjettene** i offentlig sektor tilsvarende anslått produktivitetsvekst
+      - budsjettinnstramminger utover produktivitetsvekst vil svekke kvaliteten på tjenestene
+    - lite sannsynlig at mer effektiv ressursbruk i offentlig sektor alene skal kunne dekke det framtidige inndekningsbehovet
+  - økt privat ansvar
+    - økt privat medfinansiering av offentlige tjenester
+    - ansvaret for tjenester overføres til privat sektor
+    - økte brukerbetalinger (har uheldige fordelingsmessige konsekvenser)
+    - politisk krevende å gjennomføre
+  - økte skatter
+    - betydelig økning i skattenivået
+      - negative effekter på arbeidstilbudet og på bedriftenes insentiver til å investere og drive næringsvirksomhet
+    - bekjempelse av skatteunndragelse og et mer effektivt skattesystem kan bidra til å bedre ressursutnyttelsen
+
+## Økt behov for arbeidskraft i helse- og omsorgssektoren
+
+- Aldringen av befolkningen → ressursbruken i helse- og omsorgssektoren øker → økt behov for arbeidskraft
+- For å møte behovet for arbeidskraft vil det måtte være 15 prosent av sysselsatte i helse- og omsorgssektoren i 2035, og 22 prosent i 2060 (Hjemås m.fl. 2019)
+  - vil være en fjerdedel av den totale sysselsettingsveksten fram til 2035, og halvparten mellom 2035 og 2060
+- faktorer som bremser etterspørselsveksten
+  - bedre helse blant eldre
+  - økt bruk av velferdsteknologi øker produktiviteten
+- faktorer som øker etterspørselsveksten etter arbeidskraft i sektoren
+  - økt standard på helsetjenestene
+  - økt velstandsnivå gir forventning om stadig bedre tjenester
+  - nye og kostbare behandlingsmuligheter blir tilgjengelig
+- etterspørselen etter arbeidskraft vil trolig også øke i andre sektorer (Cappelen m.fl. 2020)
+  - etterspørselen vil vokse klart sterkere enn arbeidsstyrken for personer med videregående fagutdanning rettet inn mot industri, bygg og anlegg og håndverk
+
+# Sysselsetting og megatrender
+
+## Automatisering og teknologisk utvikling
+
+![](jobbautomatisering.png)
+
+- Teknologisk utvikling har både positive og negative effekter på sysselsettingen
+  - **teknologi erstatter mennesker** i utførelsen av oppgaver
+    - **negativ effekt på sysselsettingen**
+    - økt produktivitet → prisreduksjoner → økt etterspørsel → **positiv effekt** på sysselsettingen
+  - **ny teknologi komplementerer menneskelig arbeidskraft** → øker produktiviteten til arbeidstakere
+    - innovasjon → nye produkter og teknologi → økt produktivitet → lønningene opp og prisene ned → økt kjøpekraft, økte investeringer og økt etterspørsel etter arbeidskraft → nye arbeidsplasser
+    - **positive sysselsettingseffekter**
+  - ny teknologi kan også skape helt nye jobber
+
+![Arbeidere i yrker med størst mulighet for automatisering, som prosent av samlet sysselsetting. 2019. Kilde: OECD (2023). Employment Outlook 2023.](https://www.regjeringen.no/contentassets/7400c9d08a5543b8912fbf700f3344fd/no/hfig/fig4-5.svg)
+
+- Totaleffekten avhenger hvilken effekt som er sterkest
+  - "Ny teknologi og arbeidskraft er komplementer":
+    - Atkinson og Wu(2017), Marcussen (2016):
+      - frykten for teknologidrevet ledighet er sterkt overdrevet
+      - takten i yrkesmobilitet og jobbtap under de seinere års tekniske rasjonalisering har vært lav de senere årene
+  - "Ny teknologi og arbeid er substitutter":
+    - maskinlæring, automatisering, roboter og andre digitale verktøy gjør arbeidskraft overflødig
+      - spesielt innenfor rutinepregede aktiviteter
+      - også jobber som hovedsakelig består av kognitive oppgaver og var ansett som umulige å automatisere, er nå i faresonen (Brynjolfsson & McAfee 2014)
+- utfordringene automatiseringen skaper må vurderes i forhold til de store endringene som uansett skjer hvert år i arbeidsmarkedet
+  - hvert år forsvinner om lag hver tiende jobb, mens enda flere jobber kommer til
+- økt polarisering på arbeidsmarkedet: ny teknologi har konsekvenser for hvilke typer jobber som finnes
+
+![](polarisering_arbeidsmarkedet.png)
+
+- etterspørselen etter ulike typer arbeidstakere vil ikke være konstant
+  - etterspørselen etter arbeidstakere som utfører kognitivt krevende oppgaver øker som følge av informasjonsteknologi
+  - noen jobber som krever middels kompetanse står i fare for å bli automatisert bort
+  - mange jobber i tjenestesektoren er vanskelig å automatisere
+
+## Globalisering (eller antiglobalisering?)
+
+- Små, åpne vestlige økonomier har høstet store gevinster av liberaliseringen av internasjonal handel i etterkrigstiden
+  - globalisering av finanssektoren har derimot hatt mer tvetydige virkninger
+- Selv om de nordiske økonomiene har vært blant globaliseringsvinnerne, har arbeidsplasser i flere bransjer og næringer gått tapt
+  - omstrukturering av internasjonale produksjons- og verdikjeder har ført til relokalisering av manuelle jobber
+    - parallelt med vekst i kunnskapsintensive jobber på hjemmebane
+- fri bevegelse av tjenester og arbeidskraft får økende betydning for vekst- og omstillingsevnen i arbeidslivet
+  - norsk eksport til EU dominert av olje, gass, ubearbeidet fisk og råvarebaserte industriprodukter
+    - Hvis målet i framtiden er å utvikle mer kunnskapsbasert digital, grønn eksportproduksjon med større innslag av tjenester, vil det økonomisk sett neppe være noen fordel om Norge stiller seg utenfor EU
+- lavere kommunikasjons- og transportkostnader har knyttet sammen markeder for varer og tjenester
+- har bidratt til akselererende spredning av teknologi og data, informasjon og kunnskapsbaserte tjenester
+- flere tjenester kan bli formidlet online uten hensyn til geografisk avstand
+  - økt innovasjonstakt og forsterket internasjonal konkurranse
+  - et mulig scenario: globalisering innen kunnskapsintensiv produksjon og online-tjenester, utflyttingen av tradisjonell arbeidsintensiv produksjon bremses opp
+
+## Store demografiske endringer: aldring og migrasjon I
+
+- Utviklingen i arbeidsstyrken påvirkes først og fremst av **demografiske endringer**
+  - endringer i befolkningens størrelse og alderssammensetting
+    - Ifølge beregninger fra Eurostat vil befolkningen i arbeidsdyktig alder (15-64) i EU skrumpe
+    - andelen eldre vil øke drastisk de neste 50 årene
+    - arbeidsstyrken i EU vil falle med 45 millioner fram til 2080, brorparten før 2050
+    - aldersgruppa 65+ øke med 53 millioner fra 19 prosent til 29 prosent av befolkningen
+      - størsteparten av veksten vil komme i gruppa 80+
+        - mest behov for helse- og omsorgstjenester
+    - **den aldersmessige forsørgerbyrden (antall personer 65 år og over delt på antall personer 20-64 år) kommmer til å øke kraftig**
+
+## Forsørgerbrøk for eldre
+
+![](000010.png)
+
+## Store demografiske endringer: aldring og migrasjon II
+
+- vil sannsynligvis lede til knapphet på arbeidskraft og kompetanse i mange bransjer i både Norden og EU
+- vil lede til sterk vekst i behovet for arbeidskraft i helse- og omsorgssektoren
+- stor nedgang i arbeidsstyrken i Polen og de baltiske landene
+  - økt etterspørsel og skjerpet konkurranse om arbeidskraft betyr at arbeidsinnvandringen fra disse landene til Norge og Norden vil avta
+- for noen yrkesgrupper i Norden kan også utvandring bli mer attraktivt
+- Europa som helhet vil etterspørre mer arbeidskraft utenfra
+- befolkningsveksten fortsetter i Asia og Afrika
+- Afrika vil stå for over halvparten av økningen i verdens befolkning til 2050
+  - arbeidsstyrken vil mer enn dobles innen 2050, fra 425 millioner i 2015 til over 1 milliard (UN 2019)
+  - utvandring fra Afrika vil øke
+    - forsterkes av den globale oppvarmingen
+- innvandrerbefolkningen vil fortsette å vokse
+  - mer og mer viktig å integrere ankomne flyktninger og deres familier i arbeidslivet:
+    - lavere velferdsutgifter
+    - økt produksjon og skatteinntekter
+    - høyere livskvalitet for innvandrerne selv, deres barn og innbyggerne for øvrig?
+  - utfordringer:
+    - Gjennomsnittlig sysselsettingsrate blant tredjelandsmigranter fra Asia og Afrika
+      - deres etterkommere (andregenerasjonen) ser ut til å gjøre det langt bedre i skole, utdanning og arbeid (Hermansen 2016)
+      - forsterket innsats:
+        - å inkludere førstegenerasjonen i arbeidslivet
+        - inkludere den økte andelen unge i majoritetsbefolkningen som har droppet ut av skole, utdanning og arbeid
+        - inkluder de unge som er avhengige av sosiale ytelser
+
+## Grønn omstilling og lavere etterspørsel fra petroleumssektoren
+
+- petroleumsvirksomheten har bidratt betydelig til å løfte verdiskaping, inntekter og velstand i norsk økonomi
+- en femtedel av økningen i BNP for Fastlands-Norge fra 2002 kan tilskrives den økte etterspørselen fra petroleumsvirksomheten og bruken av oljeinntekter over statsbudsjettet
+- bruken av petroleumsressursene har også påvirket næringsstrukturen
+- framover forventes det lavere etterspørsel fra petroleumssektoren
+- for å nå klimamålene kreves det tiltak som vil redusere etterspørsel etter norsk olje og gass
+  - framskynder nedbyggingen av petroleumssektoren
+  - øker utfordringene knyttet til omstillingen av norsk økonomi
+    - IEA: har laget et scenario som viser hvilke tiltak som er nødvendige for å nå Paris-avtalens klimamål (International Energy Agency 2020)
+      - etterspørselen etter olje og gass vil være henholdsvis 34 og 12 prosent lavere i 2040 enn i 2019
+
+## Hvordan øke sysselsettingen
+
+- høy sysselsetting er et hovedmål i norsk politikk
+  - viktig for
+    - verdiskapningen
+    - finansiering av velferdsordninger
+    - den enkeltes velferd
+- sysselsettingen i Norge er høy
+  - nesten 80 prosent av befolkningen mellom 20 og 64 år er sysselsatt
+- Norge har stort behov for arbeidskraft i årene som kommer
+  - flere utfordringer knyttet til å øke sysselsettingen
+    - skillet mellom de som er innenfor og de som er utenfor arbeidsmarkedet er blitt skarpere over tid
+    - blant unge har andelen som mottar langvarige helserelaterte ytelser fra det offentlige økt
+
+![Økning i antall sysselsatte og antall årsverk ved ulike retningsvalg. 1 000. Full effekt. Kilde: Finansdepartementet.](https://www.regjeringen.no/contentassets/7400c9d08a5543b8912fbf700f3344fd/no/hfig/fig3-23.svg){.nostretch}
+
+- Økt sysselsetting kan bare skje i kombinasjon med en god utvikling i norsk økonomi
+  - en velfungerende lønnsdannelse
+  - et levedyktig arbeids- og næringsliv
+  - den generelle økonomiske politikken bidrar til et høyt og stabilt nivå på samlet etterspørsel
+- tusenkronersspørsmålene:
+  - hvilke tiltak som kan bidra til at flere kommer i arbeid?
+  - hvordan få flere til å utnytte sin arbeidsevne?
+  - hvordan få flere til å unngå unødig langvarige stønadsforløp?
+  - hvordan få færre til å falle utenfor arbeidslivet på en varig stønad?
+
+## Avslutning
+
+- aldrende befolkning gjør at trygdeutgiftene og utgiftene til omsorg og pleie vil stige mye fremover
+  - et betydelig økt finansieringsbehov med dagens velferdsstat
+  - selv med et stort pensjonsfond er det behov for ytterligere tiltak for å finansiere velferdsstaten
+    - øke inntektene (skatter, brukerbetalinger)
+    - redusere utgiftene på andre områder

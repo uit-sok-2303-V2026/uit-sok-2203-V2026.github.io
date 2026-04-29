@@ -1,0 +1,211 @@
+---
+title: "Oppslutningen om veldferdsstaten"
+subtitle: " NOU 2011:7, kap 13"
+author:
+  - Mikko Moilanen
+format: 
+  revealjs:
+ #   smaller: true
+    scrollable: true
+ #   chalkboard: true
+    multiplex: true
+    self-contained: true
+    footer: "[uit-sok-2303-V26.github.io/](https://uit-sok-2303-V26.github.io/)"
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: title_slide.png
+      data-background-size: cover
+date: last-modified
+date-format: "DD/MM/YYYY"
+css: style.css
+editor: visual
+from: markdown+emoji
+---
+
+# Oppslutningen om velferdsstaten
+
+![](NordiskeModellen.png)
+
+## Velferdsstaten og tillit: Nordiske land har høy mellommenneskelig tillit
+
+<iframe data-external="1" src="https://ourworldindata.org/grapher/self-reported-trust-attitudes?tab=chart&amp;country=NOR~FIN~DNK~USA~SWE" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">
+
+</iframe>
+
+## Velferdsstaten og tillit: velferdsstaten kan fremme og vedlikeholde tillit
+
+<iframe data-external="1" src="https://ourworldindata.org/grapher/interpersonal-trust-vs-income-inequality?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">
+
+</iframe>
+
+-   Universelle velferdsregimer reduserer skillet mellom «oss» og «dem»
+
+-   Gratispassasjerproblem:
+    -   Velferdsstaten er avhengig av at hver enkelt har en tillit til at «alle de andre» også vil legge pengene sine i den felles potten
+    -   Hvis ikke, risikerer den enkelte å tape pengene han selv har lagt i felleskassa, samtidig som de som beholdt pengene selv kom bedre ut
+
+## Viktigheten av oppslutning
+
+-   Inntektssikringsordninger krever bred oppslutning for å fungere effektivt
+
+-   Misnøye kan eksistere samtidig som reglene og lovene må følges
+
+-   Langsiktig systemoverlevelse til tross for misnøye
+
+    -   man slipper ikke å betale skatt eller trygdeavgift selv om man er uenig i måten pengene brukes på
+
+-   Misnøye kan føre til politisk endring
+
+    -   kan omformes til politiske programmer
+    -   endringer i partienes prioteringer
+
+-   Innvandringsfiendtlig retorikk kan forsterke skepsis
+
+-   Meningsmålinger kan indikere tidlig misnøye ![](innvandring_holdninger.png)
+
+-   Høy oppslutning forenkler kontroll og administrasjon av velferdsordningene
+
+    -   Følging av regler baseres på oppfatningen om at det er "riktig"
+    -   Oppslutning bidrar til opprettholdelse av et system sett som godt og riktig
+
+## Konsekvenser av svak oppslutning
+
+-   Svak oppslutning svekker viljen til å bidra
+-   Regler og kontroll blir fremtredende
+-   Trussel om straff kan øke hvis oppslutningen er lav
+-   Risiko for økende systemmanipulasjon
+    -   stadig jakt etter muligheter til å lure systemet
+
+## Legitimitet og velferdsstatens bærekraft
+
+-   Legitimitet er forutsetningen for bærekraften til systemet
+-   Oppslutningen sikrer systemets langvarige levedyktighet
+
+## Public Goods Game
+
+- Hver deltaker får **10 poeng** i hver runde.
+
+- Du velger hvor mange poeng du vil legge i **felleskassen**.
+  
+- Poengene du **ikke** legger i felleskassen, beholder du selv.
+  - målet er å oppnå høyest mulig gevinst for deg selv
+
+- Alle poeng i felleskassen blir multiplisert med **1,5**.
+
+- fellespotten deles deretter **likt mellom alle deltakerne**.
+
+$$
+\text{Din gevinst}
+=
+(10 - \text{ditt bidrag})
++
+\frac{1.5 \times \text{samlet bidrag}}{\text{antall deltakere}}
+$$
+
+## Spørreskjema
+![](tillit.png)
+
+# Økende mangfold som velferdsstatlig legitimitetsproblem
+
+## Hvorfor er økende mangfold en utfordring?
+
+-   Økende mangfold kan potensielt svekke velferdsstatens legitimitet
+-   Spørsmål om grensedragning, samhørighet og gjensidighet er kritiske
+-   Fellesskapsfølelse fremmer viljen til å bidra til det felles gode
+
+## Holdninger til innvandrere og innvandring: velferdsgoder
+
+![](misbruk.png)
+
+## Betingelser for at fellesskap skal opprettholdes
+
+1.  **Kontroll**:man opplever at systemet har kontroll over omfordeling
+
+-   adgangen til rettigheter og plikter er klart definert
+
+2.  **Gjensidighet**: man opplever at alle bidrar etter evne:
+
+-   "Jeg betaler for deg, du betaler for meg."
+
+3.  **Det opplevde fellesskapet**: man opplever en tilhørighet til fellesskapet
+
+-   enten det er etnisk, nasjonal, eller annen tilknytning
+
+### Kontroll
+
+-   Staten kan ikke ha åpne grenser og samtidig gi sterke rettigheter til alle
+-   Nødvendige restriksjoner for å bevare velferdsstatens legitimitet og bærekraft
+-   Et land som søker å kombinere fri innvandring med sjenerøse og universelle ytelser, vil sannsynligvis oppleve problemer med oppslutning om velferdsordningen i den generelle befolkningen.
+
+### Gjensidighet
+
+-   Velferdsstatens bærekraft avhenger av gjensidig forpliktelse til bidrag og risikodeling
+    -   et system for risikodeling, og mange av ytelser kan forstås som forsikringsordninger
+-   Mistenksomhet mot innvandreres bidrag kan svekke systemets legitimitet
+-   Majoriteten kan være lite innstilt på å være med å betale for beskyttelse mot risikoer de selv har liten sannsynlighet for å oppleve
+    -   Grunntanken i velferdsstaten: velferdsstatene er basert på en opplevelse av å være i samme båt
+
+### Det opplevde fellesskapet
+
+-   Større vilje til omfordeling hvis mottakeren oppfattes som en av "oss"
+    -   mennesker er mer villige til å gi opp deler av inntekten sin til fellesskapet hvis den som mottar fellesskapsgoder er en som ser ut som, og oppfører seg som, dem selv
+    -   forestillingen om det nasjonale fellesskapet vs. økt mangfold
+        -   velferdsstatsprosjektet kan vakle
+-   nasjonale fellesskap og utgruppeskepsis spiller en rolle i opprettholdelsen av velferdsordninger
+-   Forestilinger om naturgitte fellesskap kan ha en betydelig retorisk kraft, og brukes av innvandringsskeptiske politikere i flere land
+-   [velferdssjåvinisme-hypotesen](https://brill.com/view/journals/ijgr/29/4/article-p777_008.xml)
+    -   USA:
+        -   velferd er greit, så lenge den går til personer av egen gruppe
+    -   Vesten:
+        -   personer som allerede er skeptisk til personer fra andre etniske grupper blir mer skeptiske til ulike velferdsholdninger når andelen innvandrere er høy
+        -   de som ikke har noe imot innvandrere er mer vennlig innstilt til ulike velferdsordninger, også for innvandrerne
+
+## Konsekvenser av økt mangfold
+
+-   Innvandring utfordrer ideen om "the bounded world"
+-   Utrygghet rundt grensekontroll kan minske støtte til velferdsstaten
+-   Innvandreres og utvandreres bidrag til fellesskapet er avgjørende for oppfatningen av rettferdighet og gjensidighet
+
+## Oppsummering
+
+-   Økende mangfold utfordrer velferdsstatens legitimitet gjennom spørsmål om samhørighet og rettferdig fordeling
+-   Et balansert kontrollregime og klare betingelser for tilgang til velferdsgoder er viktig for å opprettholde støtten
+-   Gjensidig forpliktelse og opplevelsen av nasjonalt fellesskap spiller sentrale roller for velferdsstatens aksept i befolkningen
+
+## Sosial kapital
+
+-   **Sosial kapital**: nøkkelbegrep i samfunnsvitenskap
+-   Definisjon (Putnam): Sosiale nettverk, gjensidighet og **tillit**
+-   Sentrale spørsmål:
+    -   Hvordan påvirker økende mangfold den sosiale kapitalen i et samfunn?
+        -   Forholdet mellom etnisk mangfold og sosial kapital
+        -   Påvirkning av mangfold på samfunnets sosiale kapital
+
+### Teoretiske perspektiver
+
+-   Konfliktteori:
+    -   Heterogenitet fremmer **inngruppesolidaritet** og **utgruppeskepsis**
+-   Kontaktteori:
+    -   Mer kontakt med etnisk ulike personer øker gjensidig tillit
+-   Empirisk støtte for begge teorier
+
+### Putnams konklusjoner om multietniske nabolag
+
+-   Kortsiktig spenning mellom mangfold og samhørighet
+-   Langsiktig potensial for økt toleranse for mangfold
+-   Implikasjoner for velferdsstaten:
+    -   Tilbaketrekning og mindre deltakelse i felles prosjekter
+    -   Mindre vilje til å finansiere felles goder
+
+## En todelt velferdsstat?
+
+-   Velferdsstaten er populær i Norge, og manglende oppslutning framstår ikke som et presserende problem
+-   Støtte for en todelt velferdsstat blant en tredjedel av norske velgere
+    -   ønske om å reservere ytelser for ikke-innvandrere
+    -   det kan være tilslutning til å begrense velferdsstatens ordninger til personer som har bodd i landet i et visst antall år
+    -   **hvem som skal inkluderes og ekskluderes?**
+    -   en modernisert utgave av en gammel problematikk i velferdsdebatten: Skal man skille mellom en «verdig» og en «ikke verdig» trengende, og når er man eventuelt «verdig»?
+-   utviklingen i holdninger til økt mangfold når det gjelder velferdsstaten vil avhenge av
+    -   størrelsen på innvandringen
+    -   innvandrernes deltakelse på arbeidsmarkedet og stønadsbruk
+    -   omfanget av stønadseksport
