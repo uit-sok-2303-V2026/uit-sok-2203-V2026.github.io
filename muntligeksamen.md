@@ -5,7 +5,7 @@
 # Muntlig eksamen
 
 ## Tid for eksamen
-Datoene for den muntlige eksamenen er **<span style="color:OrangeRed;">1. - 3. mai 2026 </span>**. 
+Datoene for den muntlige eksamenen er **<span style="color:OrangeRed;">1. - 3. juni 2026 </span>**. 
 
 ## Tidsskjema for muntlig eksamen
 
@@ -17,7 +17,7 @@ Tidsskjemaet for muntlig eksamen blir publisert på Canvas.
 Det er lov å bytte tidspunkt om det er absolutt nødvendig, men... 
 * Dere må selv finne en person å bytte med (vi vil ikke ordne med bytter til dere).
 * Dere må få byttet godkjent av denne personen
-* Dere må gi oss beskjed via e-post om byttet (med hvem og hvilke tidspunkter det gjelder) **seinest fredag 15. mai kl 12:00**.
+* Dere må gi oss beskjed via e-post om byttet (med hvem og hvilke tidspunkter det gjelder) **seinest fredag 27. mai kl 23:59**.
 
 ## Opplegg
 Den muntlige eksamen er delt opp i to hoveddeler.
