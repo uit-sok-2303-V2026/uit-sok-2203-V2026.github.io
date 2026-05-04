@@ -5,7 +5,7 @@
 # Muntlig eksamen
 
 ## Tid for eksamen
-Datoene for den muntlige eksamenen er **<span style="color:OrangeRed;">18. - 22 mai 2026 </span>**. 
+Datoene for den muntlige eksamenen er **<span style="color:OrangeRed;">1. - 3. mai 2026 </span>**. 
 
 ## Tidsskjema for muntlig eksamen
 
