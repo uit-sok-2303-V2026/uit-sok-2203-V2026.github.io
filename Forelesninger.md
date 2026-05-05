@@ -36,3 +36,4 @@ Her finner du lenker til alle forelesninger på kurset. Siden oppdateres fortlø
 * F5:3 Velferdsstatens framtid [slides](https://uit-sok-2303-V2026.github.io/assets/framtid.html) [qmd](https://uit-sok-2303-V2026.github.io/assets/framtid.qmd)
 
 ## Oppsummering og instruks til muntlig eksamen
+* Instruks muntlig eksamen [Slides](https://uit-sok-2303-V2026.github.io/assets/Instruks_muntlig_eksamen2026.pdf)
